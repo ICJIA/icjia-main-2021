@@ -2,22 +2,17 @@
   "name": "icjia-agency-main-site-2021",
   "version": "0.1.0",
   "private": true,
+  "description": "Illinois Criminal Justice Information Authority 2021",
   "author": {
     "name": "Illinois Criminal Justice Information Authority",
     "email": "christopher.schweda@illinois.gov"
-  },
-  "description": "Illinois Criminal Justice Information Authority 2021",
-  "homepage": "https://icjia.illinois.gov/",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ICJIA/icjia-main-2021"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
+    "postbuild": "node generateBuildInfo.js",
     "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"
   },
   "dependencies": {
@@ -29,6 +24,7 @@
     "nprogress": "^0.2.0",
     "vue": "^2.6.12",
     "vue-router": "^3.4.6",
+    "vuetify": "^2.3.13",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
@@ -46,6 +42,16 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.1",
     "prettier": "^2.1.2",
-    "vue-template-compiler": "^2.6.12"
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.7",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.6.0"
+  },
+  "homepage": "https://icjia.illinois.gov/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICJIA/icjia-main-2021"
   }
 }
