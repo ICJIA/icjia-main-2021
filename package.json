@@ -1,15 +1,32 @@
 {
-  "name": "icjia-main-2021",
+  "name": "icjia-agency-main-site-2021",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Illinois Criminal Justice Information Authority",
+    "email": "christopher.schweda@illinois.gov"
+  },
+  "description": "Illinois Criminal Justice Information Authority 2021",
+  "homepage": "https://icjia.illinois.gov/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICJIA/icjia-main-2021"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"
   },
   "dependencies": {
+    "auto-changelog": "^2.2.1",
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31",
+    "nprogress": "^0.2.0",
     "vue": "^2.6.12",
     "vue-router": "^3.4.6",
     "vuex": "^3.5.1"
