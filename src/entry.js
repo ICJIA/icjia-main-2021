@@ -17,7 +17,7 @@ function createBanner() {
   <div style="text-align: center; font-size: 0.7em;">
     
     <h1 style="font-weight: 900; font-size: 36px; margin-top: 100px; margin-bottom: 32px; font-family: 'Roboto', sans-serif !important;">
-          R<span style="color: #ccaa41">3</span>&nbsp;<span
+          <span
             >Illinois Criminal Justice Information Authority</span
           >
         </h1>
