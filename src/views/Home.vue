@@ -1,5 +1,8 @@
 <template>
-  <div>content here</div>
+  <v-container>
+    <v-row> Content here </v-row>
+    <div style="height: 1000px"></div>
+  </v-container>
 </template>
 
 <script>
