@@ -32,7 +32,7 @@
       <!-- {{ $store.state.auth.isAuthenticated }} -->
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon aria-label="search">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>

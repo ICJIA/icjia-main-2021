@@ -72,11 +72,11 @@ export default {
       link: [{ rel: "canonical", href: this.canonical }],
       meta: [
         { charset: "utf-8" },
-        {
-          vmid: "robots",
-          name: "robots",
-          content: "index, follow",
-        },
+        // {
+        //   vmid: "robots",
+        //   name: "robots",
+        //   content: "index, follow",
+        // },
         {
           vmid: "description",
           name: "description",
