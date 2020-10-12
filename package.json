@@ -1,6 +1,6 @@
 {
   "name": "icjia-agency-main-site-2021",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Illinois Criminal Justice Information Authority 2021",
   "author": {
@@ -19,6 +19,7 @@
     "auto-changelog": "^2.2.1",
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "jsonfile": "^6.0.1",
     "material-design-icons-iconfont": "^6.1.0",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.31",
