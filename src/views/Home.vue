@@ -75,6 +75,7 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
+    <HomeBoxes></HomeBoxes>
     <v-container
       fluid
       style="background: #fff"
@@ -84,7 +85,6 @@
         $vuetify.breakpoint.xl
       "
     >
-      <HomeBoxes></HomeBoxes>
       <v-card elevation="0" style="border: 1px solid #ccc">
         <v-toolbar flat color="grey" dark>
           <v-toolbar-title>Upcoming Events</v-toolbar-title>
