@@ -1,32 +1,20 @@
 <template>
   <v-app id="appTop">
+    <div id="nav" role="navigation" style="z-index: 10000">
+      <router-link
+        to="#main"
+        aria-label="Skip Navigation"
+        class="skiplink"
+        @click.native="scrollFix('#main')"
+        title="Skip Navigation"
+        style="font-size: 12px"
+      >
+        Skip to content
+      </router-link>
+    </div>
     <AppNav></AppNav>
 
-    <v-fab-transition>
-      <v-btn
-        v-scroll="onScroll"
-        v-show="fab"
-        fab
-        fixed
-        bottom
-        dark
-        right
-        color="blue darken-4"
-        transition="scale-transition"
-        @click="toTop"
-        aria-label="Click to scroll to top"
-      >
-        <v-icon>keyboard_arrow_up</v-icon>
-      </v-btn>
-    </v-fab-transition>
-
     <v-main>
-      <!-- <Banner ref="banner" />
-      <Census :key="$route.path"></Census> -->
-
-      <!-- <Language></Language> -->
-      <!-- <Translate></Translate> -->
-
       <transition name="fade" mode="out-in">
         <router-view
           @click="closeElements()"
@@ -97,6 +85,16 @@ export default {
     censusExpire: true,
   }),
   methods: {
+    scrollFix: function () {
+      var hash = location.hash.substr(1);
+      var el = document.getElementById(`${hash}`);
+      if (hash && el) {
+        //console.log(hash);
+        this.$vuetify.goTo(`#${hash}`, { offset: 12 }).catch(() => {
+          this.$vuetify.goTo(0);
+        });
+      }
+    },
     closeElements() {
       EventBus.$emit("close-search");
     },

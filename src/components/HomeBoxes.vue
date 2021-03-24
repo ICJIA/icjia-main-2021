@@ -63,9 +63,9 @@ export default {
   data() {
     return {
       colors: {
-        box1: "#aaa",
-        box2: "#999",
-        box3: "#888",
+        box1: "#333",
+        box2: "#444",
+        box3: "#555",
       },
     };
   },

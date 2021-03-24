@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* jQuery Accessibility Quick Fixes */
 
 (function (a) {
