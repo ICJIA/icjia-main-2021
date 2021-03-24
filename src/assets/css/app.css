@@ -29,6 +29,10 @@ a {
   font-weight: 900;
 }
 
+a:focus {
+  font-weight: 900;
+}
+
 details {
   margin-top: 30px;
   margin-left: 15px;
@@ -95,6 +99,8 @@ th {
   overflow: hidden;
   white-space: nowrap;
   width: 1px;
+  font-size: 14px;
+  font-weight: 900 !important;
 }
 .skiplink:focus {
   clip: auto;
@@ -102,9 +108,14 @@ th {
   position: 0px;
   z-index: 100000;
   width: auto;
-  background: #eee;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 900 !important;
 }
 
 *:focus {
   border: 3px solid #000 !important;
+
+  font-weight: 900 !important;
 }

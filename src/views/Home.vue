@@ -8,7 +8,7 @@
             align="center"
             justify="center"
           >
-            <div style="width: 40% !important">
+            <div style="width: 65% !important">
               <v-container>
                 <v-row>
                   <v-col cols="12" md="4">
