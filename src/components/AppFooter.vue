@@ -1,6 +1,6 @@
 <template>
   <v-footer style="border-top: 1px solid #aaa">
-    <v-card flat tile width="100%" class="grey darken-4 text-center pt-1">
+    <v-card flat tile width="100%" class="grey darken-4 text-center pt-1 pb-4">
       <!-- <v-card-text class="white--text pt-8">
         <div style="display: inline">
           <img
@@ -56,6 +56,11 @@
             />
           </v-col>
           <v-col cols="12" md="6" class="text-center mt-8" style="color: white">
+            <div class="py-4">
+              <span class="v-icon fab fa-twitter mr-4"></span
+              ><span class="v-icon fab fa-facebook mr-4"></span>
+              <span class="v-icon fab fa-youtube"></span>
+            </div>
             <div style="font-size: 12px">
               <router-link to="/" class="footerLink">About</router-link> |
               <router-link to="/" class="footerLink">Help</router-link> |
