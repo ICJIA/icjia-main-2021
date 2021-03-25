@@ -86,4 +86,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.v-tab--active {
+  font-weight: 900 !important;
+  background: #666;
+  color: #fff !important;
+}
+</style>
