@@ -25,7 +25,7 @@
           })
         "
         style="font-size: 20px; font-weight: bold; margin-left: 10px"
-        class="hover"
+        class="hover hidden-sm-and-down"
       >
         ILLINOIS CRIMINAL JUSTICE INFORMATION AUTHORITY
       </div>
