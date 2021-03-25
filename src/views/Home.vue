@@ -76,6 +76,7 @@
       </v-carousel-item>
     </v-carousel>
     <HomeBoxes></HomeBoxes>
+    <HomeEvents></HomeEvents>
 
     <div id="content" style="margin-top: -10px">
       <v-row no-gutters class="hidden-sm-and-down">
@@ -133,8 +134,6 @@
           </div>
         </v-col>
       </v-row>
-
-      <HomeEvents></HomeEvents>
     </div>
   </div>
 </template>

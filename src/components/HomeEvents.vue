@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card elevation="0" style="border: 1px solid #ccc; margin-top: -5px">
+    <v-card elevation="0" style="margin-top: -11px; margin-bottom: 18px">
       <v-toolbar flat color="grey darken-3" dark>
         <v-toolbar-title style="font-weight: 900"
           >Upcoming Events</v-toolbar-title
@@ -15,9 +15,9 @@
         "
         style="background: #eee"
       >
-        <v-tab>Meetings</v-tab>
-        <v-tab>Events </v-tab>
         <v-tab>Community</v-tab>
+        <v-tab>Meetings </v-tab>
+        <v-tab>Events</v-tab>
 
         <v-tab-item>
           <v-card flat style="background: #eee">
@@ -67,9 +67,6 @@
         </v-tab-item>
       </v-tabs>
     </v-card>
-    <div style="font-size: 12px" class="mt-2 text-right">
-      Shrink browser window to see mobile view
-    </div>
   </div>
 </template>
 
