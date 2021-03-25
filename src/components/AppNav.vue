@@ -139,7 +139,7 @@
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" app temporary>
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
