@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height fluid class="px-0" style="margin-top: -23px">
+  <v-container fill-height fluid class="px-0" style="margin-top: -22px">
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <router-link to="/">

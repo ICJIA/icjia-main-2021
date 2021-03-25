@@ -77,7 +77,7 @@
     </v-carousel>
     <HomeBoxes></HomeBoxes>
 
-    <div id="content" style="margin-top: -11px">
+    <div id="content" style="margin-top: -10px">
       <v-row no-gutters>
         <v-col style="border-right: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
