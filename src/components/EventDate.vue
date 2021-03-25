@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ eventBorder: eventBorder }" class="px-5">
+  <div :class="{ eventBorder: eventBorder && !isMobile }" class="px-5 mb-1">
     <h2 style="font-size: 64px" class="mb-8">21</h2>
     <h3
       style="
@@ -24,6 +24,11 @@
 
 <script>
 export default {
+  computed: {
+    isMobile() {
+      return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs;
+    },
+  },
   props: {
     eventBorder: {
       type: Boolean,
