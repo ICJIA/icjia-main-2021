@@ -62,11 +62,11 @@
               <span class="v-icon fab fa-youtube"></span>
             </div>
             <div style="font-size: 12px">
-              <router-link to="/" class="footerLink">About</router-link> |
-              <router-link to="/" class="footerLink">Help</router-link> |
-              <router-link to="/" class="footerLink">Privacy</router-link> |
-              <router-link to="/" class="footerLink">Contact</router-link> |
-              <router-link to="/" class="footerLink">Sitemap</router-link>
+              <router-link to="/" style="color: #fff">About</router-link>
+              | <router-link to="/" style="color: #fff">Help</router-link> |
+              <router-link to="/" style="color: #fff">Privacy</router-link> |
+              <router-link to="/" style="color: #fff">Contact</router-link> |
+              <router-link to="/" style="color: #fff">Sitemap</router-link>
             </div>
 
             <div

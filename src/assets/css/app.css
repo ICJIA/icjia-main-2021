@@ -141,3 +141,7 @@ th {
   text-decoration: none;
   color: #000 !important;
 }
+
+.v-application a {
+  color: #000;
+}
