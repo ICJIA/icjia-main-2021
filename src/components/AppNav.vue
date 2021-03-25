@@ -139,27 +139,56 @@
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" app temporary>
-      <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-title>Item 1</v-list-item-title>
-          </v-list-item>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      temporary
+      disable-resize-watcher
+      color="white"
+      ><v-list class="mt-5">
+        <div v-for="item in items" :key="item.title">
+          <div v-if="item.items.length">
+            <v-list-group v-model="item.active" no-action>
+              <template v-slot:activator>
+                <v-list-item-content>
+                  <v-list-item-title
+                    v-text="item.title"
+                    style="font-size: 18px; font-weight: bold"
+                  ></v-list-item-title>
+                </v-list-item-content>
+              </template>
 
-          <v-list-item>
-            <v-list-item-title>Item 2</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Item 3</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Item 4</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
+              <v-list-item
+                v-for="child in item.items"
+                :key="child.title"
+                exact
+                @click="drawer = false"
+              >
+                <v-list-item-content style="margin-left: -40px">
+                  <v-list-item-title
+                    v-text="child.title"
+                    style="
+                      font-size: 14px !important;
+                      font-weight: bold;
+                      color: #555;
+                    "
+                  ></v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list-group>
+          </div>
+          <div v-else>
+            <v-list-item
+              style="margin-bottom: -5px"
+              exact
+              @click="drawer = false"
+            >
+              <v-list-item-title style="font-size: 18px; font-weight: bold">
+                {{ item.title }}</v-list-item-title
+              >
+            </v-list-item>
+          </div>
+        </div>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -170,6 +199,41 @@ export default {
   data() {
     return {
       drawer: false,
+      items: [
+        {
+          url: "/",
+          items: [],
+          title: "Item 1",
+        },
+        {
+          url: "/",
+          items: [],
+          title: "Item 2",
+        },
+        {
+          url: "/",
+          items: [],
+          title: "Item 3",
+        },
+        {
+          items: [
+            { title: "SubItem 1", url: "/" },
+            { title: "SubItem 2", url: "/" },
+            { title: "SubItem 3", url: "/" },
+            { title: "SubItem 4", url: "/" },
+          ],
+          title: "Item 4",
+        },
+        {
+          items: [
+            { title: "SubItem 1", url: "/" },
+            { title: "SubItem 2", url: "/" },
+            { title: "SubItem 3", url: "/" },
+            { title: "SubItem 4", url: "/" },
+          ],
+          title: "Item 5",
+        },
+      ],
     };
   },
   mounted() {
