@@ -42,7 +42,14 @@
             </v-img>
           </v-col>
           <v-col cols="12" md="9"
-            ><v-card-text style="font-size: 12px; margin-top: -25px">
+            ><v-card-text
+              style="
+                font-size: 14px;
+                margin-top: -25px;
+                color: #000;
+                font-weight: 400;
+              "
+            >
               January 10, 2022
             </v-card-text>
 

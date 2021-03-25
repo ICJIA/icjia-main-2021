@@ -77,41 +77,39 @@
     </v-carousel>
     <HomeBoxes></HomeBoxes>
 
-    <div id="content" style="margin-top: -25px">
-      <v-container fluid>
-        <v-row>
-          <v-col cols="12" md="6">
-            <h2
-              style="
-                font-size: 36px;
-                border-bottom: 1px solid #ccc;
-                padding-bottom: 8px;
-                margin-bottom: 25px;
-              "
+    <div id="content" style="margin-top: -11px">
+      <v-row no-gutters>
+        <v-col style="border-right: 1px solid #fff">
+          <v-toolbar flat color="grey darken-3" dark>
+            <v-toolbar-title style="font-weight: 900"
+              >Community Outreach</v-toolbar-title
             >
-              Community Outreach
-            </h2>
-            <div v-for="n in 4" :key="n">
-              <HomeCommunityOutreach></HomeCommunityOutreach>
-            </div>
-          </v-col>
-          <v-col cols="12" md="6">
-            <h2
-              style="
-                font-size: 36px;
-                border-bottom: 1px solid #ccc;
-                padding-bottom: 8px;
-                margin-bottom: 25px;
-              "
-            >
-              Newsroom
-            </h2>
-            <div v-for="n in 5" :key="n">
-              <HomeNewsroom></HomeNewsroom>
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+          </v-toolbar>
+        </v-col>
+        <v-col>
+          <v-toolbar flat color="grey darken-3" dark>
+            <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
+          </v-toolbar>
+        </v-col>
+      </v-row>
+      <v-row style="margin-top: -5px">
+        <v-col
+          cols="12"
+          md="6"
+          style="border-right: 1px solid #ccc"
+          class="pr-6"
+        >
+          <div v-for="n in 4" :key="n">
+            <HomeCommunityOutreach></HomeCommunityOutreach>
+          </div>
+        </v-col>
+        <v-col cols="12" md="6" class="pl-6">
+          <div v-for="n in 5" :key="n">
+            <HomeNewsroom></HomeNewsroom>
+          </div>
+        </v-col>
+      </v-row>
+
       <HomeEvents></HomeEvents>
     </div>
   </div>
