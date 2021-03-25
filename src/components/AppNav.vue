@@ -256,10 +256,7 @@ export default {
       ],
     };
   },
-  mounted() {
-    // window.$("i").replaceTagName("span");
-    // window.$('button[role="button"]').removeRedundantAttributes("role");
-  },
+  mounted() {},
 };
 </script>
 

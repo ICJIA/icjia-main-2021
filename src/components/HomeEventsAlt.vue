@@ -113,7 +113,7 @@ export default {
     };
   },
   mounted() {
-    window.$("i").replaceTagName("span");
+    // window.$("i").replaceTagName("span");
   },
   watch: {
     eventModel(newValue) {

@@ -217,7 +217,18 @@ export default {
     },
     fixA11y() {
       window.$("i").replaceTagName("span");
-      window.$('button[role="button"]').removeRedundantAttributes("role");
+      window
+        .$("button.v-icon")
+        .replaceEmptyElements("This is intentionally blank");
+      window
+        .$("span.v-icon")
+        .replaceEmptyElements("This is intentionally blank");
+      window.$('div[role="button"]').removeRedundantAttributes("aria-owns");
+      window.$('th[role="columnheader"]').removeRedundantAttributes("role");
+      window.$("th > span").replaceEmptyElements("This is intentionally blank");
+      window
+        .$("button.v-icon")
+        .addAriaLabel("Click this to toggle display of the news article");
     },
   },
 };

@@ -12,7 +12,7 @@
         Skip to content
       </router-link>
     </div>
-    <AppNav></AppNav>
+    <AppNav @hook:mounted="fixA11y()"></AppNav>
 
     <v-main>
       <transition name="fade" mode="out-in">
@@ -22,7 +22,10 @@
         ></router-view>
       </transition>
     </v-main>
-    <AppFooter style="margin: 0; padding: 0"></AppFooter>
+    <AppFooter
+      style="margin: 0; padding: 0"
+      @hook:mounted="fixA11y()"
+    ></AppFooter>
   </v-app>
 </template>
 
@@ -86,6 +89,18 @@ export default {
     censusExpire: true,
   }),
   methods: {
+    fixA11y() {
+      // window.$("i").replaceTagName("span");
+      // window
+      //   .$("button.v-icon")
+      //   .replaceEmptyElements("This is intentionally blank");
+      // window.$('div[role="button"]').removeRedundantAttributes("aria-owns");
+      // window.$('th[role="columnheader"]').removeRedundantAttributes("role");
+      // window.$("th > span").replaceEmptyElements("This is intentionally blank");
+      // window
+      //   .$("button.v-icon")
+      //   .addAriaLabel("Click this to toggle display of the news article");
+    },
     scrollFix: function () {
       var hash = location.hash.substr(1);
       var el = document.getElementById(`${hash}`);
