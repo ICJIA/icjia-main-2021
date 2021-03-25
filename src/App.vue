@@ -22,6 +22,7 @@
         ></router-view>
       </transition>
     </v-main>
+    <AppFooter style="margin: 0; padding: 0"></AppFooter>
   </v-app>
 </template>
 

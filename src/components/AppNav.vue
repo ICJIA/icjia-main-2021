@@ -7,7 +7,7 @@
           alt="ICJIA Logo"
           class="shrink mr-2 hover"
           contain
-          src="https://via.placeholder.com/105x50?text=LOGO"
+          src="https://via.placeholder.com/175x100/aaaaaa/FFFFFF/?text=LOGO"
           transition="scale-transition"
           width="120"
           style
