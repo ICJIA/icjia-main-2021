@@ -39,7 +39,11 @@
         transition="scale-transition"
       >
         <template v-slot:activator="{ on, attrs }">
-          <v-btn text class="hidden-sm-and-down" v-bind="attrs" v-on="on"
+          <v-btn
+            text
+            class="hidden-sm-and-down navItem"
+            v-bind="attrs"
+            v-on="on"
             >Item 1<v-icon right small>arrow_drop_down</v-icon>
           </v-btn>
         </template>
@@ -91,7 +95,11 @@
         transition="scale-transition"
       >
         <template v-slot:activator="{ on, attrs }">
-          <v-btn text class="hidden-sm-and-down" v-bind="attrs" v-on="on"
+          <v-btn
+            text
+            class="hidden-sm-and-down navItem"
+            v-bind="attrs"
+            v-on="on"
             >Item 5<v-icon right small>arrow_drop_down</v-icon>
           </v-btn>
         </template>
@@ -146,5 +154,6 @@ export default {
 <style lang="scss" scoped>
 .navItem {
   color: #000 !important;
+  font-weight: 900;
 }
 </style>
