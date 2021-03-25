@@ -138,6 +138,26 @@
       <!-- <v-btn icon>
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
+
+      <v-menu offset-y bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on">
+            <v-icon>mdi-dots-vertical</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>Item 1</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>Item 2</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>Item 3</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
