@@ -144,6 +144,7 @@ export default {
   data() {
     return {
       model: 0,
+
       colors: [
         "grey darken-1",
         "grey darken-2",

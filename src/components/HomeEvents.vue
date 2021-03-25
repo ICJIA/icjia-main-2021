@@ -7,6 +7,7 @@
         >
       </v-toolbar>
       <v-tabs
+        v-model="eventModel"
         :vertical="
           $vuetify.breakpoint.md ||
           $vuetify.breakpoint.lg ||
@@ -14,9 +15,9 @@
         "
         style="background: #eee"
       >
-        <v-tab @click="changeTab('meetings')">Meetings</v-tab>
-        <v-tab @click="changeTab('events')">Events </v-tab>
-        <v-tab @click="changeTab('community')">Community</v-tab>
+        <v-tab>Meetings</v-tab>
+        <v-tab>Events </v-tab>
+        <v-tab>Community</v-tab>
 
         <v-tab-item>
           <v-card flat style="background: #eee">
@@ -74,11 +75,17 @@
 
 <script>
 export default {
-  methods: {
-    changeTab(e) {
-      console.log(e);
+  data() {
+    return {
+      eventModel: 0,
+    };
+  },
+  watch: {
+    eventModel(newValue) {
+      console.log("Tab click: ", newValue);
     },
   },
+  methods: {},
 };
 </script>
 
