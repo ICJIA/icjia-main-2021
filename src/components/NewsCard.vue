@@ -13,17 +13,19 @@
               January 10, 2022
             </v-card-text>
 
-            <v-card-text
-              ><div
-                style="
-                  margin-top: -25px;
-                  font-size: 18px;
-                  font-weight: 700;
-                  line-height: 24px;
-                "
-              >
-                News Item Title here
-              </div></v-card-text
+            <v-card-text>
+              <router-link to="/" class="card-link"
+                ><div
+                  style="
+                    margin-top: -25px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                  "
+                >
+                  News Item Title here
+                </div>
+              </router-link></v-card-text
             >
 
             <v-card-text style="margin-top: -15px"

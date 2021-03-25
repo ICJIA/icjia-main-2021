@@ -135,3 +135,8 @@ th {
   transform: scale(1.04);
   cursor: pointer;
 }
+
+.card-link {
+  text-decoration: none;
+  color: #000 !important;
+}

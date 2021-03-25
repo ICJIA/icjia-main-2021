@@ -5,18 +5,22 @@
     }"
     class="px-8 py-8"
   >
-    <h2 style="font-size: 64px; font-weight: 900" class="mb-8">21</h2>
-    <h3
-      style="
-        border-bottom: 5px solid #333;
-        font-size: 36px;
-        padding-bottom: 16px;
-        max-width: 150px;
-        margin-bottom: 15px;
-      "
-    >
-      March
-    </h3>
+    <router-link to="/" class="card-link">
+      <h2 style="font-size: 64px; font-weight: 900" class="mb-8">21</h2>
+
+      <h3
+        style="
+          border-bottom: 5px solid #333;
+          font-size: 36px;
+          padding-bottom: 16px;
+          max-width: 150px;
+          margin-bottom: 15px;
+        "
+      >
+        March
+      </h3>
+    </router-link>
+
     <p style="color: #000">
       Lorem markdownum Oechalia tenus, bracchia concolor tum, et in tota a
       generum. Ludit et nostri idemque circum. Tela tamen verba, tenet domui

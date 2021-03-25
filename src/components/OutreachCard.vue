@@ -62,7 +62,9 @@
                   line-height: 24px;
                 "
               >
-                Community Outreach Item Title here
+                <router-link to="/" class="card-link">
+                  Community Outreach Item Title here
+                </router-link>
               </div></v-card-text
             >
 
