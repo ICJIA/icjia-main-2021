@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #fafafa" role="main">
+  <div style="background: #eee" role="main">
     <v-carousel v-model="model" hide-delimiters hide-delimiter-background>
       <v-carousel-item v-for="(color, index) in colors" :key="index">
         <v-sheet :color="color" height="100%" tile>
@@ -122,7 +122,12 @@
         >
           <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
         </v-toolbar>
-        <v-col cols="12" md="6" class="px-5">
+        <v-col
+          cols="12"
+          md="6"
+          class="px-5"
+          style="border-left: 1px solid #ccc"
+        >
           <div v-for="n in 5" :key="n">
             <HomeNewsroom></HomeNewsroom>
           </div>

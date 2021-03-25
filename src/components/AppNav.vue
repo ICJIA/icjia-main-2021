@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar app style="background: #fff">
+    <v-app-bar app>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       <div class="d-flex align-center">
         <v-img
