@@ -79,7 +79,14 @@
     <HomeEvents></HomeEvents>
     <HomeBoxes></HomeBoxes>
 
-    <div id="content" style="margin-top: -10px">
+    <div
+      id="content"
+      style="
+        margin-top: -10px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+      "
+    >
       <v-row no-gutters class="hidden-sm-and-down">
         <v-col style="border-right: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
@@ -110,7 +117,7 @@
           cols="12"
           md="6"
           style="border-right: 1px solid #eee"
-          class="px-5"
+          class="px-5 mt-3"
         >
           <div v-for="n in 4" :key="n">
             <HomeCommunityOutreach></HomeCommunityOutreach>
@@ -127,7 +134,7 @@
         <v-col
           cols="12"
           md="6"
-          class="px-5"
+          class="px-5 mt-3"
           style="border-left: 1px solid #ccc"
         >
           <div v-for="n in 5" :key="n">

@@ -1,7 +1,7 @@
 <template>
   <v-footer>
     <v-card flat tile width="100%" class="grey darken-4 text-center pt-1">
-      <v-card-text class="white--text pt-8">
+      <!-- <v-card-text class="white--text pt-8">
         <div style="display: inline">
           <img
             src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=LOGO"
@@ -13,7 +13,75 @@
           {{ new Date().getFullYear() }} —
           <strong>Illinois Criminal Justice Information Authority</strong>
         </div>
-      </v-card-text>
+      </v-card-text> -->
+      <v-container>
+        <v-row>
+          <v-col cols="12" md="4" style="color: white">
+            <h2 style="color: white" class="mb-3">Footer Heading 1</h2>
+            <p class="text-left" style="font-size: 14px">
+              Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam
+              postibus ire, adspicio. Vidit novissima nihil in tamen Plena at
+              lumina adfixa nocuisse quos deceptam utque stravit Philemon et?
+              Questus subibis quoque, formosior committat insignis, cumque nam.
+            </p>
+          </v-col>
+          <v-col cols="12" md="4" style="color: white">
+            <h2 style="color: white" class="mb-3">Footer Heading 2</h2>
+            <p class="text-left" style="font-size: 14px">
+              Blandis fateor causamque membris pulsa quaecumque perosus accedere
+              Aeson adflabitur. Nocebit distent in faciem obsequio in nescit
+              ecce morsa hoc prima exosus. Ortus ferus, quidem! Ostendens
+              longeque maris volucresque, amictu penitus flectit infantem et
+              loca demissaque non.
+            </p>
+          </v-col>
+          <v-col cols="12" md="4" style="color: white">
+            <h2 style="color: white" class="mb-3">Footer Heading 3</h2>
+            <p class="text-left" style="font-size: 14px">
+              Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam
+              postibus ire, adspicio. Vidit novissima nihil in tamen Plena at
+              lumina adfixa nocuisse quos deceptam utque stravit Philemon et?
+              Questus subibis quoque, formosior committat insignis, cumque nam.
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
+      <v-container class="mt-3" style="border-top: 1px solid #fff" fill-height>
+        <v-row align="center" justify="center">
+          <v-col cols="12" md="6" class="text-center mt-8">
+            <img
+              src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=LOGO"
+              alt="Footer logo"
+              style="border: 1px solid #777"
+            />
+          </v-col>
+          <v-col cols="12" md="6" class="text-center mt-8" style="color: white">
+            <div style="font-size: 12px">
+              <router-link to="/" class="footerLink">About</router-link> |
+              <router-link to="/" class="footerLink">Help</router-link> |
+              <router-link to="/" class="footerLink">Privacy</router-link> |
+              <router-link to="/" class="footerLink">Contact</router-link>
+            </div>
+
+            <div
+              class="mt-3"
+              style="font-size: 12px; font-weight: 300; color: #ccc"
+            >
+              <strong
+                >&#169; {{ new Date().getFullYear() }} Illinois Criminal Justice
+                Information Authority</strong
+              >
+            </div></v-col
+          >
+        </v-row>
+      </v-container>
     </v-card>
   </v-footer>
 </template>
+
+<style>
+.router-link-exact-active {
+  color: #fff !important;
+  font-weight: 400;
+}
+</style>
