@@ -4,9 +4,9 @@
       <v-card-text class="white--text pt-8">
         <div style="display: inline">
           <img
-            src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=Logo here"
+            src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=LOGO"
             alt="Footer logo"
-            style="border: 1px solid #fff"
+            style="border: 1px solid #777"
           />
         </div>
         <div class="mt-5">
