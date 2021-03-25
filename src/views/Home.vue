@@ -78,7 +78,7 @@
     <HomeBoxes></HomeBoxes>
 
     <div id="content" style="margin-top: -10px">
-      <v-row no-gutters>
+      <v-row no-gutters class="hidden-sm-and-down">
         <v-col style="border-right: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
             <v-toolbar-title style="font-weight: 900"
@@ -92,23 +92,37 @@
           </v-toolbar>
         </v-col>
       </v-row>
-      <v-row style="margin-top: -5px">
+
+      <v-row no-gutters style="margin-top: 10px">
+        <v-toolbar
+          flat
+          color="grey darken-3"
+          dark
+          class="mb-3 hidden-md-and-up"
+        >
+          <v-toolbar-title style="font-weight: 900"
+            >Community Outreach</v-toolbar-title
+          >
+        </v-toolbar>
         <v-col
           cols="12"
           md="6"
           style="border-right: 1px solid #eee"
-          class="pr-6"
+          class="px-5"
         >
           <div v-for="n in 4" :key="n">
             <HomeCommunityOutreach></HomeCommunityOutreach>
           </div>
         </v-col>
-        <v-col
-          cols="12"
-          md="6"
-          class="pl-6"
-          style="border-left: 1px solid #eee"
+        <v-toolbar
+          flat
+          color="grey darken-3"
+          dark
+          class="mt-3 mb-3 hidden-md-and-up"
         >
+          <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
+        </v-toolbar>
+        <v-col cols="12" md="6" class="px-5">
           <div v-for="n in 5" :key="n">
             <HomeNewsroom></HomeNewsroom>
           </div>
