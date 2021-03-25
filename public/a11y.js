@@ -50,21 +50,3 @@
     console.log("a11y: " + $(this).length + " aria labels added: " + text);
   };
 })(window.jQuery);
-
-/* DoIT Accessibility Snippet */
-
-/*<![CDATA[*/
-
-(function () {
-  var sz = document.createElement("script");
-  sz.type = "text/javascript";
-  sz.async = true;
-
-  sz.src = "//siteimproveanalytics.com/js/siteanalyze_6123065.js";
-
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(sz, s);
-  console.log("a11y: DoIT snippet loaded");
-})();
-
-/*]]>*/
