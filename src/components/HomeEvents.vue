@@ -18,15 +18,12 @@
           <v-tab @click="changeTab('event3')">Community</v-tab>
 
           <v-tab-item>
-            <v-card
-              flat
-              style="background: #eee; height: 250px; overflow-y: auto"
-            >
+            <v-card flat style="background: #eee">
               <v-card-text>
-                <v-container fluid>
+                <v-container fluid style="background: #fff">
                   <v-row>
                     <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                      <EventDate></EventDate>
+                      <EventDate :eventBorder="n < 3"></EventDate>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -34,15 +31,12 @@
             </v-card>
           </v-tab-item>
           <v-tab-item>
-            <v-card
-              flat
-              style="background: #eee; height: 300px; overflow-y: auto"
-            >
+            <v-card flat style="background: #eee">
               <v-card-text>
-                <v-container fluid>
+                <v-container fluid style="background: #fff">
                   <v-row>
                     <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                      <EventDate></EventDate>
+                      <EventDate :eventBorder="n < 3"></EventDate>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -50,15 +44,12 @@
             </v-card>
           </v-tab-item>
           <v-tab-item>
-            <v-card
-              flat
-              style="background: #eee; height: 300px; overflow-y: auto"
-            >
+            <v-card flat style="background: #eee">
               <v-card-text>
-                <v-container fluid>
+                <v-container fluid style="background: #fff">
                   <v-row>
                     <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                      <EventDate></EventDate>
+                      <EventDate :eventBorder="n < 3"></EventDate>
                     </v-col>
                   </v-row>
                 </v-container>

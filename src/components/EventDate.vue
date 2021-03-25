@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{ eventBorder: eventBorder }" class="px-5">
     <h2 style="font-size: 64px" class="mb-8">21</h2>
     <h3
       style="
@@ -23,7 +23,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    eventBorder: {
+      type: Boolean,
+      default: true,
+    },
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.eventBorder {
+  border-right: 1px solid #ccc;
+}
+</style>
