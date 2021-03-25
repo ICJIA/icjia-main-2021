@@ -1,6 +1,6 @@
 <template>
   <v-footer style="border-top: 1px solid #aaa">
-    <v-card flat tile width="100%" class="grey darken-4 text-center pt-1 pb-4">
+    <v-card flat tile width="100%" class="grey darken-4 text-center pt-4 pb-4">
       <!-- <v-card-text class="white--text pt-8">
         <div style="display: inline">
           <img

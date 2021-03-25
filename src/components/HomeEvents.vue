@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card elevation="0" style="margin-top: -11px; margin-bottom: 18px">
-      <v-toolbar flat color="grey darken-3" dark>
+      <v-toolbar flat color="grey darken-3" dark class="mb-1">
         <v-toolbar-title style="font-weight: 900"
           >Upcoming Events</v-toolbar-title
         >
