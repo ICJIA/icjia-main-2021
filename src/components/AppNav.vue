@@ -202,7 +202,12 @@ export default {
       items: [
         {
           url: "/",
-          items: [],
+          items: [
+            { title: "SubItem 1", url: "/" },
+            { title: "SubItem 2", url: "/" },
+            { title: "SubItem 3", url: "/" },
+            { title: "SubItem 4", url: "/" },
+          ],
           title: "Item 1",
         },
         {
@@ -216,12 +221,7 @@ export default {
           title: "Item 3",
         },
         {
-          items: [
-            { title: "SubItem 1", url: "/" },
-            { title: "SubItem 2", url: "/" },
-            { title: "SubItem 3", url: "/" },
-            { title: "SubItem 4", url: "/" },
-          ],
+          items: [],
           title: "Item 4",
         },
         {
