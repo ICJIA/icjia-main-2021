@@ -93,11 +93,53 @@
             <v-toolbar-title style="font-weight: 900"
               >Community Outreach</v-toolbar-title
             >
+            <v-spacer></v-spacer>
+
+            <v-menu offset-y bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn dark icon v-bind="attrs" v-on="on">
+                  <v-icon>mdi-dots-vertical</v-icon>
+                </v-btn>
+              </template>
+
+              <v-list>
+                <v-list-item>
+                  <v-list-item-title>Item 1</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-title>Item 2</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-title>Item 3</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </v-toolbar>
         </v-col>
         <v-col style="border-left: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
             <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
+            <v-spacer></v-spacer>
+
+            <v-menu offset-y bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn dark icon v-bind="attrs" v-on="on">
+                  <v-icon>mdi-dots-vertical</v-icon>
+                </v-btn>
+              </template>
+
+              <v-list>
+                <v-list-item>
+                  <v-list-item-title>Item 1</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-title>Item 2</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-title>Item 3</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
           </v-toolbar>
         </v-col>
       </v-row>

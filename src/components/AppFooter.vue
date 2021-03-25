@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer style="border-top: 1px solid #aaa">
     <v-card flat tile width="100%" class="grey darken-4 text-center pt-1">
       <!-- <v-card-text class="white--text pt-8">
         <div style="display: inline">
@@ -18,7 +18,7 @@
         <v-row>
           <v-col cols="12" md="4" style="color: white">
             <h2 style="color: white" class="mb-3">Footer Heading 1</h2>
-            <p class="text-left" style="font-size: 14px">
+            <p class="text-left" style="font-size: 13px">
               Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam
               postibus ire, adspicio. Vidit novissima nihil in tamen Plena at
               lumina adfixa nocuisse quos deceptam utque stravit Philemon et?
@@ -27,7 +27,7 @@
           </v-col>
           <v-col cols="12" md="4" style="color: white">
             <h2 style="color: white" class="mb-3">Footer Heading 2</h2>
-            <p class="text-left" style="font-size: 14px">
+            <p class="text-left" style="font-size: 13px">
               Blandis fateor causamque membris pulsa quaecumque perosus accedere
               Aeson adflabitur. Nocebit distent in faciem obsequio in nescit
               ecce morsa hoc prima exosus. Ortus ferus, quidem! Ostendens
@@ -37,7 +37,7 @@
           </v-col>
           <v-col cols="12" md="4" style="color: white">
             <h2 style="color: white" class="mb-3">Footer Heading 3</h2>
-            <p class="text-left" style="font-size: 14px">
+            <p class="text-left" style="font-size: 13px">
               Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam
               postibus ire, adspicio. Vidit novissima nihil in tamen Plena at
               lumina adfixa nocuisse quos deceptam utque stravit Philemon et?
@@ -60,7 +60,8 @@
               <router-link to="/" class="footerLink">About</router-link> |
               <router-link to="/" class="footerLink">Help</router-link> |
               <router-link to="/" class="footerLink">Privacy</router-link> |
-              <router-link to="/" class="footerLink">Contact</router-link>
+              <router-link to="/" class="footerLink">Contact</router-link> |
+              <router-link to="/" class="footerLink">Sitemap</router-link>
             </div>
 
             <div
