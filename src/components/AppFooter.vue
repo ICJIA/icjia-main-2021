@@ -55,7 +55,7 @@
               style="border: 1px solid #777"
             />
           </v-col>
-          <v-col cols="12" md="6" class="text-center mt-8" style="color: white">
+          <v-col cols="12" md="6" class="text-center mt-2" style="color: white">
             <div class="py-4">
               <span class="v-icon fab fa-twitter mr-4"></span
               ><span class="v-icon fab fa-facebook mr-4"></span>
