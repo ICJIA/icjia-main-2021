@@ -2,7 +2,7 @@
   <div>
     <v-card
       class="grid-item markdown-body hover news-card mb-5"
-      height="120px"
+      height="160px"
       elevation="0"
       color="#fff"
     >
@@ -14,8 +14,17 @@
             </v-card-text>
 
             <v-card-text>
-              <router-link to="/" class="card-link"
-                ><div
+              <div
+                style="
+                  margin-top: -25px;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                "
+              >
+                <router-link
+                  to="/"
+                  class="card-link"
                   style="
                     margin-top: -25px;
                     font-size: 18px;
@@ -23,10 +32,10 @@
                     line-height: 24px;
                   "
                 >
-                  News Item Title here
-                </div>
-              </router-link></v-card-text
-            >
+                  News Item Title here</router-link
+                >
+              </div>
+            </v-card-text>
 
             <v-card-text style="margin-top: -15px"
               >Orem markdownum Oechalia tenus, bracchia concolor tum, et in tota
