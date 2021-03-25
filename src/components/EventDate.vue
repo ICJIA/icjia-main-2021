@@ -1,6 +1,11 @@
 <template>
-  <div :class="{ eventBorder: eventBorder && !isMobile }" class="px-5 mb-1">
-    <h2 style="font-size: 64px" class="mb-8">21</h2>
+  <div
+    :class="{
+      eventBorder: eventBorder && !isMobile,
+    }"
+    class="px-8 py-8"
+  >
+    <h2 style="font-size: 64px; font-weight: 900" class="mb-8">21</h2>
     <h3
       style="
         border-bottom: 5px solid #333;
@@ -41,5 +46,9 @@ export default {
 <style>
 .eventBorder {
   border-right: 1px solid #ccc;
+}
+
+.evenBottomtBorder {
+  border-bottom: 1px solid #aaa;
 }
 </style>

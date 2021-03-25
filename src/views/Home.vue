@@ -76,16 +76,39 @@
       </v-carousel-item>
     </v-carousel>
     <HomeBoxes></HomeBoxes>
-    <div id="content">
+
+    <div id="content" style="margin-top: -25px">
       <v-container fluid>
         <v-row>
           <v-col cols="12" md="6">
-            <div v-for="n in 3" :key="n">
+            <h2
+              style="
+                font-size: 36px;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 8px;
+                margin-bottom: 25px;
+              "
+            >
+              Community Outreach
+            </h2>
+            <div v-for="n in 4" :key="n">
               <HomeCommunityOutreach></HomeCommunityOutreach>
             </div>
           </v-col>
           <v-col cols="12" md="6">
-            <HomeNewsroom></HomeNewsroom>
+            <h2
+              style="
+                font-size: 36px;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 8px;
+                margin-bottom: 25px;
+              "
+            >
+              Newsroom
+            </h2>
+            <div v-for="n in 5" :key="n">
+              <HomeNewsroom></HomeNewsroom>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -134,5 +157,11 @@ export default {
 }
 .v-tab--active {
   color: #000 !important;
+}
+
+.v-card > *:first-child:not(.v-btn):not(.v-chip),
+.v-card > .v-card__progress + *:not(.v-btn):not(.v-chip) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 </style>

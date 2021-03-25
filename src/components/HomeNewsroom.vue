@@ -1,5 +1,5 @@
 <template>
-  <div>News here</div>
+  <div><NewsCard></NewsCard></div>
 </template>
 
 <script>
