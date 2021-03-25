@@ -14,9 +14,9 @@
         "
         style="background: #eee"
       >
-        <v-tab @click="changeTab('community')">Meetings</v-tab>
-        <v-tab @click="changeTab('icjia')">Events </v-tab>
-        <v-tab @click="changeTab('event3')">Community</v-tab>
+        <v-tab @click="changeTab('meetings')">Meetings</v-tab>
+        <v-tab @click="changeTab('events')">Events </v-tab>
+        <v-tab @click="changeTab('community')">Community</v-tab>
 
         <v-tab-item>
           <v-card flat style="background: #eee">
@@ -73,7 +73,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    changeTab(e) {
+      console.log(e);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
