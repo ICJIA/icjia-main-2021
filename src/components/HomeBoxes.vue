@@ -7,16 +7,54 @@
             dark
             :color="colors.box1"
             height="100%"
-            class="elevation-0 px-10 py-8 box"
+            class="elevation-0 px-1 py-1 box mr-1"
           >
-            <h2 class="text-center box-head">Lorem markdownum</h2>
+            <v-img
+              src="https://via.placeholder.com/350"
+              aria-label="News post image"
+              width="100%"
+              height="250"
+              class=""
+              style="border: 0px solid #fafafa"
+              alt="ICJIA Intranet image"
+              ><template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    aria-label="Progress bar: Loading"
+                    color="blue darken-3"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
 
-            <v-card-text class="px-2 font-weight-light box-text">
-              Lorem markdownum: tribus me ferum rutilum! Nocte vel hoc, potuisse
-              comitata rigido crudelesque videri quo legit; inquiri. Quodque
-              remis ripa genitus celerem purpureus fuere feris: aevo rident
-              fiducia carpebam introrsus limine.
-            </v-card-text>
+            <div class="px-5">
+              <v-card-text style="font-size: 12px"
+                >January 22, 2022
+              </v-card-text>
+
+              <v-card-text
+                ><div
+                  style="
+                    margin-top: -20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 28px;
+                  "
+                >
+                  Research Hub Article 1 here
+                </div></v-card-text
+              >
+
+              <v-card-text style="margin-top: -15px"
+                >Lorem markdownum mollibus, qui tam timentia densior ferrum
+                capillos ad nisi qua sic. Recusat terras; ad per Syringa
+                Erecthida magnas felicem pigris consistere? Penates silvae
+                supplevit et antris inplevit ait deprensa. Sua Alcides aetatis
+                velles. Iason erraverit quamquam nectare Syringa famae, has se
+                adhuc; de.</v-card-text
+              >
+            </div>
           </v-card>
         </router-link>
       </v-col>
@@ -24,16 +62,57 @@
         <router-link to="/">
           <v-card
             dark
-            :color="colors.box2"
+            :color="colors.box1"
             height="100%"
-            class="elevation-0 px-10 py-8 box"
+            class="elevation-0 px-1 py-1 box mr-1"
           >
-            <h2 class="text-center box-head">Sine qui ferat</h2>
-            <v-card-text class="px-2 font-weight-light box-text">
-              Sine qui ferat, consuescit corpus manibus, phocus! Templo idem
-              procerum. Et semper esset Hersilien flavae; aras ubera postquam
-              deficiunt animus, distulit acta castra anguem. violence.
-            </v-card-text>
+            <v-img
+              src="https://via.placeholder.com/350"
+              aria-label="News post image"
+              width="100%"
+              height="250"
+              class=""
+              style="border: 0px solid #fafafa"
+              alt="ICJIA Intranet image"
+              ><template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    aria-label="Progress bar: Loading"
+                    color="blue darken-3"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+
+            <div class="px-5">
+              <v-card-text style="font-size: 12px"
+                >January 22, 2022
+              </v-card-text>
+
+              <v-card-text
+                ><div
+                  style="
+                    margin-top: -20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 28px;
+                  "
+                >
+                  Research Hub Article 2 here
+                </div></v-card-text
+              >
+
+              <v-card-text style="margin-top: -15px"
+                >Ita in viresque stimuloque summasque in nostri Phoebique caede,
+                vano. Arte nomine, quondam manu. Ait tenent versus gaudia, remis
+                quod agrosque neque, cum magni summaque, et. Stygios sacris
+                magis, illa carentem reduxit, locus comes, reverentia deum
+                vertitur Surgit? Ubi cadit, longum laevaque, consternatique
+                solent et tamen ferunt et adiuvet intonsum nubibus, domo umbra
+                beatam genitor.</v-card-text
+              >
+            </div>
           </v-card>
         </router-link>
       </v-col>
@@ -41,16 +120,58 @@
         <router-link to="/">
           <v-card
             dark
-            :color="colors.box3"
+            :color="colors.box1"
             height="100%"
-            class="elevation-0 px-10 py-8 box"
+            class="elevation-0 px-1 py-1 box"
           >
-            <h2 class="text-center box-head">Iugalia per inferias</h2>
-            <v-card-text class="px-2 font-weight-light box-text">
-              Iugalia per inferias quid ait omnibus rigorem vivente sumite
-              augere depresso post et astra: mentem. Fieretque Haemonia adicit
-              veniamque talibus, plura est, cur.
-            </v-card-text>
+            <v-img
+              src="https://via.placeholder.com/350"
+              aria-label="News post image"
+              width="100%"
+              height="250"
+              class=""
+              style="border: 0px solid #fafafa"
+              alt="ICJIA Intranet image"
+              ><template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    aria-label="Progress bar: Loading"
+                    color="blue darken-3"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+
+            <div class="px-5">
+              <v-card-text style="font-size: 12px"
+                >January 22, 2022
+              </v-card-text>
+
+              <v-card-text
+                ><div
+                  style="
+                    margin-top: -20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    line-height: 28px;
+                  "
+                >
+                  Research Hub Article 3 here
+                </div></v-card-text
+              >
+
+              <v-card-text style="margin-top: -15px"
+                >Cunctis sit utilis nulloque Apollo, doli patulis candida,
+                oculis inarata nisi, leonum et multa. Arbore dabat tulerunt in
+                Iuno terris enim subiecta, ut. Erit inmurmurat ore, servata et
+                quos gradientis: asello artus, in arida ut illum, et. Luminis
+                animal submisit equos primus sic corpora palus est alii hanc
+                quantoque quos libet quascumque scire. Omni non sinuantur,
+                suffuderat nomina: captat dona moles poenae enim:
+                fibris.</v-card-text
+              >
+            </div>
           </v-card>
         </router-link>
       </v-col>
@@ -63,9 +184,9 @@ export default {
   data() {
     return {
       colors: {
-        box1: "#222",
-        box2: "#333",
-        box3: "#444",
+        box1: "#333",
+        box2: "#444",
+        box3: "#555",
       },
     };
   },
@@ -76,7 +197,7 @@ export default {
 a {
   text-decoration: none !important;
 }
-.box:hover {
+/* .box:hover {
   background: #ccc !important;
 }
 .box:hover > * {
@@ -97,7 +218,7 @@ a {
 .rule {
   border-bottom: 1px solid #ccc !important;
   border-top: 1px solid #ccc !important;
-}
+} */
 
 .v-sheet.v-card {
   border-radius: 0px;
