@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar fixed app color="white" hide-on-scroll height="90">
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <div>
         <v-img
           alt="ICJIA Logo"
@@ -139,11 +139,39 @@
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
     </v-app-bar>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title>Item 1</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Item 2</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>Item 3</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Item 4</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      drawer: false,
+    };
+  },
   mounted() {
     // window.$("i").replaceTagName("span");
     // window.$('button[role="button"]').removeRedundantAttributes("role");

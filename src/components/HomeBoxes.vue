@@ -203,8 +203,8 @@ export default {
   data() {
     return {
       colors: {
-        box1: "#333",
-        box2: "#444",
+        box1: "#555",
+        box2: "#555",
         box3: "#555",
       },
     };
