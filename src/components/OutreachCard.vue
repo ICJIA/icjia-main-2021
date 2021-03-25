@@ -16,7 +16,7 @@
           <v-col cols="12" md="3">
             <v-img
               aria-label="News post image"
-              src="https://via.placeholder.com/250"
+              src="https://via.placeholder.com/250?text=Splash Photo"
               width="100%"
               height="150px"
               class=""

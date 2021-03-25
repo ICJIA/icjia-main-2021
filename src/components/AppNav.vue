@@ -1,15 +1,15 @@
 <template>
   <div>
-    <v-app-bar fixed app color="white" hide-on-scroll>
+    <v-app-bar fixed app color="white" hide-on-scroll height="90">
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <div>
         <v-img
           alt="ICJIA Logo"
           class="shrink mr-2 hover"
           contain
-          src="/icjia-logo.png"
+          src="https://via.placeholder.com/105x50?text=LOGO"
           transition="scale-transition"
-          width="70"
+          width="120"
           style
           @click="
             $router.push('/').catch((err) => {

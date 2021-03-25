@@ -16,7 +16,7 @@
               class="elevation-0 px-1 py-1 box mr-1 hub-card"
             >
               <v-img
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/350?text=Article splash photo"
                 aria-label="News post image"
                 width="100%"
                 height="250"
@@ -77,7 +77,7 @@
               class="elevation-0 px-1 py-1 box mr-1 hub-card"
             >
               <v-img
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/350?text=Article splash photo"
                 aria-label="News post image"
                 width="100%"
                 height="250"
@@ -139,7 +139,7 @@
               class="elevation-0 px-1 py-1 box hub-card"
             >
               <v-img
-                src="https://via.placeholder.com/350"
+                src="https://via.placeholder.com/350?text=Article splash photo"
                 aria-label="News post image"
                 width="100%"
                 height="250"
