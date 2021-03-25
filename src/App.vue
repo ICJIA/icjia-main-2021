@@ -2,10 +2,10 @@
   <v-app id="appTop">
     <div id="nav" role="navigation" style="z-index: 10000">
       <router-link
-        to="#main"
+        to="#content"
         aria-label="Skip Navigation"
         class="skiplink"
-        @click.native="scrollFix('#main')"
+        @click.native="scrollFix('#content')"
         title="Skip Navigation"
         style="font-size: 12px"
       >
