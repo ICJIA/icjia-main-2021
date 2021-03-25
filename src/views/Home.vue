@@ -86,7 +86,7 @@
             >
           </v-toolbar>
         </v-col>
-        <v-col>
+        <v-col style="border-left: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
             <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
           </v-toolbar>
@@ -96,14 +96,19 @@
         <v-col
           cols="12"
           md="6"
-          style="border-right: 1px solid #ccc"
+          style="border-right: 1px solid #eee"
           class="pr-6"
         >
           <div v-for="n in 4" :key="n">
             <HomeCommunityOutreach></HomeCommunityOutreach>
           </div>
         </v-col>
-        <v-col cols="12" md="6" class="pl-6">
+        <v-col
+          cols="12"
+          md="6"
+          class="pl-6"
+          style="border-left: 1px solid #eee"
+        >
           <div v-for="n in 5" :key="n">
             <HomeNewsroom></HomeNewsroom>
           </div>
