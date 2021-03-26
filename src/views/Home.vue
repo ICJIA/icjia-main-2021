@@ -90,7 +90,7 @@
       <v-row no-gutters class="hidden-sm-and-down">
         <v-col style="border-right: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
-            <v-toolbar-title style="font-weight: 900"
+            <v-toolbar-title style="font-weight: 900; font-size: 28px"
               >Community Outreach</v-toolbar-title
             >
             <v-spacer></v-spacer>
@@ -118,7 +118,9 @@
         </v-col>
         <v-col style="border-left: 1px solid #fff">
           <v-toolbar flat color="grey darken-3" dark>
-            <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
+            <v-toolbar-title style="font-weight: 900; font-size: 28px"
+              >Newsroom</v-toolbar-title
+            >
             <v-spacer></v-spacer>
 
             <v-menu offset-y bottom>

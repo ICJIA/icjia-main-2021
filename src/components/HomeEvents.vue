@@ -2,7 +2,7 @@
   <div>
     <v-card elevation="0" style="margin-top: -11px; margin-bottom: 18px">
       <v-toolbar flat color="grey darken-3" dark class="mb-1">
-        <v-toolbar-title style="font-weight: 900"
+        <v-toolbar-title style="font-weight: 900; font-size: 28px"
           >Upcoming Events</v-toolbar-title
         >
         <v-spacer></v-spacer>
@@ -28,6 +28,7 @@
         </v-menu>
       </v-toolbar>
       <v-tabs
+        show-arrows
         v-model="eventModel"
         :vertical="
           $vuetify.breakpoint.md ||
@@ -38,7 +39,7 @@
       >
         <v-tab>Community</v-tab>
         <v-tab>Meetings </v-tab>
-        <v-tab>Events</v-tab>
+        <v-tab>Training</v-tab>
 
         <v-tab-item>
           <v-card flat style="background: #eee">
@@ -112,5 +113,11 @@ export default {
   font-weight: 900 !important;
   background: #666;
   color: #fff !important;
+}
+.v-tab {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.01rem;
 }
 </style>

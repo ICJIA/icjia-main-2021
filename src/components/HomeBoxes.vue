@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-toolbar flat color="grey darken-3" dark>
-      <v-toolbar-title style="font-weight: 900"
+      <v-toolbar-title style="font-weight: 900; font-size: 28px"
         >Latest Research
       </v-toolbar-title>
       <v-spacer></v-spacer>
