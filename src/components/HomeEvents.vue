@@ -35,57 +35,37 @@
           $vuetify.breakpoint.lg ||
           $vuetify.breakpoint.xl
         "
-        style="background: #eee"
       >
         <v-tab>Community</v-tab>
         <v-tab>Meetings </v-tab>
         <v-tab>Training</v-tab>
 
         <v-tab-item>
-          <v-card flat style="background: #eee">
-            <v-card-text>
-              <v-container fluid style="background: #fff">
-                <v-row>
-                  <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                    <EventDate :eventBorder="n < 3" class="hover event-card">
-                    </EventDate>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-          </v-card>
+          <v-container fluid style="background: #fff">
+            <v-row no-gutters>
+              <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
+                <EventDate tag="community"> </EventDate>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item>
-          <v-card flat style="background: #eee">
-            <v-card-text>
-              <v-container fluid style="background: #fff">
-                <v-row>
-                  <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                    <EventDate
-                      :eventBorder="n < 3"
-                      class="hover event-card"
-                    ></EventDate>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-          </v-card>
+          <v-container fluid style="background: #fff">
+            <v-row no-gutters>
+              <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
+                <EventDate tag="Meetings"> </EventDate>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
         <v-tab-item>
-          <v-card flat style="background: #eee">
-            <v-card-text>
-              <v-container fluid style="background: #fff">
-                <v-row>
-                  <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                    <EventDate
-                      :eventBorder="n < 3"
-                      class="hover event-card"
-                    ></EventDate>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-          </v-card>
+          <v-container fluid style="background: #fff">
+            <v-row no-gutters>
+              <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
+                <EventDate tag="Training"> </EventDate>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-tab-item>
       </v-tabs>
     </v-card>

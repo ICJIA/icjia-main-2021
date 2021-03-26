@@ -115,10 +115,18 @@ th {
 }
 
 *:focus {
-  border: 3px solid #000 !important;
-
-  font-weight: 900 !important;
+  border: 3px solid #000;
+  font-weight: 900;
 }
+
+.card-link {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+/* .card-link:focus {
+  border: 3px solid #000 !important;
+} */
 
 .info-card:hover,
 .event-card:hover,
@@ -135,11 +143,6 @@ th {
   transition: all 100ms ease-in;
   transform: scale(1.04);
   cursor: pointer;
-}
-
-.card-link {
-  text-decoration: none;
-  color: #000 !important;
 }
 
 .v-application a {

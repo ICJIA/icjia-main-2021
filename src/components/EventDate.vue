@@ -1,33 +1,54 @@
 <template>
-  <div
-    :class="{
-      eventBorder: eventBorder && !isMobile,
-    }"
-    class="px-8 py-8"
-  >
-    <router-link to="/" class="card-link">
-      <h2 style="font-size: 64px; font-weight: 900" class="mb-8">21</h2>
+  <div>
+    <v-card
+      class="hover event-card mr-2 mt-1 mb-1"
+      style="height: 400px; overflow-y: auto"
+    >
+      <v-container fluid>
+        <v-row no-gutters>
+          <v-col>
+            <div class="text-right">
+              <span
+                style="
+                  background: #888;
+                  color: white;
+                  font-size: 11px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                "
+                class="px-2 py-2"
+                >{{ tag }}</span
+              >
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
 
-      <h3
-        style="
-          border-bottom: 5px solid #333;
-          font-size: 36px;
-          padding-bottom: 16px;
-          max-width: 150px;
-          margin-bottom: 15px;
-        "
-      >
-        March
-      </h3>
-    </router-link>
+      <v-container fluid style="margin-top: -25px">
+        <v-row no-gutters>
+          <v-col class="px-4 py-2">
+            <h2 style="font-size: 64px; font-weight: 900">21</h2>
 
-    <p style="color: #000">
-      Lorem markdownum Oechalia tenus, bracchia concolor tum, et in tota a
-      generum. Ludit et nostri idemque circum. Tela tamen verba, tenet domui
-      Dymantis. Huc decor ante corpore virga et sonitum bello clam Amphiona, bis
-      ubi armo per infectum traxit dictoque nymphae? Quirites aequoris vultu
-      altis medium, haec ad devexo aquilonibus.
-    </p>
+            <h3
+              style="
+                border-bottom: 5px solid #333;
+                font-size: 36px;
+                margin-top: -10px;
+                max-width: 150px;
+              "
+            >
+              March
+            </h3>
+
+            <p style="color: #000" class="mt-8">
+              Lorem markdownum Oechalia tenus, bracchia concolor tum, et in tota
+              a generum. Ludit et nostri idemque circum. Tela tamen verba, tenet
+              domui Dymantis.
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card>
   </div>
 </template>
 
@@ -42,6 +63,10 @@ export default {
     eventBorder: {
       type: Boolean,
       default: true,
+    },
+    tag: {
+      type: String,
+      default: "General",
     },
   },
 };
