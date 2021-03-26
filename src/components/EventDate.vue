@@ -27,20 +27,28 @@
       <v-container fluid style="margin-top: -25px">
         <v-row no-gutters>
           <v-col class="px-4 py-2">
-            <h2 style="font-size: 64px; font-weight: 900">21</h2>
+            <h2 style="font-size: 64px; font-weight: 900; margin-top: -15px">
+              21
+            </h2>
 
             <h3
               style="
                 border-bottom: 5px solid #333;
                 font-size: 36px;
-                margin-top: -10px;
+                margin-top: -15px;
                 max-width: 150px;
               "
             >
               March
             </h3>
-
-            <p style="color: #000" class="mt-8">
+            <div class="mt-6">
+              <span class="eventTitle" style="font-weight: 900">
+                Event Title Here</span
+              >
+              |
+              <span class="eventTime" style="color: #666"> 2:00pm to 4pm</span>
+            </div>
+            <p style="color: #000" class="mt-3">
               Lorem markdownum Oechalia tenus, bracchia concolor tum, et in tota
               a generum. Ludit et nostri idemque circum. Tela tamen verba, tenet
               domui Dymantis.
