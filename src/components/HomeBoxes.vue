@@ -35,6 +35,15 @@
             height="100%"
             class="elevation-0 px-1 py-1 box mr-1 hub-card"
           >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this article
+            </router-link>
             <v-img
               src="https://via.placeholder.com/350?text=Article splash photo"
               aria-label="News post image"
@@ -90,6 +99,15 @@
             height="100%"
             class="elevation-0 px-1 py-1 box mr-1 hub-card"
           >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this article
+            </router-link>
             <v-img
               src="https://via.placeholder.com/350?text=Article splash photo"
               aria-label="News post image"
@@ -146,6 +164,15 @@
             height="100%"
             class="elevation-0 px-1 py-1 box hub-card"
           >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this article
+            </router-link>
             <v-img
               src="https://via.placeholder.com/350?text=Article splash photo"
               aria-label="News post image"

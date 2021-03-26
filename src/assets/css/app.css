@@ -114,6 +114,11 @@ th {
   font-weight: 900 !important;
 }
 
+.skiplink:focus.dark {
+  background: #000;
+  color: #fff;
+}
+
 *:focus {
   border: 3px solid #000;
   font-weight: 900;

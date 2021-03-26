@@ -45,6 +45,15 @@
               a generum. Ludit et nostri idemque circum. Tela tamen verba, tenet
               domui Dymantis.
             </p>
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px"
+            >
+              Read more about this event
+            </router-link>
           </v-col>
         </v-row>
       </v-container>
