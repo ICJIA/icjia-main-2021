@@ -1,22 +1,16 @@
 <template>
   <v-footer style="border-top: 1px solid #aaa">
     <v-card flat tile width="100%" class="grey darken-4 text-center pt-4 pb-4">
-      <!-- <v-card-text class="white--text pt-8">
-        <div style="display: inline">
-          <img
-            src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=LOGO"
-            alt="Footer logo"
-            style="border: 1px solid #777"
-          />
-        </div>
-        <div class="mt-5">
-          {{ new Date().getFullYear() }} —
-          <strong>Illinois Criminal Justice Information Authority</strong>
-        </div>
-      </v-card-text> -->
       <v-container>
         <v-row>
-          <v-col cols="12" md="4" style="color: white">
+          <v-col
+            cols="12"
+            md="4"
+            style="color: white"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+          >
             <h2 style="color: white" class="mb-3">Footer Heading 1</h2>
             <p class="text-left" style="font-size: 13px">
               Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam
@@ -25,7 +19,14 @@
               Questus subibis quoque, formosior committat insignis, cumque nam.
             </p>
           </v-col>
-          <v-col cols="12" md="4" style="color: white">
+          <v-col
+            cols="12"
+            md="4"
+            style="color: white"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+          >
             <h2 style="color: white" class="mb-3">Footer Heading 2</h2>
             <p class="text-left" style="font-size: 13px">
               Blandis fateor causamque membris pulsa quaecumque perosus accedere
@@ -35,7 +36,14 @@
               loca demissaque non.
             </p>
           </v-col>
-          <v-col cols="12" md="4" style="color: white">
+          <v-col
+            cols="12"
+            md="4"
+            style="color: white"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+          >
             <h2 style="color: white" class="mb-3">Footer Heading 3</h2>
             <p class="text-left" style="font-size: 13px">
               Lorem markdownum nunc, virginea ornabant hanc, Lelex etiam

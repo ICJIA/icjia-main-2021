@@ -10,6 +10,9 @@
         $vuetify.breakpoint.lg ||
         $vuetify.breakpoint.xl
       "
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-delay="0"
     >
       <v-container fluid>
         <v-row>

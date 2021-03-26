@@ -5,6 +5,9 @@
       height="160px"
       elevation="0"
       color="#fff"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-delay="0"
     >
       <v-container fluid>
         <v-row>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
     <v-toolbar flat color="grey darken-3" dark>
       <v-toolbar-title style="font-weight: 900; font-size: 28px"
         >Latest Research
