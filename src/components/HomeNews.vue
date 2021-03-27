@@ -1,9 +1,10 @@
 <template>
   <div>
     <v-tabs show-arrows v-model="newsModel" class="mt-2">
-      <v-tab>Latest Grants </v-tab>
-      <v-tab>Press Releases </v-tab>
-      <v-tab>Agency News </v-tab>
+      <v-tab>Grants </v-tab>
+      <v-tab>Press </v-tab>
+      <v-tab>Agency </v-tab>
+      <v-tab>Employment </v-tab>
 
       <v-tab-item style="background: #eee">
         <div style="height: 1px"></div>
@@ -17,10 +18,17 @@
           <NewsCard title="Press release item here"></NewsCard>
         </div>
       </v-tab-item>
+
       <v-tab-item style="background: #eee">
         <div style="height: 1px"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
-          <NewsCard title="ICJIA News item here"></NewsCard>
+          <NewsCard title="Agency News item here"></NewsCard>
+        </div>
+      </v-tab-item>
+      <v-tab-item style="background: #eee">
+        <div style="height: 1px"></div>
+        <div v-for="n in numberOfCards" :key="`news-${n}`">
+          <NewsCard title="Employment News item here"></NewsCard>
         </div>
       </v-tab-item>
     </v-tabs>
