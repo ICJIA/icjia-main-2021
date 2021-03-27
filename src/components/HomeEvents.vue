@@ -53,7 +53,7 @@
           <v-container fluid style="background: #fff">
             <v-row no-gutters>
               <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                <EventDate tag="Meetings"> </EventDate>
+                <EventDate tag="meetings"> </EventDate>
               </v-col>
             </v-row>
           </v-container>
@@ -62,7 +62,7 @@
           <v-container fluid style="background: #fff">
             <v-row no-gutters>
               <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
-                <EventDate tag="Training"> </EventDate>
+                <EventDate tag="training"> </EventDate>
               </v-col>
             </v-row>
           </v-container>
@@ -88,16 +88,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.v-tab {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+  letter-spacing: 0.01rem !important;
+}
 .v-tab--active {
   font-weight: 900 !important;
-  background: #666;
+  background: #666 !important;
   color: #fff !important;
-}
-.v-tab {
-  font-size: 24px;
-  font-weight: 400;
-  color: #000;
-  letter-spacing: 0.01rem;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
-    <v-toolbar flat color="grey darken-3" dark>
+  <div>
+    <!-- <v-toolbar flat color="grey darken-3" dark>
       <v-toolbar-title style="font-weight: 900; font-size: 28px"
         >Latest Research
       </v-toolbar-title>
@@ -25,7 +25,7 @@
           </v-list-item>
         </v-list>
       </v-menu>
-    </v-toolbar>
+    </v-toolbar> -->
     <v-container fill-height fluid class="px-0" style="margin-top: -9px">
       <v-row no-gutters>
         <v-col cols="12" md="4">

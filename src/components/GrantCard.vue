@@ -58,14 +58,15 @@
                 "
               >
                 <router-link to="/" class="card-link">
-                  <span style="font-weight: 900">{{ title }} </span>
+                  <span style="font-weight: 900"> Grant News Item here </span>
                 </router-link>
               </div></v-card-text
             >
 
             <v-card-text style="margin-top: -15px"
-              >Orem markdownum Oechalia tenus, bracchia concolor tum, et in tota
-              a generum.</v-card-text
+              >Sed et vehit nec mortalibus prius, incursurus nebulas quati Eueni
+              tollens, et. Forte potiturque Anchisae nata commemorare postera
+              inanis carissime Hippomene dira</v-card-text
             >
           </v-col>
         </v-row>
@@ -75,14 +76,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    title: {
-      type: String,
-      default: "News Item Here",
-    },
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped></style>

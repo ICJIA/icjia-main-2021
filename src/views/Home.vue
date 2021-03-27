@@ -77,113 +77,48 @@
     </v-carousel>
 
     <HomeEvents></HomeEvents>
-    <HomeBoxes></HomeBoxes>
+    <HomeResearch></HomeResearch>
 
     <div
       id="content"
       style="
-        margin-top: -10px;
+        margin-top: 4px;
         padding-bottom: 30px;
         border-bottom: 1px solid #ccc;
       "
     >
-      <v-row no-gutters class="hidden-sm-and-down">
-        <v-col style="border-right: 1px solid #fff">
-          <v-toolbar flat color="grey darken-3" dark>
-            <v-toolbar-title style="font-weight: 900; font-size: 28px"
-              >Community Outreach</v-toolbar-title
-            >
-            <v-spacer></v-spacer>
+      <v-toolbar flat color="grey darken-3" dark style="margin-top: -13px">
+        <v-toolbar-title style="font-weight: 900; font-size: 28px"
+          >News & Information
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
 
-            <v-menu offset-y bottom>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn dark icon v-bind="attrs" v-on="on">
-                  <v-icon>mdi-dots-vertical</v-icon>
-                </v-btn>
-              </template>
+        <v-menu offset-y bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn dark icon v-bind="attrs" v-on="on">
+              <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
+          </template>
 
-              <v-list>
-                <v-list-item>
-                  <v-list-item-title>Item 1</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-title>Item 2</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-title>Item 3</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </v-toolbar>
+          <v-list>
+            <v-list-item>
+              <v-list-item-title>Item 1</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>Item 2</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>Item 3</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </v-toolbar>
+      <v-row>
+        <v-col cols="12" md="6">
+          <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
         </v-col>
-        <v-col style="border-left: 1px solid #fff">
-          <v-toolbar flat color="grey darken-3" dark>
-            <v-toolbar-title style="font-weight: 900; font-size: 28px"
-              >Newsroom</v-toolbar-title
-            >
-            <v-spacer></v-spacer>
-
-            <v-menu offset-y bottom>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn dark icon v-bind="attrs" v-on="on">
-                  <v-icon>mdi-dots-vertical</v-icon>
-                </v-btn>
-              </template>
-
-              <v-list>
-                <v-list-item>
-                  <v-list-item-title>Item 1</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-title>Item 2</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-title>Item 3</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </v-toolbar>
-        </v-col>
-      </v-row>
-
-      <v-row no-gutters style="margin-top: 10px">
-        <v-toolbar
-          flat
-          color="grey darken-3"
-          dark
-          class="mb-3 hidden-md-and-up"
-        >
-          <v-toolbar-title style="font-weight: 900"
-            >Community Outreach</v-toolbar-title
-          >
-        </v-toolbar>
-        <v-col
-          cols="12"
-          md="6"
-          style="border-right: 1px solid #eee"
-          class="px-5 mt-3"
-        >
-          <div v-for="n in 4" :key="n">
-            <HomeCommunityOutreach></HomeCommunityOutreach>
-          </div>
-        </v-col>
-        <v-toolbar
-          flat
-          color="grey darken-3"
-          dark
-          class="mt-3 mb-3 hidden-md-and-up"
-        >
-          <v-toolbar-title style="font-weight: 900">Newsroom</v-toolbar-title>
-        </v-toolbar>
-        <v-col
-          cols="12"
-          md="6"
-          class="px-5 mt-3"
-          style="border-left: 1px solid #ccc"
-        >
-          <div v-for="n in 5" :key="n">
-            <HomeNewsroom></HomeNewsroom>
-          </div>
+        <v-col cols="12" md="6">
+          <HomeNews></HomeNews>
         </v-col>
       </v-row>
     </div>

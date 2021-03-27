@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div mt-3>
     <v-card
-      class="grid-item markdown-body hover news-card mb-5"
-      height="180px"
+      class="grid-item markdown-body hover news-card mt-2 mb-2 px-3 mr-1 ml-1"
+      height="280px"
       elevation="0"
       color="#fff"
       v-if="
@@ -10,18 +10,15 @@
         $vuetify.breakpoint.lg ||
         $vuetify.breakpoint.xl
       "
-      data-aos="fade-up"
-      data-aos-offset="100"
-      data-aos-delay="0"
+      style="overflow-y: auto !important"
     >
       <v-container fluid>
         <v-row>
-          <v-col cols="12" md="3">
+          <v-col cols="12" md="4">
             <v-img
               aria-label="News post image"
               src="https://via.placeholder.com/250?text=Splash Photo"
-              width="100%"
-              height="150px"
+              height="230px"
               class=""
               style="border: 0px solid #fafafa"
               alt="ICJIA Intranet image"
@@ -44,7 +41,7 @@
               </template>
             </v-img>
           </v-col>
-          <v-col cols="12" md="9"
+          <v-col cols="12" md="8"
             ><v-card-text
               style="
                 font-size: 14px;
@@ -74,8 +71,16 @@
             >
 
             <v-card-text style="margin-top: -15px"
-              >Orem markdownum Oechalia tenus, bracchia concolor tum, et in tota
-              a generum.</v-card-text
+              ><div>
+                <p>
+                  Lorem markdownum et caelo capacius tractu ex Ledam quantaque
+                  fores. Nixique bisque intravit Teucri Aeneae regisque tergo
+                  matrona regit o. Causa non. Sed potest credunt periit seu est
+                  minuuntur taurorum dicens avidaeque iram. Per illum et amor
+                  sit reduxit adit, sui ima villosis tractataque tamen forma
+                  Clymeneia si modo non caelum.
+                </p>
+              </div></v-card-text
             >
           </v-col>
         </v-row>
