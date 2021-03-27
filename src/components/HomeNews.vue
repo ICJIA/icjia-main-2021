@@ -69,7 +69,7 @@ export default {
   font-size: 24px !important;
   font-weight: 400 !important;
   color: #000 !important;
-  letter-spacing: 0.01rem !important;
+  letter-spacing: 0.005rem !important;
 }
 .v-tab--active {
   font-weight: 900 !important;

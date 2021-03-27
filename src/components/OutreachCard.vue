@@ -64,7 +64,7 @@
               >
                 <router-link to="/" class="card-link">
                   <span style="font-weight: 900">
-                    Community Outreach Item Title here
+                    Community Outreach Article here
                   </span>
                 </router-link>
               </div></v-card-text
