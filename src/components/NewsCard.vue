@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card
-      class="grid-item markdown-body hover news-card mt-2 mb-2 px-3 mr-1 ml-1"
+      class="grid-item markdown-body hover news-card"
       height="180px"
       elevation="0"
       color="#fff"
@@ -71,6 +71,7 @@
         </v-row>
       </v-container>
     </v-card>
+    <div style="height: 5px; background: #eee"></div>
   </div>
 </template>
 

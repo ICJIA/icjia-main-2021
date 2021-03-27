@@ -6,27 +6,33 @@
       <v-tab>Agency </v-tab>
       <v-tab>Employment </v-tab>
 
-      <v-tab-item style="background: #eee">
-        <div style="height: 1px"></div>
+      <v-tab-item>
+        <div style="height: 5px; background: #eee !important"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
-          <GrantCard></GrantCard>
+          <NewsCard
+            title="Grant news item here"
+            style="background: #fff"
+          ></NewsCard>
         </div>
       </v-tab-item>
-      <v-tab-item style="background: #eee">
-        <div style="height: 1px"></div>
+      <v-tab-item>
+        <div style="height: 5px; background: #eee !important"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
-          <NewsCard title="Press release item here"></NewsCard>
+          <NewsCard
+            title="Press release item here"
+            style="background: #fff"
+          ></NewsCard>
         </div>
       </v-tab-item>
 
-      <v-tab-item style="background: #eee">
-        <div style="height: 1px"></div>
+      <v-tab-item>
+        <div style="height: 5px; background: #eee !important"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
           <NewsCard title="Agency News item here"></NewsCard>
         </div>
       </v-tab-item>
-      <v-tab-item style="background: #eee">
-        <div style="height: 1px"></div>
+      <v-tab-item>
+        <div style="height: 5px; background: #eee !important"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
           <NewsCard title="Employment News item here"></NewsCard>
         </div>
