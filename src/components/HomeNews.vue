@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-tabs show-arrows v-model="newsModel" class="mt-2">
+    <v-tabs show-arrows v-model="newsModel" class="mt-2" color="grey darken-1">
       <v-tab>Agency </v-tab>
       <v-tab>Press </v-tab>
       <v-tab>Grants </v-tab>
