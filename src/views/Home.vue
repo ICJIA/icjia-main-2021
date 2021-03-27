@@ -114,13 +114,14 @@
         </v-menu>
       </v-toolbar>
     </div>
-
-    <v-col cols="12" md="6">
-      <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
-    </v-col>
-    <v-col cols="12" md="6">
-      <HomeNews></HomeNews>
-    </v-col>
+    <v-row>
+      <v-col cols="12" md="6">
+        <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
+      </v-col>
+      <v-col cols="12" md="6">
+        <HomeNews></HomeNews>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
