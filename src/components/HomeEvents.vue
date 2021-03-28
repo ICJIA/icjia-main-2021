@@ -34,7 +34,7 @@
         $vuetify.breakpoint.lg ||
         $vuetify.breakpoint.xl
       "
-    >
+      ><div style="height: 15px"></div>
       <v-tab>Community</v-tab>
       <v-tab>Meetings </v-tab>
       <v-tab>Training</v-tab>
