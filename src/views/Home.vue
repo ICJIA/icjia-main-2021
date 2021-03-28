@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #eee" role="main">
+  <div style="background: #eee; padding-bottom: 75px" role="main">
     <v-carousel v-model="model" hide-delimiters hide-delimiter-background>
       <v-carousel-item v-for="(color, index) in colors" :key="index">
         <v-sheet :color="color" height="100%" tile>
@@ -79,15 +79,8 @@
     <HomeEvents></HomeEvents>
     <HomeResearch></HomeResearch>
 
-    <div
-      id="content"
-      style="
-        margin-top: 4px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #ccc;
-      "
-    >
-      <v-toolbar flat color="grey darken-3" dark style="margin-top: -13px">
+    <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+      <v-toolbar flat color="grey darken-3" dark style="margin-top: -10px">
         <v-toolbar-title style="font-weight: 900; font-size: 28px"
           >News & Information
         </v-toolbar-title>
@@ -114,7 +107,7 @@
         </v-menu>
       </v-toolbar>
     </div>
-    <v-row>
+    <v-row style="margin-top: -40px">
       <v-col cols="12" md="6">
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
@@ -122,11 +115,23 @@
         <HomeNews></HomeNews>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col cols="12" md="6">
+        <WidgetBar title="Facebook"></WidgetBar>
+        <SocialFacebook></SocialFacebook>
+      </v-col>
+      <v-col cols="12" md="6">
+        <WidgetBar title="Twitter"></WidgetBar>
+        <SocialTwitter></SocialTwitter>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
+import WidgetBar from "../components/WidgetBar.vue";
 export default {
+  components: { WidgetBar },
   data() {
     return {
       model: 0,
