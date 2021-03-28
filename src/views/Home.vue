@@ -77,7 +77,6 @@
     </v-carousel>
 
     <HomeEvents></HomeEvents>
-    <HomeResearch></HomeResearch>
 
     <div id="content" style="margin-top: 4px; padding-bottom: 30px">
       <v-toolbar flat color="grey darken-3" dark style="margin-top: -10px">
@@ -107,7 +106,11 @@
         </v-menu>
       </v-toolbar>
     </div>
+
     <v-row style="margin-top: -40px">
+      <v-col> <HomeResearch></HomeResearch></v-col>
+    </v-row>
+    <v-row style="margin-top: -30px">
       <v-col cols="12" md="6">
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
@@ -115,13 +118,12 @@
         <HomeNews></HomeNews>
       </v-col>
     </v-row>
+    <WidgetBar title="Social Media"></WidgetBar>
     <v-row>
       <v-col cols="12" md="6">
-        <WidgetBar title="Facebook"></WidgetBar>
         <SocialFacebook></SocialFacebook>
       </v-col>
       <v-col cols="12" md="6">
-        <WidgetBar title="Twitter"></WidgetBar>
         <SocialTwitter></SocialTwitter>
       </v-col>
     </v-row>

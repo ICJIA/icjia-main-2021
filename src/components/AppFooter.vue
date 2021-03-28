@@ -57,11 +57,16 @@
               <span class="v-icon fab fa-youtube"></span>
             </div>
             <div style="font-size: 12px">
-              <router-link to="/" style="color: #fff">About</router-link>
-              | <router-link to="/" style="color: #fff">Help</router-link> |
+              <router-link to="/" style="color: #fff">About</router-link> |
               <router-link to="/" style="color: #fff">Privacy</router-link> |
               <router-link to="/" style="color: #fff">Contact</router-link> |
-              <router-link to="/" style="color: #fff">Sitemap</router-link>
+              <router-link to="/" style="color: #fff">Sitemap</router-link> |
+              <router-link to="/" style="color: #fff">RSS</router-link> |
+              <router-link
+                href="https://github.com/ICJIA/icjia-main-2021"
+                style="color: #fff"
+                >Github</router-link
+              >
             </div>
 
             <div
