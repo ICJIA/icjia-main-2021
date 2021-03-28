@@ -5,10 +5,16 @@
     }}</v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <v-menu offset-y bottom>
+    <v-menu>
       <template v-slot:activator="{ on, attrs }">
-        <v-btn dark icon v-bind="attrs" v-on="on">
-          <v-icon>mdi-dots-vertical</v-icon>
+        <v-btn
+          text
+          v-bind="attrs"
+          v-on="on"
+          style="margin-right: 0px !important; font-weight: 900"
+        >
+          MENU
+          <v-icon right>mdi-dots-vertical</v-icon>
         </v-btn>
       </template>
 
@@ -33,6 +39,12 @@ export default {
     title: {
       type: String,
       default: "Untitled Widget Bar",
+    },
+    props: {
+      showLabel: {
+        type: Boolean,
+        default: true,
+      },
     },
   },
 };

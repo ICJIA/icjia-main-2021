@@ -79,32 +79,7 @@
     <HomeEvents></HomeEvents>
 
     <div id="content" style="margin-top: 4px; padding-bottom: 30px">
-      <v-toolbar flat color="grey darken-3" dark style="margin-top: -10px">
-        <v-toolbar-title style="font-weight: 900; font-size: 28px"
-          >News & Information
-        </v-toolbar-title>
-        <v-spacer></v-spacer>
-
-        <v-menu offset-y bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn dark icon v-bind="attrs" v-on="on">
-              <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn>
-          </template>
-
-          <v-list>
-            <v-list-item>
-              <v-list-item-title>Item 1</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Item 2</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Item 3</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </v-toolbar>
+      <WidgetBar title="News & Information"></WidgetBar>
     </div>
 
     <v-row style="margin-top: -40px">
