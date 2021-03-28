@@ -62,10 +62,11 @@
               <router-link to="/" style="color: #fff">Contact</router-link> |
               <router-link to="/" style="color: #fff">Sitemap</router-link> |
               <router-link to="/" style="color: #fff">RSS</router-link> |
-              <router-link
+              <a
                 href="https://github.com/ICJIA/icjia-main-2021"
                 style="color: #fff"
-                >Github</router-link
+                target="_blank"
+                >Github</a
               >
             </div>
 
@@ -88,6 +89,6 @@
 <style>
 .router-link-exact-active {
   color: #fff !important;
-  font-weight: 400;
+  font-weight: 900;
 }
 </style>
