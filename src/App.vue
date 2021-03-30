@@ -1,13 +1,18 @@
 <template>
   <v-app id="appTop">
-    <div id="nav" role="navigation" style="z-index: 10000">
+    <div
+      role="navigation"
+      style="z-index: 10000"
+      aria-labelledby="skip-to-content"
+    >
       <router-link
         to="#content"
-        aria-label="Skip Navigation"
+        aria-label="Skip to content"
         class="skiplink"
         @click.native="scrollFix('#content')"
         title="Skip Navigation"
         style="font-size: 12px"
+        id="skip-to-content"
       >
         Skip to content
       </router-link>

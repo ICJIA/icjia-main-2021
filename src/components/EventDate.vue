@@ -13,7 +13,7 @@
             <div class="text-right">
               <span
                 style="
-                  background: #888;
+                  background: #333;
                   color: white;
                   font-size: 11px;
                   font-weight: 700;
