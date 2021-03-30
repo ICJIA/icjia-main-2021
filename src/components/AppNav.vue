@@ -9,7 +9,7 @@
           contain
           src="https://ipsumimage.appspot.com/155x100?l= LOGO "
           transition="scale-transition"
-          width="120"
+          width="100"
           style
           @click="
             $router.push('/').catch((err) => {

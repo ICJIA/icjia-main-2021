@@ -95,7 +95,7 @@
       style="border: 1px solid #ccc"
     >
       <v-img
-        src="https://via.placeholder.com/350"
+        src="https://ipsumimage.appspot.com/250x250?l=Outreach|splash photo here"
         aria-label="News post image"
         width="100%"
         height="250"
