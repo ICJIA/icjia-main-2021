@@ -45,7 +45,7 @@
         <v-row align="center" justify="center">
           <v-col cols="12" md="6" class="text-center mt-8">
             <img
-              src="https://via.placeholder.com/175x100/212121/FFFFFF/?text=LOGO"
+              src="https://ipsumimage.appspot.com/140x100,212121?f=ffffff&l= LOGO "
               alt="Footer logo"
               style="border: 1px solid #777"
             />

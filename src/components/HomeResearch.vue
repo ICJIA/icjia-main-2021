@@ -45,7 +45,7 @@
               Read more about this article
             </router-link>
             <v-img
-              src="https://via.placeholder.com/350?text=Article splash photo"
+              src="https://ipsumimage.appspot.com/450x250?l=Research|splash photo here"
               aria-label="News post image"
               width="100%"
               height="250"
@@ -109,7 +109,7 @@
               Read more about this article
             </router-link>
             <v-img
-              src="https://via.placeholder.com/350?text=Article splash photo"
+              src="https://ipsumimage.appspot.com/450x250?l=Research|splash photo here"
               aria-label="News post image"
               width="100%"
               height="250"
@@ -174,7 +174,7 @@
               Read more about this article
             </router-link>
             <v-img
-              src="https://via.placeholder.com/350?text=Article splash photo"
+              src="https://ipsumimage.appspot.com/450x250?l=Research|splash photo here"
               aria-label="News post image"
               width="100%"
               height="250"

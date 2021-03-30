@@ -17,7 +17,7 @@
           <v-col cols="12" md="4">
             <v-img
               aria-label="News post image"
-              src="https://via.placeholder.com/250?text=Splash Photo"
+              src="https://ipsumimage.appspot.com/250x250?l=Outreach|splash photo here"
               height="230px"
               class=""
               style="border: 0px solid #fafafa"
