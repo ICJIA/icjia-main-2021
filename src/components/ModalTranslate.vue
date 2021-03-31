@@ -1,27 +1,29 @@
 <template>
   <v-dialog v-model="translate" width="500">
     <v-card>
-      <v-card-title> Translate</v-card-title>
       <v-card-text>
         <v-container fluid>
           <v-row>
             <v-col>
-              <v-btn text @click="googleTranslate('es')">Spanish</v-btn>
-              <v-btn text @click="googleTranslate('pt')">Portugese</v-btn>
-              <v-btn text @click="googleTranslate('fr')">French</v-btn>
-              <v-btn text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('es')">Spanish</v-btn>
+              <v-btn small text @click="googleTranslate('pt')">Portugese</v-btn>
+              <v-btn small text @click="googleTranslate('fr')">French</v-btn>
+              <v-btn small text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('ru')">Russian</v-btn>
             </v-col>
             <v-col>
-              <v-btn text @click="googleTranslate('es')">Spanish</v-btn>
-              <v-btn text @click="googleTranslate('pt')">Portugese</v-btn>
-              <v-btn text @click="googleTranslate('fr')">French</v-btn>
-              <v-btn text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('es')">Spanish</v-btn>
+              <v-btn small text @click="googleTranslate('pt')">Portugese</v-btn>
+              <v-btn small text @click="googleTranslate('fr')">French</v-btn>
+              <v-btn small text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('ru')">Russian</v-btn>
             </v-col>
             <v-col>
-              <v-btn text @click="googleTranslate('es')">Spanish</v-btn>
-              <v-btn text @click="googleTranslate('pt')">Portugese</v-btn>
-              <v-btn text @click="googleTranslate('fr')">French</v-btn>
-              <v-btn text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('es')">Spanish</v-btn>
+              <v-btn small text @click="googleTranslate('pt')">Portugese</v-btn>
+              <v-btn small text @click="googleTranslate('fr')">French</v-btn>
+              <v-btn small text @click="googleTranslate('pl')">Polish</v-btn>
+              <v-btn small text @click="googleTranslate('ru')">Russian</v-btn>
             </v-col>
           </v-row>
         </v-container>

@@ -1,15 +1,9 @@
 <template>
   <div>
-    <v-app-bar
-      fixed
-      app
-      height="60"
-      color="grey lighten-3"
-      class="hidden-sm-and-down"
-    >
+    <v-app-bar fixed app height="60" color="grey lighten-2">
       <v-img
         alt="ICJIA Logo"
-        class="shrink mr-2 hover"
+        class="shrink hover"
         contain
         src="https://ipsumimage.appspot.com/155x100?l= LOGO "
         transition="scale-transition"
@@ -21,15 +15,8 @@
           })
         "
       />
-      <v-spacer></v-spacer>
 
-      <v-text-field
-        solo
-        dense
-        label="Search"
-        class="mt-6"
-        prepend-inner-icon="mdi-magnify"
-      ></v-text-field>
+      <v-spacer></v-spacer>
       <v-btn
         text
         small
@@ -39,8 +26,21 @@
         style="font-size: 12px; font-weight: 900"
       >
         <span class="v-icon mdi mdi-globe-model ml-2"></span>
-        Translate this page
+        Translate<span class="hidden-sm-and-down"> this page</span>
       </v-btn>
+      <v-btn
+        text
+        small
+        v-bind="attrs"
+        v-on="on"
+        style="font-size: 12px; font-weight: 900"
+      >
+        <span class="v-icon mdi mdi-magnify ml-2"></span>
+        Search
+      </v-btn>
+      <v-spacer
+        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
+      ></v-spacer>
     </v-app-bar>
     <v-app-bar fixed app color="white" height="90" hide-on-scroll>
       <div
