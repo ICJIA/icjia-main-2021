@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar fixed app height="60" color="grey lighten-2">
+    <v-app-bar fixed app height="35" color="grey lighten-2">
       <v-img
         alt="ICJIA Logo"
         class="shrink hover"
@@ -17,31 +17,40 @@
       />
 
       <v-spacer></v-spacer>
+      <v-btn small text style="font-size: 10px; font-weight: 900">
+        <span class="v-icon left fab fa-twitter-square mr-2"></span>
+        Tweet
+      </v-btn>
+      <v-btn small text style="font-size: 10px; font-weight: 900">
+        <span class="v-icon left fab fa-facebook-square mr-2"></span>
+        Share
+      </v-btn>
       <v-btn
         text
         small
         v-bind="attrs"
         v-on="on"
         @click="openTranslationModal()"
-        style="font-size: 12px; font-weight: 900"
+        style="font-size: 10px; font-weight: 900"
       >
-        <span class="v-icon mdi mdi-globe-model ml-2"></span>
-        Translate<span class="hidden-sm-and-down"> this page</span>
+        <span class="v-icon fas fa-globe mr-2"></span>
+        Translate
       </v-btn>
       <v-btn
         text
         small
         v-bind="attrs"
         v-on="on"
-        style="font-size: 12px; font-weight: 900"
+        style="font-size: 10px; font-weight: 900"
       >
-        <span class="v-icon mdi mdi-magnify ml-2"></span>
+        <span class="v-icon mdi mdi-magnify"></span>
         Search
       </v-btn>
       <v-spacer
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
       ></v-spacer>
     </v-app-bar>
+
     <v-app-bar fixed app color="white" height="90" hide-on-scroll>
       <div
         class="hover hamburger text-center"
@@ -363,5 +372,12 @@ export default {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.searchResults {
+  position: absolute;
+  top: 100px;
+  z-index: 500000;
+  background: #000;
 }
 </style>

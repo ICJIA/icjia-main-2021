@@ -1,6 +1,6 @@
 <template>
   <v-dialog v-model="translate" width="500">
-    <v-card>
+    <v-card class="pt-4">
       <v-card-text>
         <v-container fluid>
           <v-row>
