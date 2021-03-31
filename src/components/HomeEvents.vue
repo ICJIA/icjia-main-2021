@@ -1,5 +1,5 @@
 <template>
-  <v-card elevation="0" style="margin-top: -11px; margin-bottom: 18px">
+  <v-card elevation="0" style="margin-top: -5px; margin-bottom: 18px">
     <WidgetBar title="Upcoming Events"></WidgetBar>
     <v-tabs
       show-arrows

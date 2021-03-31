@@ -12,6 +12,7 @@
                     transition="slide-y-transition"
                     id="button-1"
                     role="navigation"
+                    open-on-hover
                   >
                     <template v-slot:activator="{ on, attrs }"
                       ><v-btn v-bind="attrs" v-on="on" large
@@ -32,6 +33,7 @@
                     role="navigation"
                     id="button-2"
                     aria-label="Click this button for a menu of Y"
+                    open-on-hover
                   >
                     <template v-slot:activator="{ on, attrs }"
                       ><v-btn v-bind="attrs" v-on="on" large
@@ -52,6 +54,7 @@
                     role="navigation"
                     id="button-3"
                     aria-label="Click this button for a menu of Z"
+                    open-on-hover
                   >
                     <template v-slot:activator="{ on, attrs }"
                       ><v-btn v-bind="attrs" v-on="on" large

@@ -1,5 +1,5 @@
 {
-    "clientBase": "https://icjia.illinois.gov",
+    "clientBase": "https://dev.icjia.cloud",
     "publicPath": "",
     "namespace": "icjia-",
     "siteTitle": "Illinois Criminal Justice Information Authority",

@@ -1,23 +1,33 @@
 <template>
   <div>
     <v-app-bar fixed app color="white" hide-on-scroll height="90">
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <div>
-        <v-img
-          alt="ICJIA Logo"
-          class="shrink mr-2 hover"
-          contain
-          src="https://ipsumimage.appspot.com/155x100?l= LOGO "
-          transition="scale-transition"
-          width="100"
-          style
-          @click="
-            $router.push('/').catch((err) => {
-              $vuetify.goTo(0);
-            })
-          "
-        />
+      <div
+        class="hover hamburger text-center"
+        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
+        @click="drawer = true"
+      >
+        <span class="v-icon mdi mdi-menu"></span>
+        <div style="font-size: 10px; font-weight: 900">MENU</div>
       </div>
+
+      <v-spacer
+        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
+      ></v-spacer>
+      <v-img
+        alt="ICJIA Logo"
+        class="shrink mr-2 hover"
+        contain
+        src="https://ipsumimage.appspot.com/155x100?l= LOGO "
+        transition="scale-transition"
+        width="90"
+        style
+        @click="
+          $router.push('/').catch((err) => {
+            $vuetify.goTo(0);
+          })
+        "
+      />
+
       <div
         @click="
           $router.push('/').catch((err) => {
@@ -37,6 +47,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -93,6 +104,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -131,15 +143,16 @@
         </v-list>
       </v-menu>
 
-      <v-btn icon>
-        <span class="v-icon mdi mdi-magnify"></span>
-      </v-btn>
-
       <!-- <v-btn icon>
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
 
-      <v-menu offset-y bottom>
+      <v-menu
+        offset-y
+        bottom
+        open-on-hover
+        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
+      >
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-icon>mdi-dots-vertical</v-icon>
@@ -158,6 +171,23 @@
           </v-list-item>
         </v-list>
       </v-menu>
+
+      <v-tooltip top>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on" @click="openTranslationModal()">
+            <span class="v-icon mdi mdi-globe-model"></span>
+          </v-btn>
+        </template>
+        <span>Translate</span>
+      </v-tooltip>
+      <v-tooltip top>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on">
+            <span class="v-icon mdi mdi-magnify"></span>
+          </v-btn>
+        </template>
+        <span>Search</span>
+      </v-tooltip>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
@@ -215,7 +245,13 @@
 </template>
 
 <script>
+import { EventBus } from "@/event-bus";
 export default {
+  methods: {
+    openTranslationModal() {
+      EventBus.$emit("translate", this.$route.fullPath);
+    },
+  },
   data() {
     return {
       drawer: false,
@@ -264,5 +300,25 @@ export default {
 .navItem {
   color: #000 !important;
   font-weight: 900;
+}
+
+.hamburger {
+  width: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hamburger:hover {
+  background: #eee;
+  padding: 5px;
+}
+
+.translate {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 </style>
