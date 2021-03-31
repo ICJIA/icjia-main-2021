@@ -16,36 +16,74 @@
         "
       />
 
+      <div class="ml-5 hidden-sm-and-down" style="font-weight: 900">
+        Title of the page or article goes here
+      </div>
+
       <v-spacer></v-spacer>
-      <v-btn small text style="font-size: 10px; font-weight: 900">
-        <span class="v-icon left fab fa-twitter-square mr-2"></span>
-        Tweet
-      </v-btn>
-      <v-btn small text style="font-size: 10px; font-weight: 900">
-        <span class="v-icon left fab fa-facebook-square mr-2"></span>
-        Share
-      </v-btn>
-      <v-btn
-        text
-        small
-        v-bind="attrs"
-        v-on="on"
-        @click="openTranslationModal()"
-        style="font-size: 10px; font-weight: 900"
-      >
-        <span class="v-icon fas fa-globe mr-2"></span>
-        Translate
-      </v-btn>
-      <v-btn
-        text
-        small
-        v-bind="attrs"
-        v-on="on"
-        style="font-size: 10px; font-weight: 900"
-      >
-        <span class="v-icon mdi mdi-magnify"></span>
-        Search
-      </v-btn>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            small
+            text
+            style="font-size: 10px; font-weight: 900"
+            v-bind="attrs"
+            v-on="on"
+          >
+            <span class="v-icon left fab fa-twitter-square mr-2"></span>
+            <span class="hidden-sm-and-down">Tweet</span>
+          </v-btn>
+        </template>
+        <span>Tweet this page on Twitter</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            small
+            text
+            style="font-size: 10px; font-weight: 900"
+            v-bind="attrs"
+            v-on="on"
+          >
+            <span class="v-icon left fab fa-facebook-square mr-2"></span>
+            <span class="hidden-sm-and-down">Share</span>
+          </v-btn>
+        </template>
+        <span>Share this page on facebook</span>
+      </v-tooltip>
+      |
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            small
+            v-bind="attrs"
+            v-on="on"
+            @click="openTranslationModal()"
+            style="font-size: 10px; font-weight: 900"
+          >
+            <span class="v-icon fas fa-globe mr-2"></span>
+            <span class="hidden-sm-and-down">Translate</span>
+          </v-btn>
+        </template>
+        <span>Translate this page on Google</span>
+      </v-tooltip>
+      |
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            small
+            v-bind="attrs"
+            v-on="on"
+            style="font-size: 10px; font-weight: 900"
+          >
+            <span class="v-icon mdi mdi-magnify"></span>
+            <span class="hidden-sm-and-down">Search</span>
+          </v-btn>
+        </template>
+        <span>Search ICJIA</span>
+      </v-tooltip>
       <v-spacer
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
       ></v-spacer>
