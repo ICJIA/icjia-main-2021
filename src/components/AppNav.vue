@@ -172,15 +172,15 @@
         </v-list>
       </v-menu>
 
-      <v-tooltip top>
+      <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" @click="openTranslationModal()">
             <span class="v-icon mdi mdi-globe-model"></span>
           </v-btn>
         </template>
-        <span>Translate</span>
+        <span>Translate this page</span>
       </v-tooltip>
-      <v-tooltip top>
+      <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <span class="v-icon mdi mdi-magnify"></span>

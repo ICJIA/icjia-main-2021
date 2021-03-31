@@ -33,12 +33,36 @@
       <v-divider></v-divider>
 
       <v-card-actions class="mt-1">
-        <v-btn color="primary" text small> View Disclaimer </v-btn>
+        <v-btn x-small text @click="show = !show">
+          Disclaimer
+          <v-icon right>{{
+            show ? "mdi-chevron-up" : "mdi-chevron-down"
+          }}</v-icon>
+        </v-btn>
         <v-spacer></v-spacer>
+
         <v-btn color="primary" @click="translate = false" small>
           Close Window
         </v-btn>
       </v-card-actions>
+      <v-expand-transition>
+        <div v-show="show">
+          <v-divider></v-divider>
+
+          <v-card-text style="font-size: 11px">
+            The Illinois Criminal Justice Authority ("ICJIA") offers
+            translations of the content through Google Translate. Because Google
+            Translate is an external website, ICJIA does not control the quality
+            or accuracy of translated content. All ICJIA content is filtered
+            through Google Translate which may result in unexpected and
+            unpredictable degradation of portions of text, images and the
+            general appearance on translated pages. Google Translate may
+            maintain unique privacy and use policies. These policies are not
+            controlled by ICJIA and are not associated with ICJIA's privacy and
+            use policies.
+          </v-card-text>
+        </div>
+      </v-expand-transition>
     </v-card>
   </v-dialog>
 </template>
@@ -70,6 +94,7 @@ export default {
     return {
       translate: false,
       page: null,
+      show: false,
     };
   },
 };
