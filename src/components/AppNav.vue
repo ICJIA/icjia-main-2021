@@ -1,6 +1,48 @@
 <template>
   <div>
-    <v-app-bar fixed app color="white" hide-on-scroll height="90">
+    <v-app-bar
+      fixed
+      app
+      height="60"
+      color="grey lighten-3"
+      class="hidden-sm-and-down"
+    >
+      <v-img
+        alt="ICJIA Logo"
+        class="shrink mr-2 hover"
+        contain
+        src="https://ipsumimage.appspot.com/155x100?l= LOGO "
+        transition="scale-transition"
+        width="50"
+        style
+        @click="
+          $router.push('/').catch((err) => {
+            $vuetify.goTo(0);
+          })
+        "
+      />
+      <v-spacer></v-spacer>
+
+      <v-text-field
+        solo
+        dense
+        label="Search"
+        class="mt-6"
+        prepend-inner-icon="mdi-magnify"
+      ></v-text-field>
+      <v-btn
+        text
+        small
+        v-bind="attrs"
+        v-on="on"
+        @click="openTranslationModal()"
+        style="font-size: 12px; font-weight: 900"
+      >
+        <span class="v-icon mdi mdi-globe-model ml-2"></span>
+        Translate this page
+      </v-btn>
+    </v-app-bar>
+    <v-app-bar fixed app color="white" height="90" hide-on-scroll>
       <div
         class="hover hamburger text-center"
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
@@ -172,14 +214,14 @@
         </v-list>
       </v-menu>
 
-      <v-tooltip left>
+      <!-- <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" @click="openTranslationModal()">
             <span class="v-icon mdi mdi-globe-model"></span>
           </v-btn>
         </template>
         <span>Translate this page</span>
-      </v-tooltip>
+      </v-tooltip> -->
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
@@ -189,6 +231,7 @@
         <span>Search</span>
       </v-tooltip>
     </v-app-bar>
+
     <v-navigation-drawer
       v-model="drawer"
       app

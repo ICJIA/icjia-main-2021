@@ -17,7 +17,9 @@
         Skip to content
       </router-link>
     </div>
+
     <AppNav @hook:mounted="fixA11y()"></AppNav>
+
     <ModalTranslate></ModalTranslate>
 
     <v-main>

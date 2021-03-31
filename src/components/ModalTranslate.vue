@@ -1,7 +1,7 @@
 <template>
   <v-dialog v-model="translate" width="500">
     <v-card>
-      <v-card-title> Translate this page </v-card-title>
+      <v-card-title> Translate</v-card-title>
       <v-card-text>
         <v-container fluid>
           <v-row>
