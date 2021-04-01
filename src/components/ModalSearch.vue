@@ -31,7 +31,13 @@
       <v-row>
         <v-col>
           <div v-if="query && query.length">
-            <v-card class="mb-6" color="grey lighten-3" v-for="n in 8" :key="n">
+            <v-card
+              class="mb-6 hover"
+              color="grey lighten-3"
+              v-for="n in 8"
+              :key="n"
+              @click="search = false"
+            >
               <v-skeleton-loader
                 type="article"
                 class="mb-4"
