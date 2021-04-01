@@ -17,7 +17,7 @@
       />
 
       <div class="ml-5 hidden-sm-and-down" style="font-weight: 900">
-        Title of the page or article goes here
+        Title of page or article or news item goes here
       </div>
 
       <v-spacer></v-spacer>
