@@ -3,39 +3,34 @@
     <HomeSplash></HomeSplash>
 
     <HomeEvents></HomeEvents>
+    <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
+      <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+        <WidgetBar title="News & Information"></WidgetBar>
+      </div>
 
-    <div id="content" style="margin-top: 4px; padding-bottom: 30px">
-      <WidgetBar title="News & Information"></WidgetBar>
+      <v-row style="margin-top: -40px">
+        <v-col> <HomeResearch></HomeResearch></v-col>
+      </v-row>
+      <v-row style="margin-top: -30px">
+        <v-col cols="12" md="6">
+          <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
+        </v-col>
+        <v-col cols="12" md="6">
+          <HomeNews></HomeNews>
+        </v-col>
+      </v-row>
     </div>
-
-    <v-row style="margin-top: -40px">
-      <v-col> <HomeResearch></HomeResearch></v-col>
-    </v-row>
-    <v-row style="margin-top: -30px">
-      <v-col cols="12" md="6">
-        <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
-      </v-col>
-      <v-col cols="12" md="6">
-        <HomeNews></HomeNews>
-      </v-col>
-    </v-row>
-    <WidgetBar title="Social Media"></WidgetBar>
-    <v-row>
-      <v-col cols="12" md="6">
-        <SocialFacebook
-          data-aos="fade-up"
-          data-aos-offset="100"
-          data-aos-delay="0"
-        ></SocialFacebook>
-      </v-col>
-      <v-col cols="12" md="6">
-        <SocialTwitter
-          data-aos="fade-up"
-          data-aos-offset="100"
-          data-aos-delay="0"
-        ></SocialTwitter>
-      </v-col>
-    </v-row>
+    <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
+      <WidgetBar title="Social Media"></WidgetBar>
+      <v-row>
+        <v-col cols="12" md="6">
+          <SocialFacebook></SocialFacebook>
+        </v-col>
+        <v-col cols="12" md="6">
+          <SocialTwitter></SocialTwitter>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
 

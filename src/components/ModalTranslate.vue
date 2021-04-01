@@ -43,9 +43,7 @@
         </v-btn>
         <v-spacer></v-spacer>
 
-        <v-btn color="primary" @click="translate = false" small>
-          Close Window
-        </v-btn>
+        <v-btn color="primary" @click="translate = false" small> Close </v-btn>
       </v-card-actions>
       <v-expand-transition>
         <div v-show="show">
