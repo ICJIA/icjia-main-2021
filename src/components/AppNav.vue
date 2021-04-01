@@ -76,6 +76,7 @@
             small
             v-bind="attrs"
             v-on="on"
+            @click="openSearchModal()"
             style="font-size: 10px; font-weight: 900"
           >
             <span class="v-icon mdi mdi-magnify"></span>
@@ -271,7 +272,7 @@
       </v-tooltip> -->
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
+          <v-btn icon v-bind="attrs" v-on="on" @click="openSearchModal()">
             <span class="v-icon mdi mdi-magnify"></span>
           </v-btn>
         </template>
@@ -338,6 +339,9 @@
 import { EventBus } from "@/event-bus";
 export default {
   methods: {
+    openSearchModal() {
+      EventBus.$emit("search");
+    },
     openTranslationModal() {
       EventBus.$emit("translate", this.$route.fullPath);
     },
@@ -382,7 +386,11 @@ export default {
       ],
     };
   },
-  mounted() {},
+  mounted() {
+    EventBus.$on("searchMounted", () => {
+      console.log("search mounted");
+    });
+  },
 };
 </script>
 

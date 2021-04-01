@@ -21,6 +21,7 @@
     <AppNav @hook:mounted="fixA11y()"></AppNav>
 
     <ModalTranslate></ModalTranslate>
+    <ModalSearch></ModalSearch>
 
     <v-main>
       <transition name="fade" mode="out-in">
@@ -41,6 +42,11 @@
 import { EventBus } from "@/event-bus";
 export default {
   name: "App",
+  mounted() {
+    EventBus.$on("search mounted", () => {
+      console.log("search mounted");
+    });
+  },
   watch: {
     // eslint-disable-next-line no-unused-vars
     $route(to, from) {
@@ -109,6 +115,7 @@ export default {
       //   .$("button.v-icon")
       //   .addAriaLabel("Click this to toggle display of the news article");
     },
+
     scrollFix: function () {
       var hash = location.hash.substr(1);
       var el = document.getElementById(`${hash}`);
