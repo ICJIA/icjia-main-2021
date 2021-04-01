@@ -22,10 +22,18 @@
     <WidgetBar title="Social Media"></WidgetBar>
     <v-row>
       <v-col cols="12" md="6">
-        <SocialFacebook></SocialFacebook>
+        <SocialFacebook
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-delay="0"
+        ></SocialFacebook>
       </v-col>
       <v-col cols="12" md="6">
-        <SocialTwitter></SocialTwitter>
+        <SocialTwitter
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-delay="0"
+        ></SocialTwitter>
       </v-col>
     </v-row>
   </div>

@@ -1,38 +1,72 @@
 <template>
-  <v-dialog v-model="search" width="70%" scrollable overlay-opacity=".8">
-    <v-card class="" height="80vh">
-      <v-card-title class="headline grey lighten-2">
-        Search ICJIA
-      </v-card-title>
-      <v-card-text class="pt-6">
-        <v-text-field
-          solo
-          ref="search"
-          label="Search ICJIA"
-          append-icon="mdi-magnify"
-          id="search"
-        ></v-text-field
-      ></v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-actions class="mt-1">
-        <v-spacer></v-spacer>
-        <v-btn color="grey" @click="search = false" small> Close </v-btn>
-      </v-card-actions>
-    </v-card>
+  <v-dialog v-model="search" width="70%">
+    <v-toolbar flat color="grey darken-3" dark class="mb-2">
+      <v-toolbar-title style="font-weight: 900; font-size: 28px"
+        >Search ICJIA</v-toolbar-title
+      >
+      <v-spacer></v-spacer>
+      <v-btn @click="search = false">Close</v-btn>
+    </v-toolbar>
+    <v-container
+      fluid
+      style="min-height: 700px; background: #eee; margin-top: -20px"
+    >
+      <v-row>
+        <v-col>
+          <v-text-field
+            clearable
+            solo
+            hide-details
+            color="grey"
+            ref="search"
+            label="Search ICJIA"
+            append-icon="mdi-magnify"
+            id="search"
+            v-model="query"
+            @keyup="instantSearch()"
+            class="pt-5"
+          ></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <div v-if="query && query.length">
+            <v-card class="mb-6" color="grey lighten-3" v-for="n in 8" :key="n">
+              <v-skeleton-loader
+                type="article"
+                class="mb-4"
+              ></v-skeleton-loader>
+            </v-card>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-dialog>
 </template>
 
 <script>
 import { EventBus } from "@/event-bus";
 export default {
-  methods: {},
+  watch: {
+    // query() {
+    //   if (!this.query) this.query = null;
+    // },
+  },
+  methods: {
+    setFocus() {
+      this.$refs.search.focus();
+    },
+    instantSearch() {
+      console.log("instant search here");
+    },
+  },
   mounted() {
     EventBus.$on("search", () => {
       this.search = true;
       this.$nextTick(() => {
-        this.$refs.search.focus();
+        setTimeout(() => {
+          this.setFocus();
+        }, 200);
       });
     });
   },
@@ -40,14 +74,16 @@ export default {
     return {
       translate: false,
       search: null,
-      show: false,
+
+      query: null,
     };
   },
 };
 </script>
 
 <style>
-#search:focus {
-  border: 1px solid #ccc;
-}
+/* #search:focus {
+  border: 1px solid #ccc !important;
+  padding: 5px !important;
+} */
 </style>

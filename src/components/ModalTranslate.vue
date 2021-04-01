@@ -52,7 +52,7 @@
           <v-divider></v-divider>
 
           <v-card-text style="font-size: 11px">
-            The Illinois Criminal Justice Authority ("ICJIA") offers
+            The Illinois Criminal Justice Information Authority ("ICJIA") offers
             translations of the content through Google Translate. Because Google
             Translate is an external website, ICJIA does not control the quality
             or accuracy of translated content. All ICJIA content is filtered

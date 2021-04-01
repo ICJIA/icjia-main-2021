@@ -1,6 +1,14 @@
 <template>
   <div>
-    <v-app-bar fixed app height="35" color="grey lighten-2">
+    <v-app-bar
+      fixed
+      app
+      height="35"
+      color="grey lighten-2"
+      role="navigation"
+      id="systemBar"
+      aria-labelledby="systemBar"
+    >
       <v-img
         alt="ICJIA Logo"
         class="shrink hover"
@@ -16,7 +24,13 @@
         "
       />
 
-      <div class="ml-5 hidden-sm-and-down" style="font-weight: 900">
+      <div
+        class="ml-5 hidden-sm-and-down"
+        style="font-weight: 900"
+        data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-delay="0"
+      >
         Title of page or article or news item goes here
       </div>
 
@@ -36,6 +50,7 @@
         </template>
         <span>Tweet this page on Twitter</span>
       </v-tooltip>
+      |
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -85,9 +100,9 @@
         </template>
         <span>Search ICJIA</span>
       </v-tooltip>
-      <v-spacer
+      <!-- <v-spacer
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
-      ></v-spacer>
+      ></v-spacer> -->
     </v-app-bar>
 
     <v-app-bar fixed app color="white" height="90" hide-on-scroll>

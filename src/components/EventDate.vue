@@ -3,9 +3,6 @@
     <v-card
       class="hover event-card mr-2 mt-1 mb-1"
       style="height: 400px; overflow-y: auto"
-      data-aos="fade-left"
-      data-aos-offset="100"
-      data-aos-delay="0"
     >
       <v-container fluid>
         <v-row no-gutters>
