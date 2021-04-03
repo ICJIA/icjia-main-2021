@@ -4,9 +4,9 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          :src="getImagePath('https://dev.icjia.cloud/chicago-01.jpg')"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-01-min.jpg')"
           :lazy-src="
-            getImagePath('https://dev.icjia.cloud/chicago-01.jpg', 0, 0, 10)
+            getImagePath('https://dev.icjia.cloud/chicago-01-min.jpg', 0, 0, 10)
           "
           aspect-ratio="1"
           class="grey lighten-2"
@@ -372,7 +372,7 @@ export default {
         imageQuality
       );
       console.log(thumborImgPath);
-      //return thumborImgPath;
+      return thumborImgPath;
     },
   },
 };
