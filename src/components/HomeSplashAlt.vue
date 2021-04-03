@@ -58,9 +58,9 @@
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
-          :src="getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg')"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg')"
           :lazy-src="
-            getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg', 0, 0, 10)
+            getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg', 0, 0, 10)
           "
           aspect-ratio="1"
           class="grey lighten-2"
