@@ -19,14 +19,8 @@
       </template>
 
       <v-list>
-        <v-list-item>
-          <v-list-item-title>Item 1</v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Item 2</v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Item 3</v-list-item-title>
+        <v-list-item v-for="(item, idx) in menuItems" :key="`menu-${idx}`">
+          <v-list-item-title class="hover">{{ item }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -40,11 +34,13 @@ export default {
       type: String,
       default: "Untitled Widget Bar",
     },
-    props: {
-      showLabel: {
-        type: Boolean,
-        default: true,
-      },
+    showLabel: {
+      type: Boolean,
+      default: true,
+    },
+    menuItems: {
+      type: Array,
+      default: () => ["Item 1", "Item 2", "Item 3"],
     },
   },
 };

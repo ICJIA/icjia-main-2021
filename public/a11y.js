@@ -17,6 +17,7 @@
       a(b).after(k).remove();
       g[h - 1] = k;
     }
+
     console.log("a11y: " + this.length + " non-passing aria tags replaced.");
     return a(g);
   };

@@ -17,7 +17,7 @@
           <v-col cols="12" md="4">
             <v-img
               aria-label="News post image"
-              src="https://ipsumimage.appspot.com/250x250?l=News|splash photo here"
+              src="https://ipsumimage.appspot.com/250x250?l=Research|splash photo here"
               height="230px"
               class=""
               style="border: 0px solid #fafafa"
@@ -63,7 +63,7 @@
                 "
               >
                 <router-link to="/" class="card-link">
-                  <span style="font-weight: 900"> News Item here </span>
+                  <span style="font-weight: 900"> Research Article here </span>
                 </router-link>
               </div></v-card-text
             >
@@ -93,7 +93,7 @@
       style="border: 1px solid #ccc"
     >
       <v-img
-        src="https://ipsumimage.appspot.com/250x250?l=News|splash photo here"
+        src="https://ipsumimage.appspot.com/250x250?l=Research|splash photo here"
         aria-label="News post image"
         width="100%"
         height="250"

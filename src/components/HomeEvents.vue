@@ -1,6 +1,10 @@
 <template>
   <v-card elevation="0" style="margin-top: -5px; margin-bottom: 18px">
-    <WidgetBar title="Upcoming Events"></WidgetBar>
+    <WidgetBar
+      title="Upcoming Events"
+      style="margin-top: 10px"
+      :menuItems="eventItems"
+    ></WidgetBar>
     <v-tabs
       show-arrows
       v-model="eventModel"
@@ -50,6 +54,7 @@ export default {
   data() {
     return {
       eventModel: 0,
+      eventItems: ["ICJIA Event Calenader"],
     };
   },
   watch: {

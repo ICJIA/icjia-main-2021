@@ -1,27 +1,26 @@
 <template>
   <div style="background: #eee; padding-bottom: 75px" role="main">
     <HomeSplash></HomeSplash>
-    <div id="content" style="margin-top: 4px; padding-bottom: 30px">
-      <WidgetBar title="News & Information"></WidgetBar>
-    </div>
+    <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px"></div> -->
     <v-row style="margin-top: -30px">
       <v-col cols="12" md="6">
+        <WidgetBar
+          title="News & Information"
+          style="margin-top: 20px"
+          :menuItems="newsItems"
+        ></WidgetBar>
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
       <v-col cols="12" md="6">
-        <HomeNews></HomeNews>
+        <WidgetBar
+          title="Latest Research"
+          :menuItems="researchItems"
+          style="margin-top: 20px"
+        ></WidgetBar>
+        <ResearchCard v-for="n in 3" :key="`outreach-${n}`"></ResearchCard>
       </v-col>
     </v-row>
 
-    <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
-      <div id="content" style="margin-top: 4px; padding-bottom: 30px">
-        <WidgetBar title="Latest Research"></WidgetBar>
-      </div>
-
-      <v-row style="margin-top: -40px">
-        <v-col> <HomeResearch></HomeResearch></v-col>
-      </v-row>
-    </div>
     <HomeEvents></HomeEvents>
     <!-- <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
       <WidgetBar title="Social Media"></WidgetBar>
@@ -39,10 +38,14 @@
 
 <script>
 import WidgetBar from "../components/WidgetBar.vue";
+
 export default {
   components: { WidgetBar },
   data() {
-    return {};
+    return {
+      researchItems: ["Articles", "Datasets", "Apps", "ICJIA Research Hub"],
+      newsItems: ["Grants", "Employment", "Press Releases"],
+    };
   },
   mounted() {
     this.$nextTick(() => {

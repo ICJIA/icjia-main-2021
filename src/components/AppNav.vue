@@ -147,7 +147,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-menu
+      <!-- <v-menu
         bottom
         offset-y
         origin="center center"
@@ -196,15 +196,15 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
 
-      <v-btn text class="hidden-sm-and-down navItem">Item 2</v-btn>
+      <v-btn text class="hidden-sm-and-down navItem" to="/">Version A</v-btn>
 
-      <v-btn text class="hidden-sm-and-down navItem">Item 3</v-btn>
+      <v-btn text class="hidden-sm-and-down navItem" to="/version-b"
+        >Version B</v-btn
+      >
 
-      <v-btn text class="hidden-sm-and-down navItem">Item 4</v-btn>
-
-      <v-menu
+      <!-- <v-menu
         bottom
         offset-y
         origin="center center"
@@ -246,13 +246,13 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
 
       <!-- <v-btn icon>
         <span class="v-icon mdi mdi-dots-vertical"></span>
       </v-btn> -->
 
-      <v-menu
+      <!-- <v-menu
         offset-y
         bottom
         open-on-hover
@@ -275,16 +275,8 @@
             <v-list-item-title>Item 3</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
 
-      <!-- <v-tooltip left>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on" @click="openTranslationModal()">
-            <span class="v-icon mdi mdi-globe-model"></span>
-          </v-btn>
-        </template>
-        <span>Translate this page</span>
-      </v-tooltip> -->
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" @click="openSearchModal()">
