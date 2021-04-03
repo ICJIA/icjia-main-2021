@@ -27,6 +27,7 @@
     "moment-timezone": "^0.5.33",
     "npm": "^7.7.5",
     "nprogress": "^0.2.0",
+    "thumbor-url-builder": "^0.1.1",
     "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.1",

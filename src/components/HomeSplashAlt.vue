@@ -4,8 +4,10 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          src="/hero01-min.jpg"
-          lazy-src="/hero01-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-01.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-01.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -50,7 +52,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version B (Color with tint)</h2>
+    <!-- <h2 class="ml-5">Version B (Color with tint)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
@@ -351,9 +353,30 @@
           </v-overlay>
         </v-img>
       </v-col>
-    </v-row>
+    </v-row> -->
   </div>
 </template>
+
+<script>
+import { getImageURL } from "@/services/Image";
+
+export default {
+  methods: {
+    getImagePath(url, imgWidth = 0, imgHeight = 0, imageQuality = 30) {
+      let imgPath;
+      imgPath = `${url}`;
+      const thumborImgPath = getImageURL(
+        imgPath,
+        imgWidth,
+        imgHeight,
+        imageQuality
+      );
+      console.log(thumborImgPath);
+      //return thumborImgPath;
+    },
+  },
+};
+</script>
 
 <style scoped>
 .nofo-title {
