@@ -29,8 +29,10 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          src="/hero02-min.jpg"
-          lazy-src="/hero02-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -52,12 +54,14 @@
         </v-img>
       </v-col>
     </v-row>
-    <!-- <h2 class="ml-5">Version B (Color with tint)</h2>
+    <h2 class="ml-5">Version B (Color with tint)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
-          src="/hero02-min.jpg"
-          lazy-src="/hero02-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -96,8 +100,10 @@
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <v-img
-          src="/hero01-min.jpg"
-          lazy-src="/hero01-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-01-min.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-01-min.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -119,8 +125,10 @@
       </v-col>
       <v-col cols="12" md="4">
         <v-img
-          src="/hero02-min.jpg"
-          lazy-src="/hero02-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-02-min.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -143,8 +151,10 @@
       </v-col>
       <v-col cols="12" md="4">
         <v-img
-          src="/hero01-min.jpg"
-          lazy-src="/hero01-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg')"
+          :lazy-src="
+            getImagePath('https://dev.icjia.cloud/chicago-03-min.jpg', 0, 0, 10)
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -170,8 +180,15 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          src="/hero01-min-bw.png"
-          lazy-src="/hero01-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-03-min-bw.jpg')"
+          :lazy-src="
+            getImagePath(
+              'https://dev.icjia.cloud/chicago-03-min-bw.jpg',
+              0,
+              0,
+              10
+            )
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -353,7 +370,7 @@
           </v-overlay>
         </v-img>
       </v-col>
-    </v-row> -->
+    </v-row>
   </div>
 </template>
 
