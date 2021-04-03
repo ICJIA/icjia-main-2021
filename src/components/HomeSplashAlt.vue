@@ -159,7 +159,7 @@
           class="grey lighten-2"
           max-height="400"
         >
-          <v-overlay absolute opacity=".3" color="red lighten-3">
+          <v-overlay absolute opacity=".3" color="blue lighten-3">
             <div
               class="text-center px-5"
               style="background: rgba(125, 125, 125, 0.9); padding: 25px"
