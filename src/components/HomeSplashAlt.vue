@@ -180,10 +180,10 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          :src="getImagePath('https://dev.icjia.cloud/chicago-03-min-bw.jpg')"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-01-min-bw.jpg')"
           :lazy-src="
             getImagePath(
-              'https://dev.icjia.cloud/chicago-03-min-bw.jpg',
+              'https://dev.icjia.cloud/chicago-01-min-bw.jpg',
               0,
               0,
               10
@@ -210,8 +210,15 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          src="/hero02-min-bw.png"
-          lazy-src="/hero02-thumb.jpg"
+          :src="getImagePath('https://dev.icjia.cloud/chicago-02-min-bw.jpg')"
+          :lazy-src="
+            getImagePath(
+              'https://dev.icjia.cloud/chicago-02-min-bw.jpg',
+              0,
+              0,
+              10
+            )
+          "
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
