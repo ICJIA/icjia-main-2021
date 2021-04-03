@@ -1,10 +1,10 @@
 <template>
   <div style="background: #eee; padding-bottom: 75px" role="main">
     <HomeSplash></HomeSplash>
-    <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+    <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
       <WidgetBar title="News & Information"></WidgetBar>
-    </div>
-    <v-row style="margin-top: -30px">
+    </div> -->
+    <v-row style="margin-top: -20px">
       <v-col cols="12" md="6">
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
@@ -15,7 +15,10 @@
 
     <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0">
       <div id="content" style="margin-top: 4px; padding-bottom: 30px">
-        <WidgetBar title="Latest Research"></WidgetBar>
+        <WidgetBar
+          title="Latest Research"
+          :menuItems="researchItems"
+        ></WidgetBar>
       </div>
 
       <v-row style="margin-top: -40px">
@@ -42,7 +45,9 @@ import WidgetBar from "../components/WidgetBar.vue";
 export default {
   components: { WidgetBar },
   data() {
-    return {};
+    return {
+      researchItems: ["Articles", "Datasets", "Apps", "ICJIA Research Hub"],
+    };
   },
   mounted() {
     this.$nextTick(() => {
