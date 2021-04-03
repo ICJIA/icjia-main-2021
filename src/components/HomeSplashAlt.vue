@@ -4,7 +4,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero01-min.jpg"
+          src="/hero01-min.jpg"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -26,7 +27,8 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero02-min.jpg"
+          src="/hero02-min.jpg"
+          lazy-src="/hero02-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -52,7 +54,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
-          src="@/assets/hero02-min.jpg"
+          src="/hero02-min.jpg"
+          lazy-src="/hero02-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -91,7 +94,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <v-img
-          src="@/assets/hero01-min.jpg"
+          src="/hero01-min.jpg"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -113,7 +117,8 @@
       </v-col>
       <v-col cols="12" md="4">
         <v-img
-          src="@/assets/hero02-min.jpg"
+          src="/hero02-min.jpg"
+          lazy-src="/hero02-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -136,7 +141,8 @@
       </v-col>
       <v-col cols="12" md="4">
         <v-img
-          src="@/assets/hero01-min.jpg"
+          src="/hero01-min.jpg"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -162,7 +168,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero01-min-bw.png"
+          src="/hero01-min-bw.png"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -184,7 +191,8 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero02-min-bw.png"
+          src="/hero02-min-bw.png"
+          lazy-src="/hero02-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -211,7 +219,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero01-min-bw.png"
+          src="/hero01-min-bw.png"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -236,7 +245,8 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          src="@/assets/hero02-min-bw.png"
+          src="/hero02-min-bw.png"
+          lazy-src="/hero02-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="400"
@@ -264,7 +274,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
-          src="@/assets/hero01-min-bw.png"
+          src="/hero01-min-bw.png"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="500"
@@ -305,7 +316,8 @@
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
-          src="@/assets/hero01-min-bw.png"
+          src="/hero01-min-bw.png"
+          lazy-src="/hero01-thumb.jpg"
           aspect-ratio="1"
           class="grey lighten-2"
           max-height="500"
