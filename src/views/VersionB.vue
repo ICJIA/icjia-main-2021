@@ -38,7 +38,7 @@
 
 <script>
 import WidgetBar from "../components/WidgetBar.vue";
-
+import { EventBus } from "@/event-bus";
 export default {
   components: { WidgetBar },
   data() {
@@ -51,6 +51,10 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
+    EventBus.$emit(
+      "systemBar",
+      "Version B: News Column. Research column. Additional items in section menus."
+    );
   },
   methods: {
     changeTab(e) {

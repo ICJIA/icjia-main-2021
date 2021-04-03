@@ -5,7 +5,15 @@
 </template>
 
 <script>
-export default {};
+import { EventBus } from "@/event-bus";
+export default {
+  mounted() {
+    EventBus.$emit(
+      "systemBar",
+      "Splash samples: Various colors & button configurations"
+    );
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

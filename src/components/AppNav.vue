@@ -26,12 +26,12 @@
 
       <div
         class="ml-5 hidden-sm-and-down"
-        style="font-weight: 900"
+        style="font-weight: 900; font-size: 14px"
         data-aos="fade-left"
         data-aos-offset="100"
         data-aos-delay="0"
       >
-        Title of page or article or news item goes here
+        {{ title }}
       </div>
 
       <v-spacer></v-spacer>
@@ -364,6 +364,7 @@ export default {
   data() {
     return {
       drawer: false,
+      title: "Default Page Title",
       items: [
         {
           url: "/",
@@ -404,6 +405,9 @@ export default {
   mounted() {
     EventBus.$on("searchMounted", () => {
       console.log("search mounted");
+    });
+    EventBus.$on("systemBar", (title) => {
+      this.title = title;
     });
   },
 };
