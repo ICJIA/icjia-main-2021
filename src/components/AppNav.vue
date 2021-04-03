@@ -147,7 +147,7 @@
 
       <v-spacer></v-spacer>
 
-      <!-- <v-menu
+      <v-menu
         bottom
         offset-y
         origin="center center"
@@ -160,54 +160,56 @@
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
-            >Item 1<v-icon right small>arrow_drop_down</v-icon>
+            >Home Page versions<v-icon right small>arrow_drop_down</v-icon>
           </v-btn>
         </template>
         <v-list nav dense elevation="2">
-          <v-list-item class="appNav">
+          <v-list-item class="appNav" to="/">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 1</v-list-item-title
+                >Version A</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item class="appNav">
+          <v-list-item class="appNav" to="/version-b">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 2</v-list-item-title
+                >Version B</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
-
           <v-divider></v-divider>
-          <v-list-item class="appNav" target="_blank">
+
+          <v-list-item class="appNav" to="/version-c">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 3</v-list-item-title
+                >Version C</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
-          <v-list-item class="appNav" target="_blank">
+          <v-list-item class="appNav" to="/version-d">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 4</v-list-item-title
+                >Version D</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
         </v-list>
-      </v-menu> -->
+      </v-menu>
 
-      <v-btn text class="hidden-sm-and-down navItem" to="/"
-        >Home Version A</v-btn
-      >
+      <!-- <v-btn text class="hidden-sm-and-down navItem" to="/">Version A</v-btn>
 
       <v-btn text class="hidden-sm-and-down navItem" to="/version-b"
-        >Home Version B</v-btn
+        >Version B</v-btn
       >
 
+      <v-btn text class="hidden-sm-and-down navItem" to="/version-c"
+        >Version C</v-btn
+      > -->
+
       <v-btn text class="hidden-sm-and-down navItem" to="/heroes"
-        >Home Splash Versions</v-btn
+        >Home Splash Examples</v-btn
       >
 
       <!-- <v-menu

@@ -3,7 +3,7 @@
     <v-carousel-item v-for="(color, index) in colors" :key="index">
       <v-sheet :color="color" height="100%" tile>
         <v-row class="fill-height text-center" align="center" justify="center">
-          <div style="width: % !important">
+          <div style="">
             <v-container>
               <v-row>
                 <v-col cols="12" md="4">
