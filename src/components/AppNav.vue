@@ -198,10 +198,16 @@
         </v-list>
       </v-menu> -->
 
-      <v-btn text class="hidden-sm-and-down navItem" to="/">Version A</v-btn>
+      <v-btn text class="hidden-sm-and-down navItem" to="/"
+        >Home Version A</v-btn
+      >
 
       <v-btn text class="hidden-sm-and-down navItem" to="/version-b"
-        >Version B</v-btn
+        >Home Version B</v-btn
+      >
+
+      <v-btn text class="hidden-sm-and-down navItem" to="/heroes"
+        >Home Splash Versions</v-btn
       >
 
       <!-- <v-menu
