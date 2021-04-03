@@ -471,7 +471,7 @@
             >
               <div class="text-center px-5" style="min-width: 350px">
                 <h1 class="nofo-title mt-3" style="color: #fff">
-                  Title 1 here
+                  Title 2 here
                 </h1>
                 <div class="nofo-tagline">Short summary here</div>
                 <div class="mt-4">
@@ -511,7 +511,7 @@
             >
               <div class="text-center px-5" style="min-width: 350px">
                 <h1 class="nofo-title mt-3" style="color: #fff">
-                  Title 1 here
+                  Title 3 here
                 </h1>
                 <div class="nofo-tagline">Short summary here</div>
                 <div class="mt-4">
