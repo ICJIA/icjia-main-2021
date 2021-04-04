@@ -3,7 +3,11 @@
     <v-card
       class="mx-auto info-card"
       :class="{
-        'mr-1':
+        'mr-2':
+          $vuetify.breakpoint.md ||
+          $vuetify.breakpoint.lg ||
+          $vuetify.breakpoint.xl,
+        'ml-2':
           $vuetify.breakpoint.md ||
           $vuetify.breakpoint.lg ||
           $vuetify.breakpoint.xl,
