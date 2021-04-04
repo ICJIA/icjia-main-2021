@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #eee; padding-bottom: 75px" role="main">
+  <div style="background: #eee" role="main">
     <HomeSplash></HomeSplash>
 
     <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px"></div> -->
