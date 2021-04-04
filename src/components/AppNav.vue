@@ -184,14 +184,16 @@
           <v-list-item class="appNav" to="/version-c">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version C: One row of click-through boxes</v-list-item-title
+                >Version C: One row of click-through boxes near
+                top</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-d">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version D: Two rows of click-through boxes</v-list-item-title
+                >Version D: Two rows of click-through boxes at
+                bottom</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>

@@ -1,7 +1,7 @@
 <template>
   <div style="background: #eee; padding-bottom: 75px" role="main">
     <HomeSplash></HomeSplash>
-
+    <HomeBoxes style="margin-top: -10px" :secondRow="false"></HomeBoxes>
     <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px"></div> -->
     <v-row style="margin-top: -30px">
       <v-col cols="12" md="6">
@@ -22,7 +22,6 @@
       </v-col>
     </v-row>
 
-    <HomeBoxes style="margin-top: -10px" :secondRow="false"></HomeBoxes>
     <HomeEvents></HomeEvents>
   </div>
 </template>
