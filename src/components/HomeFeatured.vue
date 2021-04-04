@@ -15,7 +15,7 @@
     >
       <v-img
         src="https://via.placeholder.com/200?text=Splash Photo"
-        height="200px"
+        :height="splashHeight"
       ></v-img>
 
       <v-card-title> Program Title here </v-card-title>
@@ -23,7 +23,7 @@
       <v-card-subtitle> Teaser here </v-card-subtitle>
 
       <v-card-actions>
-        <v-btn small dark color="grey darken-1">More &raquo;</v-btn>
+        <v-btn small color="grey lighten-1">Read More &raquo;</v-btn>
         <v-spacer></v-spacer>
 
         <v-btn small text @click="show = !show">
@@ -54,6 +54,12 @@
 
 <script>
 export default {
+  props: {
+    splashHeight: {
+      type: String,
+      default: "200px",
+    },
+  },
   data() {
     return {
       show: false,
