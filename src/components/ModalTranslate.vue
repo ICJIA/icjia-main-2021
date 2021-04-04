@@ -75,8 +75,10 @@ export default {
   methods: {
     googleTranslate(lang) {
       console.log(lang);
+      const route = "https://dev.icjia.cloud" + this.$route.fullPath;
+
       const url =
-        "http://translate.google.com/translate?hl=en&sl=en&u=https://dev.icjia.cloud&tl=" +
+        `http://translate.google.com/translate?hl=en&sl=en&u=${route}&tl=` +
         lang;
       this.translate = false;
       window.open(url);

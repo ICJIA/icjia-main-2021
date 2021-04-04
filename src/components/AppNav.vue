@@ -167,7 +167,7 @@
           <v-list-item class="appNav" to="/">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version A</v-list-item-title
+                >Version A: Original with tabbed content</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -175,7 +175,7 @@
           <v-list-item class="appNav" to="/version-b">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version B</v-list-item-title
+                >Version B: Original without tabbed content</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -184,14 +184,29 @@
           <v-list-item class="appNav" to="/version-c">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version C</v-list-item-title
+                >Version C: One row of click-through boxes</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-d">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version D</v-list-item-title
+                >Version D: Two rows of click-through boxes</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-divider> </v-divider>
+          <v-list-item class="appNav" to="/version-e">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version E: Featured Programs v1</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/version-f">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version F: Featured Programs v2</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>

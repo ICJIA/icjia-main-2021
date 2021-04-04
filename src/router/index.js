@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import VersionB from "../views/VersionB.vue";
 import VersionC from "../views/VersionC.vue";
 import VersionD from "../views/VersionD.vue";
+import VersionE from "../views/VersionE.vue";
+import VersionF from "../views/VersionF.vue";
 import Heroes from "../views/Heroes.vue";
 
 Vue.use(VueRouter);
@@ -28,6 +30,16 @@ const routes = [
     path: "/version-d",
     name: "VersionD",
     component: VersionD,
+  },
+  {
+    path: "/version-e",
+    name: "VersionE",
+    component: VersionE,
+  },
+  {
+    path: "/version-f",
+    name: "VersionF",
+    component: VersionF,
   },
   {
     path: "/heroes",
