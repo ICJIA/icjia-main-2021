@@ -201,7 +201,8 @@
           <v-list-item class="appNav" to="/version-e">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version E: Featured Programs v1 (Four slots)</v-list-item-title
+                >Version E: Featured Programs v1 (Four
+                programs)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -209,7 +210,7 @@
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
                 >Version F: Featured Programs v2 (Three
-                slots)</v-list-item-title
+                programs)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -217,7 +218,7 @@
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
                 >Version G: 'Spotlight' instead of 'Featured' (Two
-                slots)</v-list-item-title
+                programs)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
