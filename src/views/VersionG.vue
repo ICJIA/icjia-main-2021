@@ -3,7 +3,7 @@
     <HomeSplash></HomeSplash>
 
     <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px"></div> -->
-    <WidgetBar title="Featured Programs" style="margin-top: 5px"></WidgetBar>
+    <WidgetBar title="Spotlight" style="margin-top: 5px"></WidgetBar>
 
     <v-row no-gutters style="margin-top: 20px">
       <v-col v-for="n in 2" :key="n" cols="12" md="6" class="mb-2">

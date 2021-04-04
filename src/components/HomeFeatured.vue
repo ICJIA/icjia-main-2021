@@ -18,7 +18,7 @@
         :height="splashHeight"
       ></v-img>
 
-      <v-card-title> Program Title here </v-card-title>
+      <v-card-title> Title here </v-card-title>
 
       <v-card-subtitle> Teaser here </v-card-subtitle>
 

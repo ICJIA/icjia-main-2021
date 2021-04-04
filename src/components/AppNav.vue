@@ -184,14 +184,16 @@
           <v-list-item class="appNav" to="/version-c">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version C: Click-through boxes near top</v-list-item-title
+                >Version C: Click-through boxes near top (Four
+                boxes)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-d">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version D: Click-through boxes near bottom</v-list-item-title
+                >Version D: Click-through boxes near bottom (Four
+                boxes)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -199,24 +201,23 @@
           <v-list-item class="appNav" to="/version-e">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version E: Featured Programs v1 (Four
-                programs)</v-list-item-title
+                >Version E: Featured Programs v1 (Four slots)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-f">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version F: Featured Programs v2 (Four
-                programs)</v-list-item-title
+                >Version F: Featured Programs v2 (Three
+                slots)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-g">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version G: Featured Programs v3 (Two
-                programs)</v-list-item-title
+                >Version G: 'Spotlight' instead of 'Featured' (Two
+                slots)</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
