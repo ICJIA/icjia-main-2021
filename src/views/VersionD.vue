@@ -23,7 +23,7 @@
     </v-row>
 
     <HomeEvents></HomeEvents>
-    <HomeBoxes style="margin-top: -10px" :secondRow="true"></HomeBoxes>
+    <HomeBoxes style="margin-top: -10px" :secondRow="false"></HomeBoxes>
   </div>
 </template>
 
