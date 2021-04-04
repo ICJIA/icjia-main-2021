@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="ml-5">Version A (Color with tint)</h2>
+    <h2 class="ml-5">Version A (Color with tint -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
@@ -54,7 +54,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version B (Color with tint)</h2>
+    <h2 class="ml-5">Version B (Color with tint -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
@@ -96,7 +96,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version C (Color with tint)</h2>
+    <h2 class="ml-5">Version C (Color with tint -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <v-img
@@ -176,7 +176,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version D (Monochrome with tint)</h2>
+    <h2 class="ml-5">Version D (Monochrome with tint -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
@@ -241,7 +241,7 @@
       </v-col>
     </v-row>
 
-    <h2 class="ml-5">Version E (Monochrome only)</h2>
+    <h2 class="ml-5">Version E (Monochrome only -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
@@ -310,7 +310,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version F (Monochrome only)</h2>
+    <h2 class="ml-5">Version F (Monochrome only -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
@@ -359,7 +359,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version G (Monochrome only)</h2>
+    <h2 class="ml-5">Version G (Monochrome only -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="12">
         <v-img
@@ -406,7 +406,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <h2 class="ml-5">Version H (Monochrome only)</h2>
+    <h2 class="ml-5">Version H (Monochrome only -- sample images)</h2>
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <v-img
