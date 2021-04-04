@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card
-      class="mx-auto info-card"
+      class="mx-auto info-card px-3 py-3"
       :class="{
         'mr-2':
           $vuetify.breakpoint.md ||
@@ -20,26 +20,33 @@
 
       <v-card-title> Program Title here </v-card-title>
 
-      <v-card-subtitle> Summary here </v-card-subtitle>
+      <v-card-subtitle> Teaser here </v-card-subtitle>
 
-      <!-- <v-card-actions class="text-right">
+      <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="grey darken-2" text> Read More &raquo;</v-btn>
-      </v-card-actions> -->
 
-      <!-- <v-expand-transition>
+        <v-btn small text @click="show = !show">
+          <v-icon small left>{{
+            show ? "mdi-chevron-up" : "mdi-chevron-down"
+          }}</v-icon>
+          Description
+        </v-btn>
+      </v-card-actions>
+
+      <v-expand-transition>
         <div v-show="show">
           <v-divider></v-divider>
 
           <v-card-text>
-            I'm a thing. But, like most politicians, he promised more than he
-            could deliver. You won't have time for sleeping, soldier, not with
-            all the bed making you'll be doing. Then we'll go with that data
-            file! Hey, you add a one and two zeros to that or we walk! You're
-            going to do his laundry? I've got to find a way to escape.
+            Lorem markdownum luctibus notavi belli anus femur tulerat et lucem,
+            miserabile. Caede praeacutae plagas pessima vivum ex et fortuna ne
+            amor: caliginis. Effugit telis sollicita contenta quibus loquor
+            capit copia carpens fortunam somnus. Stabat traderet coeunt ne
+            cunctis faveas quas nefas, in terret expetit inminet Cyllenius
+            ignara terra revocamina quem adplicat erat.
           </v-card-text>
         </div>
-      </v-expand-transition> -->
+      </v-expand-transition>
     </v-card>
   </div>
 </template>
