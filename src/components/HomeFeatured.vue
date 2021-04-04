@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card
-      class="mx-auto info-card px-3 py-3"
+      class="mx-auto info-card px-2 py-2"
       :class="{
         'mr-2':
           $vuetify.breakpoint.md ||
@@ -23,6 +23,7 @@
       <v-card-subtitle> Teaser here </v-card-subtitle>
 
       <v-card-actions>
+        <v-btn small dark color="grey darken-1">More &raquo;</v-btn>
         <v-spacer></v-spacer>
 
         <v-btn small text @click="show = !show">
