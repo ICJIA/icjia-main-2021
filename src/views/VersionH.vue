@@ -35,7 +35,7 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      "Version A: News Column with a second column for tabbed content"
+      "Version H: Tabbed Research -- Articles, Apps, Datasets -- vertical configuration"
     );
   },
   methods: {

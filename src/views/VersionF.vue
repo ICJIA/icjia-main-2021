@@ -49,10 +49,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit(
-      "systemBar",
-      "Version E: News Column. Research column. Additional items in section menus. Featured Programs."
-    );
+    EventBus.$emit("systemBar", "Version F: Featured Programs v2");
   },
   methods: {
     changeTab(e) {
