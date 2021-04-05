@@ -7,6 +7,7 @@ import VersionD from "../views/VersionD.vue";
 import VersionE from "../views/VersionE.vue";
 import VersionF from "../views/VersionF.vue";
 import VersionG from "../views/VersionG.vue";
+import VersionH from "../views/VersionH.vue";
 import Heroes from "../views/Heroes.vue";
 
 Vue.use(VueRouter);
@@ -46,6 +47,11 @@ const routes = [
     path: "/version-g",
     name: "VersionG",
     component: VersionG,
+  },
+  {
+    path: "/version-h",
+    name: "VersionH",
+    component: VersionH,
   },
   {
     path: "/heroes",
