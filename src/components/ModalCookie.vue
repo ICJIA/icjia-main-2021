@@ -7,7 +7,7 @@
         color="grey lighten-5"
       >
         This is the cookie policy popup. <br /><br />This site uses cookies.
-        <br /><br />Yadda Yadda Yadda.
+        This site uses local storage. <br /><br />Yadda Yadda Yadda.
         <v-card-actions>
           <!-- <v-checkbox
             class="mx-2"
@@ -16,7 +16,10 @@
           ></v-checkbox> -->
           <v-spacer></v-spacer>
 
-          <v-btn dark color="grey darken-1" @click="hideForGood">GOT IT</v-btn>
+          <v-btn dark color="grey darken-1" class="mt-6" @click="hideForGood"
+            >GOT IT</v-btn
+          >
+          <v-spacer></v-spacer>
         </v-card-actions>
       </v-card>
     </v-bottom-sheet>
