@@ -1,16 +1,44 @@
 <template>
-  <div>
-    <v-skeleton-loader
-      type="list-item-avatar-three-line, image, article"
-    ></v-skeleton-loader>
-    <v-skeleton-loader
-      type="list-item-avatar-three-line, image, article"
-    ></v-skeleton-loader>
+  <div style="max-height: 500px; scoll-y: auto">
+    <Timeline
+      id="ICJIA_Illinois"
+      sourceType="profile"
+      :options="{ tweetLimit: tweetLimit }"
+      error-message="<div class='text-center mb-4'>The ICJIA_Illinois timeline could not be loaded. Please refresh.</div>"
+      ><div class="text-center">
+        <v-progress-circular
+          indeterminate
+          aria-label="Progress bar: Loading"
+          color="primary"
+          size="50"
+          class="mb-4"
+        ></v-progress-circular></div
+    ></Timeline>
   </div>
 </template>
 
 <script>
-export default {};
+// eslint-disable-next-line no-unused-vars
+import { Tweet, Moment, Timeline } from "vue-tweet-embed";
+export default {
+  components: {
+    Timeline,
+  },
+  props: {
+    tweetLimit: {
+      type: Number,
+      default: 1,
+    },
+  },
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
+  created() {
+    console.log("created");
+  },
+  mounted() {},
+  beforeDestroy() {},
+};
 </script>
-
-<style lang="scss" scoped></style>
