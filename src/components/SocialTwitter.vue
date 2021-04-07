@@ -1,9 +1,9 @@
 <template>
-  <div style="height: 995px !important; overflow-y: auto">
+  <div style="">
     <Timeline
       id="ICJIA_Illinois"
       sourceType="profile"
-      :options="{ tweetLimit: 5, cards: 'hidden', dnt: true }"
+      :options="{ tweetLimit: 2, cards: 'hidden', dnt: true }"
       error-message="<div class='text-center mb-4'>The ICJIA_Illinois timeline could not be loaded. Please refresh.</div>"
       ><div class="text-center">
         <v-progress-circular
@@ -27,7 +27,7 @@ export default {
   props: {
     tweetLimit: {
       type: Number,
-      default: 5,
+      default: 3,
     },
   },
   data() {
