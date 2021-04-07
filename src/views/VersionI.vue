@@ -16,7 +16,7 @@
           ></WidgetBar>
         </div>
         <OutreachCard
-          v-for="n in 5"
+          v-for="n in 4"
           :key="`outreach-${n}`"
           style="margin-top: -30px"
         ></OutreachCard>

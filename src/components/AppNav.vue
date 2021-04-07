@@ -222,7 +222,7 @@
               >
             </v-list-item-content>
           </v-list-item>
-
+          <v-divider></v-divider>
           <v-list-item class="appNav" to="/version-h">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
