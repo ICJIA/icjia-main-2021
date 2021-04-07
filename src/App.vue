@@ -22,6 +22,7 @@
 
     <ModalTranslate></ModalTranslate>
     <ModalSearch></ModalSearch>
+    <ModalCookie :key="$route.path"></ModalCookie>
 
     <v-main>
       <transition name="fade" mode="out-in">
