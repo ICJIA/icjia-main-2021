@@ -52,10 +52,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit(
-      "systemBar",
-      "Version H: Tabbed Research -- Articles, Apps, Datasets -- vertical configuration"
-    );
+    EventBus.$emit("systemBar", "Version I: News with Twitter");
   },
   methods: {
     changeTab(e) {
