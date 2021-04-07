@@ -28,10 +28,12 @@
               >Twitter</v-toolbar-title
             >
             <v-spacer></v-spacer>
-            <v-btn>Refresh <v-icon right>mdi mdi-refresh</v-icon></v-btn>
+            <v-btn small @click="twitterKey++"
+              >Refresh <v-icon small right>mdi mdi-refresh</v-icon></v-btn
+            >
           </v-toolbar>
         </div>
-        <SocialTwitter></SocialTwitter>
+        <SocialTwitter :key="twitterKey"></SocialTwitter>
       </v-col>
     </v-row>
 
@@ -46,6 +48,7 @@ export default {
   data() {
     return {
       newsItems: ["Grants", "Employment", "Press Releases"],
+      twitterKey: 0,
     };
   },
   mounted() {
