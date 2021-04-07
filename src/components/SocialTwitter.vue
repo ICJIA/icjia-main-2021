@@ -1,9 +1,9 @@
 <template>
-  <div style="max-height: 500px; scoll-y: auto">
+  <div>
     <Timeline
       id="ICJIA_Illinois"
       sourceType="profile"
-      :options="{ tweetLimit: tweetLimit }"
+      :options="{ tweetLimit: 2, cards: 'hidden', dnt: true }"
       error-message="<div class='text-center mb-4'>The ICJIA_Illinois timeline could not be loaded. Please refresh.</div>"
       ><div class="text-center">
         <v-progress-circular
@@ -42,3 +42,10 @@ export default {
   beforeDestroy() {},
 };
 </script>
+
+<style>
+/* .twitter-timeline {
+  height: 550px !important;
+  overflow-y: auto !important;
+} */
+</style>

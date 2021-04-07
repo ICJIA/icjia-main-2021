@@ -16,7 +16,7 @@
           ></WidgetBar>
         </div>
         <OutreachCard
-          v-for="n in 4"
+          v-for="n in 5"
           :key="`outreach-${n}`"
           style="margin-top: -30px"
         ></OutreachCard>
@@ -33,7 +33,10 @@
             >
           </v-toolbar>
         </div>
-        <SocialTwitter :key="twitterKey"></SocialTwitter>
+        <SocialTwitter
+          :key="twitterKey"
+          style="margin-top: -25px"
+        ></SocialTwitter>
       </v-col>
     </v-row>
 
