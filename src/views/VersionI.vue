@@ -58,7 +58,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", "Version I: News with Twitter");
+    EventBus.$emit("systemBar", "Version I: News with Twitter opposite");
   },
   methods: {
     changeTab(e) {

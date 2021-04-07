@@ -97,7 +97,10 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", "Version J: News with social feeds at bottom");
+    EventBus.$emit(
+      "systemBar",
+      "Version J: News with Twitter and Facebook at bottom"
+    );
   },
   methods: {
     changeTab(e) {

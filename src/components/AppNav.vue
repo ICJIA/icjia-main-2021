@@ -234,14 +234,15 @@
           <v-list-item class="appNav" to="/version-i">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version I: News with Twitter</v-list-item-title
+                >Version I: News with Twitter opposite</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-j">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version J: Social Feeds at bottom of page</v-list-item-title
+                >Version J: News with Twitter and Facebook at
+                bottom</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
