@@ -8,6 +8,13 @@
       <v-col> <HomeResearchAlt></HomeResearchAlt></v-col>
     </v-row>
     <v-row style="margin-top: 10px">
+      <v-col cols="12">
+        <HomeBoxes
+          style="margin-top: -25px"
+          :secondRow="false"
+          :boxes="2"
+        ></HomeBoxes>
+      </v-col>
       <v-col cols="12" md="6">
         <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
           <WidgetBar
@@ -15,10 +22,11 @@
             :menuItems="newsItems"
           ></WidgetBar>
         </div> -->
+
         <OutreachCardAlt
           v-for="n in 5"
           :key="`outreach-${n}`"
-          style="margin-top: -30px"
+          style="margin-top: -10px"
         ></OutreachCardAlt>
       </v-col>
       <!-- <v-col cols="12" md="6"> -->
@@ -40,7 +48,7 @@
         ></SocialTwitter> -->
       <!-- </v-col> -->
       <v-col cols="12" md="6">
-        <HomeNews style="margin-top: -28px"></HomeNews>
+        <HomeNews style="margin-top: -10px"></HomeNews>
       </v-col>
     </v-row>
 
@@ -97,7 +105,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", "Version L: Kitchen Sink");
+    EventBus.$emit("systemBar", "Version M: Kitchen Sink v2");
   },
   methods: {
     changeTab(e) {

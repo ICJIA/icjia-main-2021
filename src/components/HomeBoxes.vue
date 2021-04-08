@@ -2,7 +2,7 @@
   <div>
     <v-container fluid>
       <v-row no-gutters>
-        <v-col cols="12" md="3" v-for="n in 4" :key="`row1-${n}`">
+        <v-col cols="12" :md="boxColumns" v-for="n in boxes" :key="`row1-${n}`">
           <v-card
             color="grey darken-3"
             style="height: 200px"
@@ -58,7 +58,16 @@
 <script>
 /* eslint-disable vue/no-use-v-if-with-v-for */
 export default {
+  computed: {
+    boxColumns() {
+      return 12 / this.boxes;
+    },
+  },
   props: {
+    boxes: {
+      type: Number,
+      default: 4,
+    },
     secondRow: {
       type: Boolean,
       default: false,

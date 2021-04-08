@@ -253,6 +253,30 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-list-item class="appNav" to="/version-L">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version L: Kitchen sink v1 (Three click-through
+                boxes)</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/version-m">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version M: Kitchen sink v2 (Two click-through
+                boxes)</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/version-n">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version N: Kitchen sink v3 (Four click-through
+                boxes)</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-menu>
 
