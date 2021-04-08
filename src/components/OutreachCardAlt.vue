@@ -72,8 +72,7 @@
               ><div>
                 <p>
                   Lorem markdownum et caelo capacius tractu ex Ledam quantaque
-                  fores. Nixique bisque intravit Teucri Aeneae regisque tergo
-                  matrona regit o.
+                  fores. Nixique.
                 </p>
               </div></v-card-text
             >
