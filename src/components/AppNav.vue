@@ -253,6 +253,7 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-divider> </v-divider>
           <v-list-item class="appNav" to="/version-L">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
@@ -272,8 +273,15 @@
           <v-list-item class="appNav" to="/version-n">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version N: Kitchen sink v3 (Four click-through
-                boxes)</v-list-item-title
+                >Version N: "We're gonna need a bigger kitchen sink" (Four
+                click-through boxes)</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/version-o">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version O: Maximum Overload</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>

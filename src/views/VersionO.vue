@@ -15,6 +15,26 @@
           :boxes="4"
         ></HomeBoxes>
       </v-col>
+      <v-col cols="12">
+        <div id="content" style="margin-top: 4px; padding-bottom: 0px">
+          <WidgetBar title="Featured Programs"></WidgetBar>
+        </div>
+      </v-col>
+      <v-col
+        v-for="n in 4"
+        :key="n"
+        cols="12"
+        md="3"
+        class="mb-2"
+        style="margin-top: -10px"
+      >
+        <HomeFeatured style="width: 100%"></HomeFeatured>
+      </v-col>
+      <v-col cols="12">
+        <div id="content" style="margin-top: 4px; padding-bottom: 0px">
+          <WidgetBar title="News and Information"></WidgetBar>
+        </div>
+      </v-col>
       <v-col cols="12" md="6">
         <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
           <WidgetBar
@@ -105,10 +125,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit(
-      "systemBar",
-      `Version N: "We're gonna need a bigger kitchen sink`
-    );
+    EventBus.$emit("systemBar", "Version O: 'Maximum Overload'");
   },
   methods: {
     changeTab(e) {
