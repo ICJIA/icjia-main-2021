@@ -13,10 +13,11 @@
                 border-bottom: 1px solid #aaa;
                 padding-bottom: 5px;
                 margin-bottom: 10px;
+                font-size: 18px;
                 text-transform: uppercase;
               "
             >
-              Card Title here
+              Click through title here
             </h2>
             <p style="color: #fff" class="mt-5">
               Lorem markdownum ardent ubi te incessit cum recanduit potentior
