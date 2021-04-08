@@ -7,22 +7,23 @@
     <v-row style="margin-top: -40px">
       <v-col> <HomeResearchAlt></HomeResearchAlt></v-col>
     </v-row>
-    <v-row style="margin-top: -20px">
+    <v-row style="margin-top: 10px">
       <v-col cols="12" md="6">
-        <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+        <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
           <WidgetBar
             title="News & Information"
             :menuItems="newsItems"
           ></WidgetBar>
-        </div>
+        </div> -->
         <OutreachCardAlt
-          v-for="n in 8"
+          v-for="n in 5"
           :key="`outreach-${n}`"
           style="margin-top: -30px"
         ></OutreachCardAlt>
       </v-col>
-      <v-col cols="12" md="6">
-        <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+      <!-- <v-col cols="12" md="6"> -->
+
+      <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
           <v-toolbar flat color="grey darken-3" dark class="mb-2">
             <v-toolbar-title style="font-weight: 900; font-size: 28px"
               >Twitter</v-toolbar-title
@@ -36,12 +37,49 @@
         <SocialTwitter
           :key="twitterKey"
           style="margin-top: -25px"
-        ></SocialTwitter>
+        ></SocialTwitter> -->
+      <!-- </v-col> -->
+      <v-col cols="12" md="6">
+        <HomeNews style="margin-top: -28px"></HomeNews>
       </v-col>
     </v-row>
 
     <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0"></div>
     <HomeEvents></HomeEvents>
+    <v-row>
+      <v-col cols="12" md="6">
+        <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+          <v-toolbar flat color="grey darken-3" dark class="mb-2">
+            <v-toolbar-title style="font-weight: 900; font-size: 28px"
+              >Twitter</v-toolbar-title
+            >
+            <v-spacer></v-spacer>
+            <v-btn small @click="twitterKey++"
+              >Refresh <v-icon small right>mdi mdi-refresh</v-icon></v-btn
+            >
+          </v-toolbar>
+        </div>
+
+        <SocialTwitter
+          :key="twitterKey"
+          style="margin-top: -25px"
+        ></SocialTwitter>
+      </v-col>
+      <v-col cols="12" md="6" class="text-center">
+        <div id="content" style="margin-top: 4px; padding-bottom: 30px">
+          <v-toolbar flat color="grey darken-3" dark class="mb-2">
+            <v-toolbar-title style="font-weight: 900; font-size: 28px"
+              >Facebook</v-toolbar-title
+            >
+            <v-spacer></v-spacer>
+            <v-btn small @click="facebookKey++"
+              >Refresh <v-icon small right>mdi mdi-refresh</v-icon></v-btn
+            >
+          </v-toolbar>
+        </div>
+        <SocialFacebook :key="facebookKey"></SocialFacebook>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -52,6 +90,7 @@ export default {
     return {
       newsItems: ["Grants", "Employment", "Press Releases"],
       twitterKey: 0,
+      facebookKey: 0,
     };
   },
   mounted() {
