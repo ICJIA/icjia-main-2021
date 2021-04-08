@@ -1,8 +1,8 @@
 <template>
   <div mt-3>
     <v-card
-      class="grid-item markdown-body hover news-card mt-2 mb-8 px-3 mr-1 ml-1"
-      height="280px"
+      class="grid-item markdown-body hover news-card mt-2 mb-9 px-3 mr-1 ml-1"
+      height="175px"
       elevation="0"
       color="#fff"
       v-if="
@@ -18,7 +18,7 @@
             <v-img
               aria-label="News post image"
               src="https://ipsumimage.appspot.com/250x250?l=News|splash photo here"
-              height="230px"
+              height="135px"
               class=""
               style="border: 0px solid #fafafa"
               alt="ICJIA Intranet image"
@@ -73,10 +73,7 @@
                 <p>
                   Lorem markdownum et caelo capacius tractu ex Ledam quantaque
                   fores. Nixique bisque intravit Teucri Aeneae regisque tergo
-                  matrona regit o. Causa non. Sed potest credunt periit seu est
-                  minuuntur taurorum dicens avidaeque iram. Per illum et amor
-                  sit reduxit adit, sui ima villosis tractataque tamen forma
-                  Clymeneia si modo non caelum.
+                  matrona regit o.
                 </p>
               </div></v-card-text
             >
