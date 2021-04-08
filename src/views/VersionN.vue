@@ -107,7 +107,7 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      `Version N: "We're gonna need a bigger kitchen sink`
+      `Version N: "We're gonna need a bigger kitchen sink."`
     );
   },
   methods: {
