@@ -105,7 +105,10 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", `Version N: "We're gonna need a bigger boat."`);
+    EventBus.$emit(
+      "systemBar",
+      `Version N: "We're gonna need a bigger kitchen sink."`
+    );
   },
   methods: {
     changeTab(e) {

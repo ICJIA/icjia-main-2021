@@ -273,14 +273,15 @@
           <v-list-item class="appNav" to="/version-n">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version N: "We're gonna need a bigger boat"</v-list-item-title
+                >Version N: "We're gonna need a bigger kitchen
+                sink."</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item class="appNav" to="/version-o">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version O: 'Turn it up to 11'</v-list-item-title
+                >Version O: 'Maximum Overload'</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
