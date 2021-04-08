@@ -125,7 +125,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", "Version O: 'Maximum Overload'");
+    EventBus.$emit("systemBar", "Version O: Maximum Overload");
   },
   methods: {
     changeTab(e) {
