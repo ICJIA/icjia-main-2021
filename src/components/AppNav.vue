@@ -44,6 +44,22 @@
             v-bind="attrs"
             v-on="on"
           >
+            <span class="v-icon left mdi mdi-account-box mr-2"></span>
+            <span class="hidden-sm-and-down">Contact</span>
+          </v-btn>
+        </template>
+        <span>Contact Us</span>
+      </v-tooltip>
+      |
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            small
+            text
+            style="font-size: 10px; font-weight: 900"
+            v-bind="attrs"
+            v-on="on"
+          >
             <span class="v-icon left fab fa-twitter-square mr-2"></span>
             <span class="hidden-sm-and-down">Tweet</span>
           </v-btn>
