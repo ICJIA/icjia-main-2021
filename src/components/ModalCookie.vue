@@ -1,22 +1,32 @@
 <template>
-  <div v-if="showCookieModal">
+  <div v-if="showCookiePolicy">
     <v-bottom-sheet v-model="cookie" persistent hide-overlay width="100%">
       <v-card
-        class="px-3 pt-5 pb-3 text-center"
+        class="px-12 pt-5 pb-10 text-left"
         style="font-weight: 900"
-        color="grey lighten-5"
+        color="blue-grey darken-3"
       >
-        This is the cookie policy popup. <br /><br />This site uses cookies.
-        This site uses local storage. <br /><br />Yadda Yadda Yadda.
+        <h2 style="color: #fff">We Use Cookies and Related Technology</h2>
+        <p style="font-size: 16px; color: #fff; font-weight: 300" class="mt-4">
+          The Illinois Criminal Justice Information Authority uses cookies and
+          related technology to personalize content and perform site analytics.
+          For more information, see our
+          <a href="#" style="color: #fff">privacy policy</a>.
+        </p>
         <v-card-actions>
           <!-- <v-checkbox
             class="mx-2"
             label="Do Not Show Again"
             @click="hideForGood"
           ></v-checkbox> -->
-          <v-spacer></v-spacer>
 
-          <v-btn dark color="grey darken-1" class="mt-6" @click="hideForGood"
+          <v-btn
+            dark
+            large
+            color="grey darken-1"
+            class="mt-6"
+            style="margin-left: -20px"
+            @click="hideForGood"
             >GOT IT</v-btn
           >
           <v-spacer></v-spacer>
@@ -35,14 +45,14 @@ export default {
   },
   methods: {
     hideForGood() {
-      localStorage.setItem("showCookieModal", false);
+      localStorage.setItem("showCookiePolicy", false);
       this.cookie = false;
     },
   },
   computed: {
-    showCookieModal() {
-      //console.log("local storage: ", localStorage.getItem("showCookieModal"));
-      if (localStorage.getItem("showCookieModal")) {
+    showCookiePolicy() {
+      //console.log("local storage: ", localStorage.getItem("showCookiePolicy"));
+      if (localStorage.getItem("showCookiePolicy")) {
         return false;
       } else {
         return true;

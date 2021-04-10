@@ -51,7 +51,7 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      "Version F: Featured Programs v2 (Research in horizontal tabs"
+      "Version F: Featured Programs v2 (Research in horizontal tabs)"
     );
   },
   methods: {
