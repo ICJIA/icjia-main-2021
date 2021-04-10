@@ -63,7 +63,7 @@ import { EventBus } from "@/event-bus";
 export default {
   data() {
     return {
-      newsItems: ["Grants", "Employment", "Press Releases"],
+      newsItems: ["Funding", "Employment", "Press"],
     };
   },
   mounted() {
