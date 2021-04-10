@@ -176,7 +176,7 @@
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
-            >Home Page versions<v-icon right small>arrow_drop_down</v-icon>
+            >Home 1<v-icon right small>arrow_drop_down</v-icon>
           </v-btn>
         </template>
         <v-list nav dense elevation="2">
@@ -246,7 +246,26 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-divider></v-divider>
+        </v-list>
+      </v-menu>
+
+      <v-menu
+        bottom
+        offset-y
+        origin="center center"
+        transition="scale-transition"
+        open-on-hover
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            class="hidden-sm-and-down navItem"
+            v-bind="attrs"
+            v-on="on"
+            >Home 2<v-icon right small>arrow_drop_down</v-icon>
+          </v-btn>
+        </template>
+        <v-list nav dense elevation="2">
           <v-list-item class="appNav" to="/version-i">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
@@ -309,6 +328,14 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-list-item class="appNav" to="/version-q">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version Q: Press, employment, grants -- removed. Events
+                includes funding.</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-menu>
 
@@ -323,7 +350,7 @@
       > -->
 
       <v-btn text class="hidden-sm-and-down navItem" to="/heroes"
-        >Home Splash Examples</v-btn
+        >Home Splash 1</v-btn
       >
 
       <!-- <v-menu
