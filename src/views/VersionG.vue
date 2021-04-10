@@ -21,12 +21,12 @@
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
       <v-col cols="12" md="6">
-        <WidgetBar
+        <!-- <WidgetBar
           title="Latest Research"
           :menuItems="researchItems"
           style="margin-top: 20px"
-        ></WidgetBar>
-        <ResearchCard v-for="n in 3" :key="`outreach-${n}`"></ResearchCard>
+        ></WidgetBar> -->
+        <HomeResearchAlt2 style="margin-top: 20px"></HomeResearchAlt2>
       </v-col>
     </v-row>
 
@@ -49,7 +49,10 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", "Version G: 'Spotlight' instead of 'Featured'");
+    EventBus.$emit(
+      "systemBar",
+      "Version G: 'Spotlight' instead of 'Featured' (Research in horizontal tabs)"
+    );
   },
   methods: {
     changeTab(e) {

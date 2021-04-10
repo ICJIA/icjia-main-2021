@@ -69,7 +69,7 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      "Version P: The Winner! (Press removed, employment removed, one column twitter)"
+      "Version P: Press removed, employment removed, one column twitter"
     );
   },
   methods: {

@@ -21,12 +21,12 @@
         <OutreachCard v-for="n in 3" :key="`outreach-${n}`"></OutreachCard>
       </v-col>
       <v-col cols="12" md="6">
-        <WidgetBar
+        <!-- <WidgetBar
           title="Latest Research"
           :menuItems="researchItems"
           style="margin-top: 20px"
-        ></WidgetBar>
-        <ResearchCard v-for="n in 3" :key="`outreach-${n}`"></ResearchCard>
+        ></WidgetBar> -->
+        <HomeResearchAlt2 style="margin-top: 20px"></HomeResearchAlt2>
       </v-col>
     </v-row>
 
@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       researchItems: ["Articles", "Datasets", "Apps", "ICJIA Research Hub"],
-      newsItems: ["Grants", "Employment", "Press Releases"],
+      newsItems: ["Grants", "Employment", "Press"],
     };
   },
   mounted() {
@@ -51,7 +51,7 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      "Version E: News Column. Research column. Additional items in section menus. Featured Programs."
+      "Version E: News Column. Featured Programs. Research in horizontal tabs."
     );
   },
   methods: {
