@@ -3,6 +3,7 @@
     <v-app-bar
       fixed
       app
+      inverted-scroll
       height="35"
       color="grey lighten-2"
       role="navigation"
