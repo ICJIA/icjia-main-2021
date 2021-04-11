@@ -1,6 +1,7 @@
 <template>
-  <div style="margin-top: 150px">
-    <v-app-bar color="white" height="90" hide-on-scroll>
+  <div>
+    <h2 class="mt-6 ml-2">Megamenu sample A</h2>
+    <v-app-bar color="grey lighten-2" height="90" hide-on-scroll class="mt-2">
       <div
         class="hover hamburger text-center"
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
@@ -13,7 +14,7 @@
       <v-spacer
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
       ></v-spacer>
-      <!-- <v-img
+      <v-img
         alt="ICJIA Logo"
         class="shrink mr-2 hover"
         contain
@@ -38,7 +39,7 @@
         class="hover hidden-sm-and-down"
       >
         ILLINOIS CRIMINAL JUSTICE INFORMATION AUTHORITY
-      </div> -->
+      </div>
 
       <v-spacer></v-spacer>
 

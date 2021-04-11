@@ -173,6 +173,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
+            small
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
@@ -259,6 +260,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
+            small
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
@@ -349,8 +351,12 @@
         >Version C</v-btn
       > -->
 
-      <v-btn text class="hidden-sm-and-down navItem" to="/heroes"
-        >Home Splash 1</v-btn
+      <v-btn small text class="hidden-sm-and-down navItem" to="/heroes"
+        >Home Splash</v-btn
+      >
+
+      <v-btn small text class="hidden-sm-and-down navItem" to="/nav"
+        >Main Nav</v-btn
       >
 
       <!-- <v-menu
