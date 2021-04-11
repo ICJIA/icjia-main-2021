@@ -407,7 +407,7 @@
         </v-card>
       </v-menu>
 
-      <v-btn text class="hidden-sm-and-down navItem">Item Splash 1</v-btn>
+      <v-btn text class="hidden-sm-and-down navItem">Item 3</v-btn>
 
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
@@ -419,7 +419,9 @@
       </v-tooltip>
     </v-app-bar>
 
-    <h2 class="mt-6 ml-2">Megamenu B (Two wide dropdowns / one normal)</h2>
+    <h2 class="mt-6 ml-2">
+      Megamenu B (Three column dropdown / Normal / Four column dropdown)
+    </h2>
     <v-app-bar color="grey lighten-2" height="90" hide-on-scroll class="mt-2">
       <div
         class="hover hamburger text-center"
@@ -701,7 +703,7 @@
         open-on-hover
         min-width="500px"
         nudge-bottom="3px"
-        nudge-left="393px"
+        nudge-left="551px"
         rounded="false"
         transition="slide-x-transition"
       >
@@ -830,6 +832,57 @@
                   "
                 >
                   Col 3 Header
+                </div>
+                <v-list nav dense elevation="0">
+                  <v-list-item class="appNav" to="/">
+                    <v-list-item-content class="hover">
+                      <v-list-item-title style="font-size: 12px !important"
+                        >Item 1</v-list-item-title
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+
+                  <v-list-item class="appNav" to="/version-b">
+                    <v-list-item-content class="hover">
+                      <v-list-item-title style="font-size: 12px !important"
+                        >Item 2</v-list-item-title
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+
+                  <v-list-item-title
+                    class="mt-2"
+                    style="font-weight: 900; color: #555"
+                  >
+                    Sub Header 1
+                  </v-list-item-title>
+                  <v-list-item class="appNav" to="/">
+                    <v-list-item-content class="hover">
+                      <v-list-item-title style="font-size: 12px !important"
+                        >Item 1</v-list-item-title
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+
+                  <v-list-item class="appNav" to="/version-b">
+                    <v-list-item-content class="hover">
+                      <v-list-item-title style="font-size: 12px !important"
+                        >Item 2</v-list-item-title
+                      >
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list></v-col
+              >
+              <v-col
+                ><div
+                  style="
+                    font-size: 24px;
+                    font-weight: 900;
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 5px;
+                  "
+                >
+                  Col 4 Header
                 </div>
                 <v-list nav dense elevation="0">
                   <v-list-item class="appNav" to="/">
