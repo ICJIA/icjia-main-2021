@@ -173,7 +173,6 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
-            small
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
@@ -260,7 +259,6 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
-            small
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
@@ -351,15 +349,15 @@
         >Version C</v-btn
       > -->
 
-      <v-btn small text class="hidden-sm-and-down navItem" to="/heroes"
+      <!-- <v-btn small text class="hidden-sm-and-down navItem" to="/heroes"
         >Home Splash</v-btn
       >
 
       <v-btn small text class="hidden-sm-and-down navItem" to="/nav"
         >Main Nav</v-btn
-      >
+      > -->
 
-      <!-- <v-menu
+      <v-menu
         bottom
         offset-y
         origin="center center"
@@ -372,36 +370,27 @@
             class="hidden-sm-and-down navItem"
             v-bind="attrs"
             v-on="on"
-            >Item 5<v-icon right small>arrow_drop_down</v-icon>
+            >UI Elements<v-icon right small>arrow_drop_down</v-icon>
           </v-btn>
         </template>
         <v-list nav dense elevation="2">
-          <v-list-item class="appNav">
+          <v-list-item class="appNav" to="/heroes">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 1</v-list-item-title
+                >Home Splash Versions</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item class="appNav">
+          <v-list-item class="appNav" to="/nav">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 2</v-list-item-title
-              >
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-divider></v-divider>
-          <v-list-item class="appNav" target="_blank">
-            <v-list-item-content class="hover">
-              <v-list-item-title style="font-size: 12px !important"
-                >Sub Item 3</v-list-item-title
+                >Navbar versions</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
         </v-list>
-      </v-menu> -->
+      </v-menu>
 
       <!-- <v-btn icon>
         <span class="v-icon mdi mdi-dots-vertical"></span>
