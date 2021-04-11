@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="ml-5">Version A (Color with tint -- sample images)</h2>
+    <h2 class="ml-5">
+      Version A (Color with tint -- sample images -- same as R3 splash)
+    </h2>
     <v-row no-gutters>
       <v-col cols="12" md="6">
         <v-img
