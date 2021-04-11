@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="mt-6 ml-2">Megamenu A (Wide menu / three columns)</h2>
+    <h2 class="mt-6 ml-2">Megamenu A (Two wide dropdowns)</h2>
     <v-app-bar color="grey lighten-2" height="90" hide-on-scroll class="mt-2">
       <div
         class="hover hamburger text-center"
@@ -407,9 +407,7 @@
         </v-card>
       </v-menu>
 
-      <v-btn text class="hidden-sm-and-down navItem" to="/heroes"
-        >Item Splash 1</v-btn
-      >
+      <v-btn text class="hidden-sm-and-down navItem">Item Splash 1</v-btn>
 
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
@@ -421,7 +419,7 @@
       </v-tooltip>
     </v-app-bar>
 
-    <h2 class="mt-6 ml-2">Megamenu B (Two wide menus / one normal)</h2>
+    <h2 class="mt-6 ml-2">Megamenu B (Two wide dropdowns / one normal)</h2>
     <v-app-bar color="grey lighten-2" height="90" hide-on-scroll class="mt-2">
       <div
         class="hover hamburger text-center"
@@ -877,6 +875,14 @@
           >
         </v-card>
       </v-menu>
+      <v-tooltip left>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on" @click="openSearchModal()">
+            <span class="v-icon mdi mdi-magnify"></span>
+          </v-btn>
+        </template>
+        <span>Search</span>
+      </v-tooltip>
     </v-app-bar>
     <div style="height: 500px"></div>
   </div>
