@@ -419,7 +419,7 @@
       </v-tooltip>
     </v-app-bar>
 
-    <h2 class="mt-6 ml-2">
+    <h2 class="mt-10 ml-2">
       Megamenu B (Three column dropdown / Normal / Four column dropdown)
     </h2>
     <v-app-bar color="grey lighten-2" height="90" hide-on-scroll class="mt-2">
