@@ -169,7 +169,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        open-on-hover
+        er
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -255,7 +255,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        open-on-hover
+        er
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -363,7 +363,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        open-on-hover
+        er
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -400,7 +400,7 @@
       <!-- <v-menu
         offset-y
         bottom
-        open-on-hover
+        er
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
       >
         <template v-slot:activator="{ on, attrs }">

@@ -47,7 +47,6 @@
         bottom
         offset-y
         content-class="my-menu"
-        open-on-hover
         min-width="500px"
         nudge-left="393px"
         rounded="false"
@@ -228,7 +227,6 @@
         bottom
         offset-y
         content-class="my-menu"
-        open-on-hover
         min-width="500px"
         nudge-bottom="3px"
         nudge-left="393px"
@@ -468,7 +466,6 @@
         bottom
         offset-y
         content-class="my-menu"
-        open-on-hover
         min-width="500px"
         nudge-bottom="3px"
         nudge-left="393px"
@@ -651,7 +648,6 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        open-on-hover
         content-class="my-menu"
       >
         <template v-slot:activator="{ on, attrs }">
@@ -701,7 +697,6 @@
         bottom
         offset-y
         content-class="my-menu"
-        open-on-hover
         min-width="500px"
         nudge-bottom="3px"
         nudge-left="551px"
