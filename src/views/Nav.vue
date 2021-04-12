@@ -652,6 +652,7 @@
         origin="center center"
         transition="scale-transition"
         open-on-hover
+        content-class="my-menu"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -947,7 +948,7 @@ export default {};
 
 <style scoped>
 .my-menu {
-  margin-top: 14px;
+  margin-top: 12px;
   contain: initial;
   overflow: visible;
 }
@@ -955,12 +956,12 @@ export default {};
   position: absolute;
   content: "";
   top: 0;
-  right: 30px;
+  right: 20px;
   transform: translateY(-100%);
-  width: 10px;
-  height: 13px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 13px solid #fff;
+  width: 8px;
+  height: 11px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 11px solid #fff;
 }
 </style>
