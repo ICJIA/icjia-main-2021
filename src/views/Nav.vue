@@ -951,7 +951,7 @@ export default {};
   position: absolute;
   content: "";
   top: 0;
-  right: 20px;
+  right: 9px;
   transform: translateY(-100%);
   width: 8px;
   height: 11px;
