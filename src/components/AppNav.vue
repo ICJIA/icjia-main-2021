@@ -60,8 +60,9 @@
             style="font-size: 10px; font-weight: 900"
             v-bind="attrs"
             v-on="on"
+            class="twitter"
           >
-            <span class="v-icon left fab fa-twitter-square mr-2"></span>
+            <span class="v-icon left fab fa-twitter-square mr-2 twitter"></span>
             <span class="hidden-sm-and-down">Tweet</span>
           </v-btn>
         </template>
@@ -77,7 +78,9 @@
             v-bind="attrs"
             v-on="on"
           >
-            <span class="v-icon left fab fa-facebook-square mr-2"></span>
+            <span
+              class="v-icon left fab fa-facebook-square mr-2 facebook"
+            ></span>
             <span class="hidden-sm-and-down">Share</span>
           </v-btn>
         </template>
@@ -94,7 +97,7 @@
             @click="openTranslationModal()"
             style="font-size: 10px; font-weight: 900"
           >
-            <span class="v-icon fas fa-globe mr-2"></span>
+            <span class="v-icon fas fa-globe mr-2 translation"></span>
             <span class="hidden-sm-and-down">Translate</span>
           </v-btn>
         </template>
@@ -550,7 +553,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
 .navItem {
   color: #000 !important;
   font-weight: 900;
@@ -581,5 +584,17 @@ export default {
   top: 100px;
   z-index: 500000;
   background: #000;
+}
+
+.v-icon.twitter {
+  color: #1da1f2 !important;
+}
+
+.v-icon.facebook {
+  color: #3b5998 !important;
+}
+
+.v-icon.translation {
+  color: #174629 !important;
 }
 </style>
