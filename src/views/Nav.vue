@@ -49,7 +49,6 @@
         content-class="my-menu"
         open-on-hover
         min-width="500px"
-        nudge-bottom="3px"
         nudge-left="393px"
         rounded="false"
         transition="slide-x-transition"
@@ -946,4 +945,22 @@
 export default {};
 </script>
 
-<style lang="sass"></style>
+<style scoped>
+.my-menu {
+  margin-top: 14px;
+  contain: initial;
+  overflow: visible;
+}
+.my-menu::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 30px;
+  transform: translateY(-100%);
+  width: 10px;
+  height: 13px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 13px solid #fff;
+}
+</style>
