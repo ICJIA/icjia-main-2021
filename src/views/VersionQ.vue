@@ -49,10 +49,10 @@
     <v-row>
       <v-col cols="12" md="2"> </v-col>
       <v-col cols="12" md="8">
-        <SocialTwitter
+        <SocialTwitterAlt
           :key="twitterKey"
           style="margin-top: -25px"
-        ></SocialTwitter
+        ></SocialTwitterAlt
       ></v-col>
     </v-row>
   </div>
@@ -64,6 +64,7 @@ export default {
   data() {
     return {
       newsItems: ["Funding", "Employment", "Press"],
+      twitterKey: 0,
     };
   },
   mounted() {

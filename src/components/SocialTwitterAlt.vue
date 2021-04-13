@@ -43,10 +43,6 @@ export default {
       type: Number,
       default: 3,
     },
-    seed: {
-      type: Number,
-      default: 5,
-    },
   },
   data() {
     return {
@@ -58,7 +54,7 @@ export default {
     console.log("created");
   },
   mounted() {
-    let rnd = Math.floor(Math.random() * this.seed) + 1;
+    let rnd = Math.floor(Math.random() * 3) + 1;
     this.okToLoad = rnd < 3 ? false : true;
   },
   beforeDestroy() {},

@@ -594,7 +594,7 @@ export default {
   color: #3b5998 !important;
 }
 
-.v-icon.translation {
+/* .v-icon.translation {
   color: #174629 !important;
-}
+} */
 </style>

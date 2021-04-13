@@ -61,6 +61,7 @@ export default {
   data() {
     return {
       researchItems: ["Articles", "Datasets", "Apps", "ICJIA Research Hub"],
+      twitterKey: 0,
     };
   },
   mounted() {

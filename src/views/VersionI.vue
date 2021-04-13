@@ -33,10 +33,11 @@
             >
           </v-toolbar>
         </div>
-        <SocialTwitter
+        <SocialTwitterAlt
           :key="twitterKey"
           style="margin-top: -25px"
-        ></SocialTwitter>
+          :seed="3"
+        ></SocialTwitterAlt>
       </v-col>
     </v-row>
 
