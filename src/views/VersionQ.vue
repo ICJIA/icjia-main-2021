@@ -15,16 +15,13 @@
         </div>
 
         <OutreachCardAlt
-          v-for="n in 4"
+          v-for="n in 5"
           :key="`outreach-${n}`"
+          style="margin-top: -28px"
         ></OutreachCardAlt>
       </v-col>
       <v-col cols="12" md="6">
-        <!-- <WidgetBar
-          title="Latest Research"
-          :menuItems="researchItems"
-          style="margin-top: 20px"
-        ></WidgetBar> -->
+        <WidgetBar title="Latest Research" style="margin-top: 20px"></WidgetBar>
         <HomeResearchAlt2 style="margin-top: 20px"></HomeResearchAlt2>
       </v-col>
     </v-row>
