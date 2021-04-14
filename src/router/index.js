@@ -17,6 +17,7 @@ import VersionN from "../views/VersionN.vue";
 import VersionO from "../views/VersionO.vue";
 import VersionP from "../views/VersionP.vue";
 import VersionQ from "../views/VersionQ.vue";
+import VersionR from "../views/VersionR.vue";
 import Nav from "../views/Nav.vue";
 import Heroes from "../views/Heroes.vue";
 
@@ -107,6 +108,11 @@ const routes = [
     path: "/version-q",
     name: "VersionQ",
     component: VersionQ,
+  },
+  {
+    path: "/version-r",
+    name: "VersionR",
+    component: VersionR,
   },
   {
     path: "/nav",

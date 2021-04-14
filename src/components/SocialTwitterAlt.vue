@@ -41,7 +41,7 @@ export default {
   props: {
     tweetLimit: {
       type: Number,
-      default: 3,
+      default: 55,
     },
   },
   data() {

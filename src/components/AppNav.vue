@@ -340,26 +340,44 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-list-item class="appNav" to="/version-r">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version R: Click-through boxes included, press removed,
+                research on botton, both social feeds</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-menu>
 
-      <!-- <v-btn text class="hidden-sm-and-down navItem" to="/">Version A</v-btn>
-
-      <v-btn text class="hidden-sm-and-down navItem" to="/version-b"
-        >Version B</v-btn
+      <!-- <v-menu
+        bottom
+        offset-y
+        origin="center center"
+        transition="scale-transition"
+        er
       >
-
-      <v-btn text class="hidden-sm-and-down navItem" to="/version-c"
-        >Version C</v-btn
-      > -->
-
-      <!-- <v-btn small text class="hidden-sm-and-down navItem" to="/heroes"
-        >Home Splash</v-btn
-      >
-
-      <v-btn small text class="hidden-sm-and-down navItem" to="/nav"
-        >Main Nav</v-btn
-      > -->
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            class="hidden-sm-and-down navItem"
+            v-bind="attrs"
+            v-on="on"
+            >Home 3<v-icon right small>arrow_drop_down</v-icon>
+          </v-btn>
+        </template>
+        <v-list nav dense elevation="2">
+          <v-list-item class="appNav" to="/version-r">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version R: Click-through boxes, press
+                removed.</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-menu> -->
 
       <v-menu
         bottom
@@ -395,35 +413,6 @@
           </v-list-item>
         </v-list>
       </v-menu>
-
-      <!-- <v-btn icon>
-        <span class="v-icon mdi mdi-dots-vertical"></span>
-      </v-btn> -->
-
-      <!-- <v-menu
-        offset-y
-        bottom
-        er
-        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item>
-            <v-list-item-title>Item 1</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Item 2</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title>Item 3</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu> -->
 
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">

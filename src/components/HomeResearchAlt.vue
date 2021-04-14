@@ -15,8 +15,9 @@
       "
       ><div style="height: 15px"></div>
       <v-tab>Articles</v-tab>
-      <v-tab>Applications </v-tab>
+
       <v-tab>Datasets</v-tab>
+      <v-tab>Web Apps </v-tab>
 
       <v-tab-item>
         <v-container fluid style="background: #fff">

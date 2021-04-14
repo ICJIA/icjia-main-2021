@@ -1,8 +1,9 @@
 <template>
-  <v-toolbar flat color="grey darken-3" dark class="mb-2">
-    <v-toolbar-title style="font-weight: 900; font-size: 28px">{{
-      title
-    }}</v-toolbar-title>
+  <v-toolbar flat color="grey darken-3" dark class="mb-2 pr-2 pl-2">
+    <v-toolbar-title
+      style="font-weight: 900; font-size: 28px; margin-left: 10px"
+      >{{ title }}</v-toolbar-title
+    >
     <v-spacer></v-spacer>
 
     <v-menu>

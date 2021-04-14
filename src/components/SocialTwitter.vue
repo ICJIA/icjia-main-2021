@@ -45,7 +45,7 @@ export default {
     },
     seed: {
       type: Number,
-      default: 5,
+      default: 55,
     },
   },
   data() {

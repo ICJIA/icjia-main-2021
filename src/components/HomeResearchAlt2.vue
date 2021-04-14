@@ -3,7 +3,7 @@
     <v-tabs show-arrows
       ><div style="height: 15px"></div>
       <v-tab>Articles</v-tab>
-      <v-tab>Applications </v-tab>
+      <v-tab>Web Apps </v-tab>
       <v-tab>Datasets</v-tab>
       <div style="height: 10px"></div>
       <v-tab-item>
