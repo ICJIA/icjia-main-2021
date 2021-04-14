@@ -323,7 +323,26 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-divider> </v-divider>
+        </v-list>
+      </v-menu>
+
+      <v-menu
+        bottom
+        offset-y
+        origin="center center"
+        transition="scale-transition"
+        er
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            class="hidden-sm-and-down navItem"
+            v-bind="attrs"
+            v-on="on"
+            >Home 3<v-icon right small>arrow_drop_down</v-icon>
+          </v-btn>
+        </template>
+        <v-list nav dense elevation="2">
           <v-list-item class="appNav" to="/version-p">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
@@ -343,41 +362,13 @@
           <v-list-item class="appNav" to="/version-r">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version R: Click-through boxes included, press removed,
-                research on botton, both social feeds</v-list-item-title
+                >Version R: Boxes added, press removed, research on bottom, both
+                social feeds</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-menu>
-
-      <!-- <v-menu
-        bottom
-        offset-y
-        origin="center center"
-        transition="scale-transition"
-        er
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            text
-            class="hidden-sm-and-down navItem"
-            v-bind="attrs"
-            v-on="on"
-            >Home 3<v-icon right small>arrow_drop_down</v-icon>
-          </v-btn>
-        </template>
-        <v-list nav dense elevation="2">
-          <v-list-item class="appNav" to="/version-r">
-            <v-list-item-content class="hover">
-              <v-list-item-title style="font-size: 12px !important"
-                >Version R: Click-through boxes, press
-                removed.</v-list-item-title
-              >
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-menu> -->
 
       <v-menu
         bottom

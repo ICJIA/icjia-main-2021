@@ -96,8 +96,8 @@ export default {
     });
     EventBus.$emit(
       "systemBar",
-      `Version R: Click-through boxes included, press removed,
-                research on botton, both social feeds`
+      `Version R: Boxes added, press removed, research on bottom, both
+                social feeds`
     );
   },
   methods: {
