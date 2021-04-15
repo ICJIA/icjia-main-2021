@@ -9,6 +9,15 @@
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
           >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this item
+            </router-link>
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
                 <v-col

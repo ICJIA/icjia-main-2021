@@ -8,7 +8,17 @@
             style="height: 250px"
             class="py-3 px-3 text-left info-card hover"
             :class="{ boxGutter: gutter }"
-            ><h2
+          >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this item
+            </router-link>
+            <h2
               style="
                 color: #fff;
                 border-bottom: 1px solid #aaa;
@@ -34,7 +44,17 @@
             color="grey darken-3"
             style="height: 200px"
             class="pt-1 px-4 text-left info-card hover mr-2 mt-2"
-            ><h2
+          >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this item
+            </router-link>
+            <h2
               style="
                 color: #fff;
                 border-bottom: 1px solid #aaa;

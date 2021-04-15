@@ -9,6 +9,15 @@
             class="py-3 px-5 text-left info-card hover"
             :class="{ boxGutter: gutter }"
           >
+            <router-link
+              to="/"
+              aria-label="Read more about this item."
+              class="skiplink dark"
+              title="Read more about this item."
+              style="font-size: 12px; margin-top: 5px; margin-left: 5px"
+            >
+              Read more about this item
+            </router-link>
             <div class="text-center">
               <h2
                 style="
