@@ -11,7 +11,7 @@
           style="margin-top: -25px"
           :secondRow="false"
           :boxes="3"
-          :showTeaser="true"
+          :showTeaser="false"
         ></HomeBoxesAlt>
       </v-col>
     </v-row>
@@ -97,11 +97,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit(
-      "systemBar",
-      `Version R: Boxes with icons and short teasers, press
-                removed`
-    );
+    EventBus.$emit("systemBar", `Version T: Boxes with icons, no teasers`);
   },
   methods: {
     changeTab(e) {

@@ -172,7 +172,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        er
+        nudge-left="100px"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -258,7 +258,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        er
+        nudge-left="100px"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -331,7 +331,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        er
+        nudge-left="160px"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -359,11 +359,27 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-divider></v-divider>
           <v-list-item class="appNav" to="/version-r">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version R: Boxes added, press removed, research on bottom, both
-                social feeds</v-list-item-title
+                >Version R: Boxes with icons and short teasers, press
+                removed</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item class="appNav" to="/version-s">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version S: Boxes without icons</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/version-t">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Version T: Boxes with icons, no teasers</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -399,6 +415,13 @@
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
                 >Navbar versions</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/boxes">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Click-through box versions</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>

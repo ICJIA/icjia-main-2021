@@ -1,6 +1,6 @@
 <template>
   <v-card elevation="0" style="margin-top: -5px; margin-bottom: 18px">
-    <v-tabs show-arrows
+    <v-tabs show-arrows grow
       ><div style="height: 15px"></div>
       <v-tab>Articles</v-tab>
       <v-tab>Web Apps </v-tab>

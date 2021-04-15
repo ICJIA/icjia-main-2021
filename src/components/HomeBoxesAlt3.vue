@@ -6,29 +6,35 @@
           <v-card
             :color="getColor(n)"
             style="height: 250px"
-            class="py-3 px-3 text-left info-card hover"
-            :class="{ boxGutter: gutter }"
-            ><h2
-              style="
-                color: #fff;
-                border-bottom: 1px solid #aaa;
-                padding-bottom: 5px;
-                margin-bottom: 10px;
-                font-size: 18px;
-                text-transform: uppercase;
-              "
-            >
-              Click through title here
-            </h2>
-            <p style="color: #fff" class="mt-5">
-              Lorem markdownum ardent ubi te incessit cum recanduit potentior
-              ignibus levitate hoc posita. At sole pennas enixa carinae
-              peregrina terra nisi, pro. Nocte omnes umeris.
-            </p></v-card
+            class="py-5 px-2 text-center info-card hover"
           >
+            <v-container fill-height fluid>
+              <v-row align="center" justify="center">
+                <v-col
+                  ><v-icon style="font-size: 70px" dark>{{
+                    icons[n - 1]
+                  }}</v-icon>
+                  <h2
+                    style="
+                      color: #fff;
+
+                      margin-bottom: 10px;
+                      font-size: 24px;
+                    "
+                  >
+                    Click through title here
+                  </h2>
+                  <p style="color: #fff; font-size: 14px" v-if="showTeaser">
+                    Lorem markdownum ramis ratus iussit Echidnaea
+                  </p></v-col
+                >
+              </v-row>
+            </v-container>
+            <!--  -->
+          </v-card>
         </v-col>
       </v-row>
-      <v-row v-if="secondRow" no-gutters>
+      <!-- <v-row v-if="secondRow" no-gutters>
         <v-col cols="12" md="4" v-for="n in 3" :key="`row1-${n}`">
           <v-card
             color="grey darken-3"
@@ -52,7 +58,7 @@
             </p></v-card
           >
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-container>
   </div>
 </template>
@@ -63,6 +69,7 @@ export default {
   data() {
     return {
       colors: ["#333", "#555"],
+      icons: ["fact_check", "leaderboard", "map", "contact_mail"],
     };
   },
   methods: {
@@ -88,17 +95,13 @@ export default {
       type: Boolean,
       default: false,
     },
-    gutter: {
+
+    showTeaser: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
 };
 </script>
 
-<style scoped>
-.boxGutter {
-  margin-right: 2px;
-  margin-left: 2px;
-}
-</style>
+<style scoped></style>

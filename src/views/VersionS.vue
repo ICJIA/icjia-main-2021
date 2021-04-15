@@ -7,12 +7,11 @@
 
     <v-row style="margin-top: 10px">
       <v-col cols="12">
-        <HomeBoxesAlt
+        <HomeBoxesAlt2
           style="margin-top: -25px"
-          :secondRow="false"
           :boxes="3"
           :showTeaser="true"
-        ></HomeBoxesAlt>
+        ></HomeBoxesAlt2>
       </v-col>
     </v-row>
     <v-row>
@@ -97,11 +96,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit(
-      "systemBar",
-      `Version R: Boxes with icons and short teasers, press
-                removed`
-    );
+    EventBus.$emit("systemBar", `Version S: Boxes without icons`);
   },
   methods: {
     changeTab(e) {

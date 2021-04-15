@@ -18,6 +18,9 @@ import VersionO from "../views/VersionO.vue";
 import VersionP from "../views/VersionP.vue";
 import VersionQ from "../views/VersionQ.vue";
 import VersionR from "../views/VersionR.vue";
+import VersionS from "../views/VersionS.vue";
+import VersionT from "../views/VersionT.vue";
+import Boxes from "../views/Boxes.vue";
 import Nav from "../views/Nav.vue";
 import Heroes from "../views/Heroes.vue";
 
@@ -115,6 +118,16 @@ const routes = [
     component: VersionR,
   },
   {
+    path: "/version-s",
+    name: "VersionS",
+    component: VersionS,
+  },
+  {
+    path: "/version-t",
+    name: "VersionT",
+    component: VersionT,
+  },
+  {
     path: "/nav",
     name: "Nav",
     component: Nav,
@@ -123,6 +136,11 @@ const routes = [
     path: "/heroes",
     name: "Heroes",
     component: Heroes,
+  },
+  {
+    path: "/boxes",
+    name: "Boxes",
+    component: Boxes,
   },
 ];
 

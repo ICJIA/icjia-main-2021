@@ -5,21 +5,24 @@
         <v-col cols="12" :md="boxColumns" v-for="n in boxes" :key="`row1-${n}`">
           <v-card
             :color="getColor(n)"
-            style="height: 250px"
-            class="py-3 px-3 text-left info-card hover"
+            style="height: 230px"
+            class="py-3 px-5 text-left info-card hover"
             :class="{ boxGutter: gutter }"
-            ><h2
-              style="
+          >
+            <div class="text-center">
+              <h2
+                style="
                 color: #fff;
-                border-bottom: 1px solid #aaa;
-                padding-bottom: 5px;
+
                 margin-bottom: 10px;
-                font-size: 18px;
+                font-size: 24px;
                 text-transform: uppercase;
+                text-center
               "
-            >
-              Click through title here
-            </h2>
+              >
+                Click through title here
+              </h2>
+            </div>
             <p style="color: #fff" class="mt-5">
               Lorem markdownum ardent ubi te incessit cum recanduit potentior
               ignibus levitate hoc posita. At sole pennas enixa carinae
