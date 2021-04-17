@@ -39,7 +39,7 @@ export default {
 .context-bar {
   position: sticky !important;
   top: 0px !important;
-  z-index: 50000 !important;
+  z-index: 1000 !important;
 }
 .btn--context {
   border: 1px solid #fff !important;
