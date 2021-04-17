@@ -181,6 +181,7 @@
         transition="scale-transition"
         nudge-left="100px"
         style="z-index: 100000"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -268,6 +269,7 @@
         transition="scale-transition"
         nudge-left="100px"
         style="z-index: 100000"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -342,6 +344,7 @@
         transition="scale-transition"
         nudge-left="160px"
         style="z-index: 100000"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -402,6 +405,7 @@
         origin="center center"
         transition="scale-transition"
         style="z-index: 100000"
+        open-on-hover
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
