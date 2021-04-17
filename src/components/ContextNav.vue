@@ -1,6 +1,12 @@
 <template>
   <div>
-    <v-app-bar dense flat height="50" scroll-threshold="0" color="#bbb">
+    <v-app-bar
+      dense
+      height="50"
+      scroll-threshold="0"
+      color="#bbb"
+      style="border-top: 1px solid #bbb"
+    >
       <v-spacer></v-spacer>
       <v-card elevation="0">
         <v-tabs dark show-arrows center-active v-model="contextTab">

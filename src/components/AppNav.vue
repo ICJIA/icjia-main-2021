@@ -130,7 +130,8 @@
       height="90"
       hide-on-scroll
       scroll-threshold="1"
-      style="z-index: 9999"
+      style="z-index: 9999; border-bottom: 1px solid #eee !important"
+      flat
     >
       <div
         class="hover hamburger text-center"
