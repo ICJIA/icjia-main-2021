@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="search" width="70%">
+  <v-dialog v-model="search" width="70%" style="z-index: 999999">
     <v-toolbar flat color="grey darken-3" dark class="mb-2">
       <v-toolbar-title style="font-weight: 900; font-size: 28px"
         >Search ICJIA</v-toolbar-title
