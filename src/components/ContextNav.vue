@@ -1,15 +1,9 @@
 <template>
   <div>
-    <v-app-bar
-      dense
-      height="50"
-      scroll-threshold="0"
-      color="#bbb"
-      style="border-top: 1px solid #bbb"
-    >
+    <v-app-bar dense height="40" scroll-threshold="0" color="#bbb">
       <v-spacer></v-spacer>
       <v-card elevation="0">
-        <v-tabs dark show-arrows center-active v-model="contextTab">
+        <v-tabs dark show-arrows center-active v-model="contextTab" height="40">
           <v-tabs-slider></v-tabs-slider>
 
           <v-tab @click="routeToPage('About the Research Hub')"

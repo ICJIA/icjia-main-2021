@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-app-bar dense height="50" scroll-threshold="0" color="#bbb">
+    <v-app-bar dense height="40" scroll-threshold="0" color="#bbb">
       <v-spacer></v-spacer>
       <v-card elevation="0">
-        <v-tabs dark show-arrows center-active v-model="contextTab">
+        <v-tabs dark show-arrows center-active v-model="contextTab" height="40">
           <v-tabs-slider></v-tabs-slider>
 
           <!-- <v-tab v-for="i in 12" :key="i" :href="'#tab-' + i">
