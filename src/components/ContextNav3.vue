@@ -7,10 +7,15 @@
       color="grey darken-2"
       scroll-threshold="0"
     >
+      <!-- <div style="color: #fff; font-size: 22px; font-weight: 900">
+        GATA at ICJIA
+      </div> -->
       <v-spacer></v-spacer>
+
       <v-card elevation="0" color="grey darken-2">
         <v-tabs
           dark
+          small
           background-color="grey darken-2"
           show-arrows
           center-active
@@ -21,12 +26,12 @@
           <!-- <v-tab v-for="i in 12" :key="i" :href="'#tab-' + i">
             Item {{ i }}
           </v-tab> -->
-
-          <v-tab style="color: #fff">About the Research Hub</v-tab>
-          <v-tab style="color: #fff">Articles</v-tab>
-          <v-tab style="color: #fff">Web Apps</v-tab>
-          <v-tab style="color: #fff">Datasets</v-tab>
-          <v-tab style="color: #fff">Documentation</v-tab>
+          <v-tab style="color: #fff">About GATA</v-tab>
+          <v-tab style="color: #fff">Funding</v-tab>
+          <v-tab style="color: #fff">Webinars</v-tab>
+          <v-tab style="color: #fff">FAQs</v-tab>
+          <v-tab style="color: #fff">Technical Assistance</v-tab>
+          <v-tab style="color: #fff">Workshop Registration</v-tab>
         </v-tabs>
       </v-card>
       <v-spacer></v-spacer>

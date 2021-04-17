@@ -23,6 +23,8 @@ import VersionT from "../views/VersionT.vue";
 import Boxes from "../views/Boxes.vue";
 import Nav from "../views/Nav.vue";
 import ContextBar from "../views/ContextBar.vue";
+import ContextBarIrb from "../views/ContextBarIrb.vue";
+import ContextBarGata from "../views/ContextBarGata.vue";
 import Heroes from "../views/Heroes.vue";
 
 Vue.use(VueRouter);
@@ -147,6 +149,16 @@ const routes = [
     path: "/context-bar",
     name: "ContextBar",
     component: ContextBar,
+  },
+  {
+    path: "/context-bar-irb",
+    name: "ContextBar2",
+    component: ContextBarIrb,
+  },
+  {
+    path: "/context-bar-gata",
+    name: "ContextBar3",
+    component: ContextBarGata,
   },
 ];
 

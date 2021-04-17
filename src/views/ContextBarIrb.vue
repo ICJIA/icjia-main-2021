@@ -1,6 +1,6 @@
 <template>
   <div>
-    <context-nav class="context-bar"></context-nav>
+    <context-nav2 class="context-bar"></context-nav2>
 
     <v-container>
       <v-row>

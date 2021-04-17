@@ -21,12 +21,11 @@
           <!-- <v-tab v-for="i in 12" :key="i" :href="'#tab-' + i">
             Item {{ i }}
           </v-tab> -->
-
-          <v-tab style="color: #fff">About the Research Hub</v-tab>
-          <v-tab style="color: #fff">Articles</v-tab>
-          <v-tab style="color: #fff">Web Apps</v-tab>
-          <v-tab style="color: #fff">Datasets</v-tab>
-          <v-tab style="color: #fff">Documentation</v-tab>
+          <v-tab style="color: #fff">About the IRB</v-tab>
+          <v-tab style="color: #fff">Members & Staff</v-tab>
+          <v-tab style="color: #fff">Meetings</v-tab>
+          <v-tab style="color: #fff">Policies</v-tab>
+          <v-tab style="color: #fff">Resources</v-tab>
         </v-tabs>
       </v-card>
       <v-spacer></v-spacer>

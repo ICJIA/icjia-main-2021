@@ -433,10 +433,26 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-divider></v-divider>
           <v-list-item class="appNav" to="/context-bar">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Context bar sample</v-list-item-title
+                >Context bar / Research Hub</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item class="appNav" to="/context-bar-irb">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Context bar / IRB</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item class="appNav" to="/context-bar-gata">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Context bar / GATA</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -476,6 +492,7 @@
       temporary
       disable-resize-watcher
       color="white"
+      style="z-index: 99999"
       ><v-list class="mt-5">
         <div v-for="item in items" :key="item.title">
           <div v-if="item.items.length">
