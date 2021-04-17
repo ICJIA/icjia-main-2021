@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar
+    <!-- <v-app-bar
       fixed
       app
       inverted-scroll
@@ -120,12 +120,17 @@
         </template>
         <span>Search ICJIA</span>
       </v-tooltip>
-      <!-- <v-spacer
-        v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
-      ></v-spacer> -->
-    </v-app-bar>
+    
+    </v-app-bar> -->
 
-    <v-app-bar fixed app color="white" height="90" hide-on-scroll>
+    <v-app-bar
+      fixed
+      app
+      color="white"
+      height="90"
+      hide-on-scroll
+      scroll-threshold="1"
+    >
       <div
         class="hover hamburger text-center"
         v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs"
@@ -173,6 +178,7 @@
         origin="center center"
         transition="scale-transition"
         nudge-left="100px"
+        style="z-index: 100000"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -259,6 +265,7 @@
         origin="center center"
         transition="scale-transition"
         nudge-left="100px"
+        style="z-index: 100000"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -332,6 +339,7 @@
         origin="center center"
         transition="scale-transition"
         nudge-left="160px"
+        style="z-index: 100000"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -391,7 +399,7 @@
         offset-y
         origin="center center"
         transition="scale-transition"
-        er
+        style="z-index: 100000"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -425,8 +433,32 @@
               >
             </v-list-item-content>
           </v-list-item>
+          <v-list-item class="appNav" to="/context-bar">
+            <v-list-item-content class="hover">
+              <v-list-item-title style="font-size: 12px !important"
+                >Context bar sample</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-menu>
+
+      <v-tooltip left>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            text
+            small
+            v-bind="attrs"
+            v-on="on"
+            @click="openTranslationModal()"
+            style="font-size: 10px; font-weight: 900"
+          >
+            <span class="v-icon fas fa-globe mr-2 translation"></span>
+            <!-- <span class="hidden-sm-and-down">Translate</span> -->
+          </v-btn>
+        </template>
+        <span>Translate this page on Google</span>
+      </v-tooltip>
 
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">

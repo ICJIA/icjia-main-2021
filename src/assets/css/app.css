@@ -121,7 +121,7 @@ th {
 }
 
 *:focus {
-  border: 3px solid #000;
+  border: 1px solid #000 !important;
   font-weight: 900;
 }
 
@@ -154,3 +154,12 @@ th {
 .v-application a {
   color: #000;
 }
+
+/* #context-bar {
+  position: sticky !important;
+  top: 30px !important;
+  z-index: 10 !important;
+}
+.btn--context {
+  border: 1px solid #ccc !important;
+} */

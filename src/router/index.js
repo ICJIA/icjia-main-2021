@@ -22,6 +22,7 @@ import VersionS from "../views/VersionS.vue";
 import VersionT from "../views/VersionT.vue";
 import Boxes from "../views/Boxes.vue";
 import Nav from "../views/Nav.vue";
+import ContextBar from "../views/ContextBar.vue";
 import Heroes from "../views/Heroes.vue";
 
 Vue.use(VueRouter);
@@ -141,6 +142,11 @@ const routes = [
     path: "/boxes",
     name: "Boxes",
     component: Boxes,
+  },
+  {
+    path: "/context-bar",
+    name: "ContextBar",
+    component: ContextBar,
   },
 ];
 

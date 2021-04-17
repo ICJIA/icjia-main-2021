@@ -1,0 +1,48 @@
+<template>
+  <div>
+    <context-nav class="context-bar"></context-nav>
+
+    <v-container>
+      <v-row>
+        <v-col class="my-5">
+          <v-skeleton-loader
+            v-bind="attrs"
+            boilerplate
+            type="card-avatar, article, actions"
+          ></v-skeleton-loader>
+          <v-skeleton-loader
+            v-bind="attrs"
+            boilerplate
+            type="table-heading, list-item-two-line, image, table-tfoot"
+          ></v-skeleton-loader
+        ></v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+
+<script>
+import ContextNav from "../components/ContextNav.vue";
+export default {
+  components: { ContextNav },
+  data() {
+    return {
+      tab: null,
+      items: [" Articles ", " Web Applications ", " Datasets "],
+      text:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    };
+  },
+};
+</script>
+
+<style>
+.context-bar {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 50000 !important;
+}
+.btn--context {
+  border: 1px solid #fff !important;
+}
+</style>
