@@ -6,12 +6,10 @@
       <v-row>
         <v-col class="my-5">
           <v-skeleton-loader
-            v-bind="attrs"
             boilerplate
             type="card-avatar, article, actions"
           ></v-skeleton-loader>
           <v-skeleton-loader
-            v-bind="attrs"
             boilerplate
             type="table-heading, list-item-two-line, image, table-tfoot"
           ></v-skeleton-loader
@@ -25,6 +23,9 @@
 import ContextNav from "../components/ContextNav.vue";
 export default {
   components: { ContextNav },
+  mounted() {
+    console.table(this.$myApp.config.contextMenus);
+  },
   data() {
     return {
       tab: null,

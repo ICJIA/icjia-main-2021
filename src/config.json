@@ -41,5 +41,35 @@
         "linkify": true,
         "typographer": false,
         "quotes": "“”‘’"
+    },
+    "contextMenus": {
+        "researchhub": [
+            {
+                "label": "Articles",
+                "url": "/researchhub/articles/"
+            },
+            {
+                "label": "Datasets",
+                "url": "/researchhub/datasets/"
+            },
+            {
+                "label": "Web Apps",
+                "url": "/researchhub/apps/"
+            }
+        ],
+        "irb": [
+            {
+                "label": "About",
+                "url": "/irb/about/"
+            },
+            {
+                "label": "Meetings",
+                "url": "/irb/meetings/"
+            },
+            {
+                "label": "Resources",
+                "url": "/irb/resources/"
+            }
+        ]
     }
 }

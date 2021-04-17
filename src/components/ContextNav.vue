@@ -9,18 +9,24 @@
     >
       <v-spacer></v-spacer>
       <v-card elevation="0" color="grey darken-2">
-        <v-btn dark text class="mr-2 btn--context" style="font-weight: 900"
-          >Articles</v-btn
+        <v-tabs
+          dark
+          background-color="grey darken-2"
+          show-arrows
+          center-active
+          v-model="contextTab"
         >
-        <v-btn dark text class="mr-2 btn--context" style="font-weight: 900"
-          >Datasets</v-btn
-        >
-        <v-btn dark text class="mr-2 btn--context" style="font-weight: 900"
-          >Web Applications</v-btn
-        >
-        <v-btn dark text class="mr-2 btn--context" style="font-weight: 900"
-          >About the Research Hub</v-btn
-        >
+          <v-tabs-slider color="grey darken-4"></v-tabs-slider>
+
+          <!-- <v-tab v-for="i in 12" :key="i" :href="'#tab-' + i">
+            Item {{ i }}
+          </v-tab> -->
+
+          <v-tab style="color: #fff">Articles</v-tab>
+          <v-tab style="color: #fff">Web Apps</v-tab>
+          <v-tab style="color: #fff">Datasets</v-tab>
+          <v-tab style="color: #fff">About the Research Hub</v-tab>
+        </v-tabs>
       </v-card>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -29,9 +35,15 @@
 
 <script>
 export default {
+  watch: {
+    contextTab(newValue) {
+      console.log("Selected tab: ", newValue);
+    },
+  },
   data() {
     return {
       contextDrawer: true,
+      contextTab: null,
     };
   },
 };

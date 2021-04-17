@@ -120,10 +120,10 @@ th {
   color: #fff;
 }
 
-*:focus {
+/* *:focus {
   border: 1px solid #000 !important;
   font-weight: 900;
-}
+} */
 
 .card-link {
   text-decoration: none;
