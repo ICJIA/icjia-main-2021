@@ -6,15 +6,13 @@
         <v-tabs dark show-arrows center-active v-model="contextTab">
           <v-tabs-slider></v-tabs-slider>
 
-          <!-- <v-tab v-for="i in 12" :key="i" :href="'#tab-' + i">
-            Item {{ i }}
-          </v-tab> -->
-
-          <v-tab>About the Research Hub</v-tab>
-          <v-tab>Articles</v-tab>
-          <v-tab>Web Apps</v-tab>
-          <v-tab>Datasets</v-tab>
-          <v-tab>Documentation</v-tab>
+          <v-tab @click="routeToPage('About the Research Hub')"
+            >About the Research Hub</v-tab
+          >
+          <v-tab @click="routeToPage('Articles')">Articles</v-tab>
+          <v-tab @click="routeToPage('Web Apps')">Web Apps</v-tab>
+          <v-tab @click="routeToPage('Datasets')">Datasets</v-tab>
+          <v-tab @click="routeToPage('Documentation')">Documentation</v-tab>
         </v-tabs>
       </v-card>
       <v-spacer></v-spacer>
@@ -25,8 +23,15 @@
 <script>
 export default {
   watch: {
-    contextTab(newValue) {
-      console.log("Selected tab: ", newValue);
+    // eslint-disable-next-line no-unused-vars
+  },
+  mounted() {
+    this.contextTab = 0;
+  },
+  methods: {
+    routeToPage(page) {
+      if (page === "About the Research Hub") return;
+      console.log("route: ", page);
     },
   },
   data() {
