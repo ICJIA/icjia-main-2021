@@ -465,7 +465,7 @@
         </v-list>
       </v-menu>
 
-      <v-tooltip left>
+      <!-- <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
@@ -476,11 +476,11 @@
             style="font-size: 10px; font-weight: 900"
           >
             <span class="v-icon fas fa-globe mr-2 translation"></span>
-            <!-- <span class="hidden-sm-and-down">Translate</span> -->
+           
           </v-btn>
         </template>
         <span>Translate this page on Google</span>
-      </v-tooltip>
+      </v-tooltip> -->
 
       <v-tooltip left>
         <template v-slot:activator="{ on, attrs }">

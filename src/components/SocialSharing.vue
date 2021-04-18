@@ -7,13 +7,14 @@
       direction="top"
       :open-on-hover="false"
       absolute
+      fixed
     >
       <template v-slot:activator>
         <v-tooltip left>
           <template v-slot:activator="{ on }">
             <v-btn
               v-model="socialSharing"
-              color="indigo darken-2"
+              color="blue darken-4"
               dark
               fab
               v-on="on"
@@ -22,7 +23,8 @@
               <v-icon v-else>fa fa-users</v-icon>
             </v-btn>
           </template>
-          <span>Share or translate this page</span>
+          <span v-if="!socialSharing">Share or translate this page</span>
+          <span v-else>Close sharing and translate</span>
         </v-tooltip>
       </template>
       <v-tooltip left>
@@ -43,7 +45,14 @@
       </v-tooltip>
       <v-tooltip left>
         <template v-slot:activator="{ on }">
-          <v-btn fab dark small color="#4285F4" v-on="on">
+          <v-btn
+            fab
+            dark
+            small
+            color="#4285F4"
+            v-on="on"
+            @click="openTranslationModal()"
+          >
             <v-icon>fas fa-globe</v-icon>
           </v-btn>
         </template>
@@ -54,11 +63,17 @@
 </template>
 
 <script>
+import { EventBus } from "@/event-bus";
 export default {
   data() {
     return {
       socialSharing: false,
     };
+  },
+  methods: {
+    openTranslationModal() {
+      EventBus.$emit("translate", this.$route.fullPath);
+    },
   },
 };
 </script>
