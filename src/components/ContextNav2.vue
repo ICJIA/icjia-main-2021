@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       dense
-      height="35"
+      height="45"
       scroll-threshold="0"
       color="grey darken-2"
       id="context-bar"
@@ -17,7 +17,7 @@
       </div>
       <v-spacer></v-spacer>
       <v-card elevation="0">
-        <v-tabs dark show-arrows center-active v-model="contextTab" height="34">
+        <v-tabs dark show-arrows center-active v-model="contextTab" height="45">
           <v-tabs-slider></v-tabs-slider>
 
           <v-tab @click="routeToPage('about-the-irb')">About the IRB</v-tab>
