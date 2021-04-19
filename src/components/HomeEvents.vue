@@ -17,6 +17,7 @@
       <v-tab>Community</v-tab>
       <v-tab>Meetings </v-tab>
       <v-tab>Training</v-tab>
+      <v-tab>Funding</v-tab>
 
       <v-tab-item>
         <v-container fluid style="background: #fff">
@@ -41,6 +42,15 @@
           <v-row no-gutters>
             <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
               <EventDate tag="training"> </EventDate>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-tab-item>
+      <v-tab-item>
+        <v-container fluid style="background: #fff">
+          <v-row no-gutters>
+            <v-col cols="12" md="4" v-for="n in 3" :key="`event-${n}`">
+              <EventDate tag="funding"> </EventDate>
             </v-col>
           </v-row>
         </v-container>

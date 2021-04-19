@@ -385,17 +385,17 @@
           <v-list-item class="appNav" to="/version-s">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
-                >Version S: Boxes without icons</v-list-item-title
+                >Version S: Version R with research at top</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
-          <v-list-item class="appNav" to="/version-t">
+          <!-- <v-list-item class="appNav" to="/version-t">
             <v-list-item-content class="hover">
               <v-list-item-title style="font-size: 12px !important"
                 >Version T: Boxes with icons, no teasers</v-list-item-title
               >
             </v-list-item-content>
-          </v-list-item>
+          </v-list-item> -->
         </v-list>
       </v-menu>
 

@@ -43,7 +43,7 @@
             </h3>
             <div class="mt-6">
               <span class="eventTitle" style="font-weight: 900">
-                Event Title Here</span
+                Title Here</span
               >
               |
               <span class="eventTime" style="color: #666"> 2:00pm to 4pm</span>

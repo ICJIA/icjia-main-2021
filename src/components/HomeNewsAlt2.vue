@@ -7,12 +7,15 @@
       class="mt-2"
       color="grey darken-1"
     >
-      <v-tab>Grants </v-tab>
+      <v-tab>Funding </v-tab>
       <v-tab>Employment </v-tab>
       <v-tab-item>
         <div style="height: 10px; background: #eee !important"></div>
         <div v-for="n in numberOfCards" :key="`news-${n}`">
-          <NewsCard title="Grant item here" style="background: #fff"></NewsCard>
+          <NewsCard
+            title="Funding item here"
+            style="background: #fff"
+          ></NewsCard>
         </div>
       </v-tab-item>
 

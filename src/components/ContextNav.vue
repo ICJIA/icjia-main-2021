@@ -67,7 +67,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .v-tab {
   font-size: 12px !important;
   font-weight: 700 !important;

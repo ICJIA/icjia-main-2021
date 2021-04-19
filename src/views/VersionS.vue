@@ -4,14 +4,18 @@
     <!-- <div id="content" style="margin-top: 4px; padding-bottom: 30px">
       <WidgetBar title="News & Information"></WidgetBar>
     </div> -->
+    <v-row style="margin-top: -20px">
+      <v-col> <HomeResearchAlt></HomeResearchAlt></v-col>
+    </v-row>
 
     <v-row style="margin-top: 10px">
       <v-col cols="12">
-        <HomeBoxesAlt2
+        <HomeBoxesAlt
           style="margin-top: -25px"
+          :secondRow="false"
           :boxes="3"
           :showTeaser="true"
-        ></HomeBoxesAlt2>
+        ></HomeBoxesAlt>
       </v-col>
     </v-row>
     <v-row>
@@ -40,9 +44,7 @@
 
     <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="0"></div>
     <HomeEvents></HomeEvents>
-    <v-row style="margin-top: -20px">
-      <v-col> <HomeResearchAlt></HomeResearchAlt></v-col>
-    </v-row>
+
     <v-row>
       <v-col cols="12" md="6">
         <div id="content" style="margin-top: 4px; padding-bottom: 30px">
@@ -96,7 +98,7 @@ export default {
     this.$nextTick(() => {
       this.fixA11y();
     });
-    EventBus.$emit("systemBar", `Version S: Boxes without icons`);
+    EventBus.$emit("systemBar", `Version S: Version R with research at top`);
   },
   methods: {
     changeTab(e) {
